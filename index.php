@@ -75,8 +75,8 @@
 
 				<!-- Name box -->
 				<div id="nostalgia-navigation-name-box">
-					<span>Keith</span>
-					<span>Douglas</span>
+					<span>G. G.</span>
+					<span>Victor</span>
 				</div>
 				<!-- /Name box -->
 				
