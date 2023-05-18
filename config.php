@@ -2,8 +2,8 @@
 
 $configDefault=array
 (
-	'title'				=>	'Nostalgia - Responsive Minimal Portfolio Template',
-	'keywords'			=>	'clean, creative, full screen, fullscreen, jquery, minimal, minimalistic, modern, personal, portfolio, responsive, retro, template, vintage, yellow',
+	'title'				=>	'G.G. Victor - Software Development',
+	'keywords'			=>	'software, developer, angular, ionic, app, application, cross-platform, typescript, freelance, portfolio, web developer, mobile developer, development, senior developer, freelance developer',
 	'description'		=>	'Nostalgia is a HTML portfolio template - personal or corporate, based on full-screen slider and sliding pages. The template is maintained in a minimalist, contrasting style. Background images kept in retro tones contrast with modern minimalist content.'		
 );
 
