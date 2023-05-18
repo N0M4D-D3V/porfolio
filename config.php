@@ -4,7 +4,7 @@ $configDefault=array
 (
 	'title'				=>	'G.G. Victor - Software Development',
 	'keywords'			=>	'software, developer, angular, ionic, app, application, cross-platform, typescript, freelance, portfolio, web developer, mobile developer, development, senior developer, freelance developer',
-	'description'		=>	'Nostalgia is a HTML portfolio template - personal or corporate, based on full-screen slider and sliding pages. The template is maintained in a minimalist, contrasting style. Background images kept in retro tones contrast with modern minimalist content.'		
+	'description'		=>	"Experienced Senior Software Developer specializing in web and cross-platform development"		
 );
 
 $config=array

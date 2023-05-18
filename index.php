@@ -133,8 +133,8 @@
 						
 						<div class="nostalgia-tab-footer-caption">
 						
-							<span class="float-left"><a href="#">Please feel free to share my works</a></span>
-							<span class="float-right"><a href="#">Copyright Keith Douglas</a></span>
+							<span class="float-left"><a href="#">Please feel free to share</a></span>
+							<span class="float-right"><a href="#">Copyright Victor Gonzalez</a></span>
 						
 						</div>
 
