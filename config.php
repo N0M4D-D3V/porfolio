@@ -33,7 +33,7 @@ $config=array
 		'keywords'			=>	'',
 		'description'		=>	''
 	),
-	'contact.php'	=>	array
+	'contact.html'	=>	array
 	(
 		'title'				=>	'Contact - '.$configDefault['title'],
 		'keywords'			=>	'',

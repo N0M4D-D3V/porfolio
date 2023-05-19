@@ -61,7 +61,7 @@ $(document).ready(function () {
       slideImageIndexPage: 3,
     },
     "blog.php": { tab: "right", className: "info", slideImageIndexPage: 4 },
-    "contact.php": { tab: "left", className: "mail", slideImageIndexPage: 5 },
+    "contact.html": { tab: "left", className: "mail", slideImageIndexPage: 5 },
     "post.html": { tab: "right", className: "info", slideImageIndexPage: 6 },
   };
 
