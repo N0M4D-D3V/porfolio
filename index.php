@@ -17,6 +17,8 @@
 		
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+		<link rel="icon" type="image/x-icon" href="/image/favicon.svg">
 		
 		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css"/>
 		<link rel="stylesheet" type="text/css" href="style/jquery.jScrollPane.css"/>
@@ -74,8 +76,8 @@
 
 				<!-- Name box -->
 				<div id="nostalgia-navigation-name-box">
-					<span>G. G.</span>
 					<span>Victor</span>
+					<span style='color: black;font-size: 26px;font-weight: bold;'> Software Developer</span>
 				</div>
 				<!-- /Name box -->
 				

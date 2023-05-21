@@ -2,7 +2,7 @@
 
 $configDefault=array
 (
-	'title'				=>	'G.G. Victor - Software Development',
+	'title'				=>	'Senior Software Developer',
 	'keywords'			=>	'software, developer, angular, ionic, app, application, cross-platform, typescript, freelance, portfolio, web developer, mobile developer, development, senior developer, freelance developer',
 	'description'		=>	"Experienced Senior Software Developer specializing in web and cross-platform development"		
 );
