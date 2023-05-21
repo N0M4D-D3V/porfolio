@@ -61,7 +61,6 @@
 						<li><a href="<?php $Nostalgia->_getURL('about.html'); ?>">About</a></li>
 						<li><a href="<?php $Nostalgia->_getURL('services.html'); ?>">Services</a></li>
 						<li><a href="<?php $Nostalgia->_getURL('portfolio.html'); ?>">Portfolio</a></li>
-						<li><a style='pointer-events: none; color: gray;' href="<?php $Nostalgia->_getURL('blog.php'); ?>">Blog</a></li>
 						<li><a href="<?php $Nostalgia->_getURL('contact.html'); ?>">Contact</a></li>
 					</ul>
 					<!-- /Menu -->
@@ -103,7 +102,6 @@
 								<option value="<?php $Nostalgia->_getURL('about.html'); ?>">About</option>
 								<option value="<?php $Nostalgia->_getURL('services.html'); ?>">Services</option>
 								<option value="<?php $Nostalgia->_getURL('portfolio.html'); ?>">Portfolio</option>
-								<option value="<?php $Nostalgia->_getURL('blog.php'); ?>">Blog</option>
 								<option value="<?php $Nostalgia->_getURL('contact.html'); ?>">Contact</option>
 								<option value="<?php $Nostalgia->_getURL('main'); ?>">- Close -</option>
 							</select>
@@ -209,8 +207,6 @@
 		<script type="text/javascript" src="script/script.js"></script>
 		<script type="text/javascript" src="script/nostalgia.js"></script>
 		<script type="text/javascript" src="script/main.js"></script>
-        <script type="text/javascript" src="plugin/contact-form/contact-form.js"></script>
-		
 	</body>
 
 </html>

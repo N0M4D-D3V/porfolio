@@ -27,24 +27,24 @@ $config=array
 		'keywords'			=>	'',
 		'description'		=>	''
 	),
-	'blog.php'	=>	array
-	(
-		'title'				=>	'Blog - '.$configDefault['title'],
-		'keywords'			=>	'',
-		'description'		=>	''
-	),
+	// 'blog.php'	=>	array
+	// (
+	// 	'title'				=>	'Blog - '.$configDefault['title'],
+	// 	'keywords'			=>	'',
+	// 	'description'		=>	''
+	// ),
 	'contact.html'	=>	array
 	(
 		'title'				=>	'Contact - '.$configDefault['title'],
 		'keywords'			=>	'',
 		'description'		=>	''
 	),
-	'post.html'	=>	array
-	(
-		'title'				=>	'Post - '.$configDefault['title'],
-		'keywords'			=>	'',
-		'description'		=>	''
-	)
+	// 'post.html'	=>	array
+	// (
+	// 	'title'				=>	'Post - '.$configDefault['title'],
+	// 	'keywords'			=>	'',
+	// 	'description'		=>	''
+	// )
 );
 		
 ?>
