@@ -121,14 +121,13 @@
 
 					</div>
 					<!-- /Scroll section -->
-					
+
 					<!-- Footer -->
 					<div id="nostalgia-tab-footer" class="clear-fix">
 						
 						<ul class="no-list social-list">
-							<li><a class="social-list-facebook" href="#"></a></li>
-							<li><a class="social-list-twitter" href="#"></a></li>
-							<li><a class="social-list-google" href="#"></a></li>
+							<li><a href="https://www.linkedin.com/in/victor-develops/" target="_blank"> <img width='100%' src="image/icon/icon-social/icon_social_linkedin.png" alt="linkedin icon"> </a></li>
+							<li><a href="/#!contact.html"> <img width='100%' src="image/icon/icon-social/icon_social_email.png" alt="mailto icon"> </a></li>
 						</ul>
 						
 						<div class="nostalgia-tab-footer-caption">

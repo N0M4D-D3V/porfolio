@@ -1,33 +1,20 @@
 <style>
-  a:hover {
-    text-decoration: none; /* no underline */
+  button {
+    float: right;
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 30px;
+
+    margin-top: 3%;
+
+    border-radius: 5px;
+    border: none;
   }
 
-  img {
-    width: 64px;
-    height: 64px;
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-  .zoom {
-    transition: transform 1s; /* Animation */
-  }
-
-  .zoom:hover {
-    -ms-transform: scale(1.5) rotate(360deg); /* IE 9 */
-    -webkit-transform: scale(1.5) rotate(360deg); /* Safari 3-8 */
-    transform: scale(1.5) rotate(360deg);
-  }
-
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .center a {
-    margin: 0 5%;
+  button:hover {
+    background-color: white;
+    color: black;
   }
 </style>
 
@@ -64,22 +51,11 @@
 
   <!-- Contact -->
   <h3>Contact</h3>
-  <div class="center w-100">
-    <a href="https://www.linkedin.com/in/victor-develops/" target="_blank">
-      <img
-        src="image/icon/icon-social/icon_social_linkedin.png"
-        alt="Linkedin logo not found"
-        class="zoom"
-      />
-    </a>
+  <form action="https://formspree.io/f/xknaavjo" method="POST">
+    <input type="email" name="email" placeholder="Email" />
+    <textarea name="message" placeholder="Message..."></textarea>
 
-    <a href="mailto:victor@gg-victor.dev">
-      <img
-        src="image/icon/icon-social/icon_social_email.png"
-        alt="Email logo not found"
-        class="zoom"
-      />
-    </a>
-  </div>
+    <button class="button" type="submit">SEND</button>
+  </form>
   <!-- /Contact -->
 </div>
