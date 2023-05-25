@@ -13,33 +13,33 @@ $(document).ready(function () {
     {
       image: "media/image/background/01.svg",
       title:
-        '<span class="supersized-caption-title">Halle Kearney<br/>By Robby Mueller</span><br/><br/>Well, today was Halle Kearney\'s first senior picture session in Akron, OH and I decided to go with something a little different here.<br/><br/>This is not going to be used as one of her senior pictures (As far as I know).<br/><br/>We took a different spin on things and I\'m a tad bit stoked on it.<br/><br/><a href="http://www.flickr.com/photos/ro2b3yface/5623260278/in/photostream/">Author Website</a>',
+        '<span class="supersized-caption-title">Angular<br/>Framework</span><br/><br/> Angular is a widely popular and powerful front-end framework for building dynamic web applications.<br/><br/> These key features and aspects of Angular contribute to its popularity and make it a versatile framework for developing modern web applications. Whether you\'re building a small project or a large-scale enterprise application, Angular provides a solid foundation for creating dynamic and scalable front-end solutions.<br/><br/><a href="https://angular.io/" target="_blank">Website</a>',
     },
     {
       image: "media/image/background/02.svg",
       title:
-        '<span class="supersized-caption-title">Lavender<br/>By Vincent van der Pas</span><br/><br/>Taken in the south of France, near Apt.<br/><br/><a href="http://www.flickr.com/photos/archetypefotografie/4958711873/in/photostream/">Author Website</a>',
+        '<span class="supersized-caption-title">Ionic<br/>Framework</span><br/><br/>Ionic is a powerful and popular framework for building cross-platform mobile applications.<br/><br/> Ionic is a versatile framework that combines the power of web technologies with the ability to create native-like mobile apps. Whether you\'re a beginner or an experienced developer, Ionic provides the tools and resources necessary to build high-quality cross-platform applications efficiently.<br/><br/><a href="https://ionicframework.com/" target="_blank">Website</a>',
     },
     {
       image: "media/image/background/03.svg",
       title:
-        '<span class="supersized-caption-title">Plainsong<br/>By Robb North</span><br/><br/>sometimes you make me feel<br/>like i\'m living at the edge of the world<br/>like i\'m living at the edge of the world<br/><br/><a href="http://www.flickr.com/photos/robbn1/3405147407/in/photostream/">Author Website</a>',
+        '<span class="supersized-caption-title">Capacitor<br/>Framework</span><br/><br/> Capacitor offers a powerful solution for hybrid mobile app development, providing access to native device functionality, cross-platform compatibility, and a familiar web-based development experience. By leveraging Capacitor, developers can efficiently build mobile applications that deliver a native-like experience while maximizing code reusability across different platforms.<br/><br/><a href="https://capacitorjs.com/" target="_blank">Website</a>',
     },
     {
       image: "media/image/background/04.svg",
       title:
-        '<span class="supersized-caption-title">Falcon on Rue Drolet<br/>By Flat-Black 66</span><br/><a href="http://www.flickr.com/photos/flatblack66/4733463620/">Author Website</a>',
+        '<span class="supersized-caption-title">Electron<br/>Framework</span><br/><br/>Electron is a powerful framework for building cross-platform desktop applications. Understanding these key aspects of Electron can help developers leverage its capabilities to build powerful and cross-platform desktop applications using familiar web technologies.<br/><br/><a href="https://www.electronjs.org/" target="_blank">Website</a>',
     },
     {
       image: "media/image/background/05.svg",
       title:
-        '<span class="supersized-caption-title">New kitchen radio<br/>By Johan Larsson</span><br/><br/>Tivoli Model One.<br/><br/><a href="http://www.flickr.com/photos/johanl/6125230384/in/photostream/">Author Website</a>',
+        '<span class="supersized-caption-title">Typescript<br/>Programming Language</span><br/><br/> TypeScript is a powerful programming language that offers several key advantages for software development. By leveraging TypeScript\'s strong typing, IDE support, modern JavaScript features, code maintainability, and the thriving community, developers can create robust and scalable applications with improved productivity and fewer errors.<br/><br/><a href="https://www.typescriptlang.org/" target="_blank">Website</a>',
     },
-    {
-      image: "media/image/background/06.svg",
-      title:
-        '<span class="supersized-caption-title">Bekohlicious!<br/>By 55Laney69</span><br/><br/>Canon 550D + Canon 50mm F1.8 EF II @F1.8 :). Cross Processed with Alien Skin Exposure<br/><br/><a href="http://www.flickr.com/photos/hansel5569/6001781706/in/photostream/">Author Website</a>',
-    },
+    // {
+    //   image: "media/image/background/06.svg",
+    //   title:
+    //     '<span class="supersized-caption-title">Bekohlicious!<br/>By 55Laney69</span><br/><br/>Canon 550D + Canon 50mm F1.8 EF II @F1.8 :). Cross Processed with Alien Skin Exposure<br/><br/><a href="http://www.flickr.com/photos/hansel5569/6001781706/in/photostream/">Author Website</a>',
+    // },
   ];
 
   var audio = [{ mp3: "media/audio/Kondor-Love-Your-Life-Outro-track.mp3" }];
