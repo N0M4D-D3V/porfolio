@@ -17,6 +17,8 @@
 		
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+		<link rel="icon" type="image/x-icon" href="/image/favicon.svg">
 		
 		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css"/>
 		<link rel="stylesheet" type="text/css" href="style/jquery.jScrollPane.css"/>
@@ -61,8 +63,7 @@
 						<li><a href="<?php $Nostalgia->_getURL('about.html'); ?>">About</a></li>
 						<li><a href="<?php $Nostalgia->_getURL('services.html'); ?>">Services</a></li>
 						<li><a href="<?php $Nostalgia->_getURL('portfolio.html'); ?>">Portfolio</a></li>
-						<li><a href="<?php $Nostalgia->_getURL('blog.php'); ?>">Blog</a></li>
-						<li><a href="<?php $Nostalgia->_getURL('contact.php'); ?>">Contact</a></li>
+						<li><a href="<?php $Nostalgia->_getURL('contact.html'); ?>">Contact</a></li>
 					</ul>
 					<!-- /Menu -->
 					
@@ -75,8 +76,8 @@
 
 				<!-- Name box -->
 				<div id="nostalgia-navigation-name-box">
-					<span>G. G.</span>
 					<span>Victor</span>
+					<span style='color: black;font-size: 26px;font-weight: bold;'> Software Developer</span>
 				</div>
 				<!-- /Name box -->
 				
@@ -103,8 +104,7 @@
 								<option value="<?php $Nostalgia->_getURL('about.html'); ?>">About</option>
 								<option value="<?php $Nostalgia->_getURL('services.html'); ?>">Services</option>
 								<option value="<?php $Nostalgia->_getURL('portfolio.html'); ?>">Portfolio</option>
-								<option value="<?php $Nostalgia->_getURL('blog.php'); ?>">Blog</option>
-								<option value="<?php $Nostalgia->_getURL('contact.php'); ?>">Contact</option>
+								<option value="<?php $Nostalgia->_getURL('contact.html'); ?>">Contact</option>
 								<option value="<?php $Nostalgia->_getURL('main'); ?>">- Close -</option>
 							</select>
 							
@@ -121,14 +121,13 @@
 
 					</div>
 					<!-- /Scroll section -->
-					
+
 					<!-- Footer -->
 					<div id="nostalgia-tab-footer" class="clear-fix">
 						
 						<ul class="no-list social-list">
-							<li><a class="social-list-facebook" href="#"></a></li>
-							<li><a class="social-list-twitter" href="#"></a></li>
-							<li><a class="social-list-google" href="#"></a></li>
+							<li><a href="https://www.linkedin.com/in/victor-develops/" target="_blank"> <img width='100%' src="image/icon/icon-social/icon_social_linkedin.png" alt="linkedin icon"> </a></li>
+							<li><a href="/#!contact.html"> <img width='100%' src="image/icon/icon-social/icon_social_email.png" alt="mailto icon"> </a></li>
 						</ul>
 						
 						<div class="nostalgia-tab-footer-caption">
@@ -209,8 +208,6 @@
 		<script type="text/javascript" src="script/script.js"></script>
 		<script type="text/javascript" src="script/nostalgia.js"></script>
 		<script type="text/javascript" src="script/main.js"></script>
-        <script type="text/javascript" src="plugin/contact-form/contact-form.js"></script>
-		
 	</body>
 
 </html>
