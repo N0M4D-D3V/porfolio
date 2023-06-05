@@ -1,14 +1,16 @@
 #! /bin/zsh
+# script by N0M4D
 
 #clear
-echo 'Clearing previous files ...' 
+echo '<> Clearing previous deploy...' 
 ./clear-rise.sh
 
 # cp info
-echo 'Copying new files into htdocs folder ...'
+echo '<> Copying curret deploy...'
 cd ..
 cd ..
 sudo cp -r ./portfolio/* /opt/lampp/htdocs
 
 #rise xampp
+echo '<> Rising XAMPP...'
 sudo /opt/lampp/lampp start
