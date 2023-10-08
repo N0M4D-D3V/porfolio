@@ -1,1 +1,1 @@
-export { MyComponent } from "./my-component/my-component.js";
+export { VNavbar } from "./v-navbar/v-navbar.js";

@@ -1,5 +1,5 @@
-export class MyComponent extends HTMLElement {
-  name = "my-component";
+export class VNavbar extends HTMLElement {
+  _id = "v-navbar";
 
   constructor() {
     super();
@@ -8,8 +8,8 @@ export class MyComponent extends HTMLElement {
     this.attachShadow({ mode: "open" });
     const template = document.createElement("template");
     template.innerHTML = `
-        <link rel="stylesheet" href="./components/my-component/my-component.css">
-        <nav id='${this.name}'>
+        <link rel="stylesheet" href="./components/${this._id}/${this._id}.css">
+        <nav id='${this._id}'>
         <div class="container">
           <a id='menu-button'>
             <img id='favicon' src="../../assets/icon/favicon.svg" alt="favicon" width="30" height="24">
@@ -40,4 +40,4 @@ export class MyComponent extends HTMLElement {
 }
 
 // Define the custom element
-customElements.define("my-component", MyComponent);
+customElements.define("v-navbar", VNavbar);
