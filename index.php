@@ -205,8 +205,6 @@
 		<script type="text/javascript" src="script/jquery.fancybox.js"></script>
 		<script type="text/javascript" src="script/jquery.fancybox-media.js"></script>
 		<script type="text/javascript" src="script/jquery.fancybox-buttons.js"></script>
-		
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>    
 
 		<script type="text/javascript" src="script/script.js"></script>
 		<script type="text/javascript" src="script/nostalgia.js"></script>

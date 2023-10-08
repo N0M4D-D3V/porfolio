@@ -3,7 +3,7 @@
 $configDefault=array
 (
 	'title'				=>	'Senior Software Developer',
-	'keywords'			=>	'software, developer, angular, ionic, app, application, cross-platform, typescript, freelance, portfolio, web developer, mobile developer, development, senior developer, freelance developer',
+	'keywords'			=>	'software developer, freelance developer, web development services, custom software solutions, front-end development, back-end development, mobile app development, full-stack development, responsive web design, agile development methodologies',
 	'description'		=>	"Experienced Senior Software Developer specializing in web and cross-platform development"		
 );
 

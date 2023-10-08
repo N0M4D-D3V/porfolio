@@ -2,39 +2,39 @@
 /*	Google Maps																  */
 /******************************************************************************/
 
-try {
-  var coordinate = new google.maps.LatLng(48.864037, 2.353477);
+// try {
+//   var coordinate = new google.maps.LatLng(48.864037, 2.353477);
 
-  var mapOptions = {
-    zoom: 15,
-    center: coordinate,
-    streetViewControl: false,
-    mapTypeControl: false,
-    zoomControlOptions: {
-      position: google.maps.ControlPosition.TOP_RIGHT,
-    },
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-  };
+//   var mapOptions = {
+//     zoom: 15,
+//     center: coordinate,
+//     streetViewControl: false,
+//     mapTypeControl: false,
+//     zoomControlOptions: {
+//       position: google.maps.ControlPosition.TOP_RIGHT,
+//     },
+//     mapTypeId: google.maps.MapTypeId.ROADMAP,
+//   };
 
-  var googleMap = new google.maps.Map(
-    document.getElementById("map"),
-    mapOptions
-  );
+//   var googleMap = new google.maps.Map(
+//     document.getElementById("map"),
+//     mapOptions
+//   );
 
-  var markerOptions = {
-    map: googleMap,
-    position: coordinate,
-    icon: mainURL + "image/map_pointer.png",
-  };
+//   var markerOptions = {
+//     map: googleMap,
+//     position: coordinate,
+//     icon: mainURL + "image/map_pointer.png",
+//   };
 
-  new google.maps.Marker(markerOptions);
+//   new google.maps.Marker(markerOptions);
 
-  $(window).resize(function () {
-    try {
-      googleMap.setCenter(coordinate);
-    } catch (e) {}
-  });
-} catch (e) {}
+//   $(window).resize(function () {
+//     try {
+//       googleMap.setCenter(coordinate);
+//     } catch (e) {}
+//   });
+// } catch (e) {}
 
 /******************************************************************************/
 /*	Accordion in portfolio													  */
