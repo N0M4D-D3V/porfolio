@@ -1,0 +1,33 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#my-component {
+  background-color: black;
+
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+
+  padding-left: 1%;
+  padding-top: 5px;
+
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+img {
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.rotated {
+  transform: rotate(45deg);
+}
