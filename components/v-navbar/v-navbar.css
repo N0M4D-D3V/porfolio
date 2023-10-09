@@ -1,15 +1,4 @@
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 #v-navbar {
-  background-color: #333;
-  color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -22,15 +11,13 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 1%;
-}
 
-img {
-  transition: transform 0.5s ease;
-  cursor: pointer;
-}
-
-.rotated {
-  transform: rotate(45deg);
+  /* Glass */
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* Styles for the minimalistic search bar */
@@ -44,16 +31,13 @@ img {
   border: none;
   outline: none;
   background: transparent;
-  color: orange;
+  color: var(--accent-color);
 }
 
 #search-button {
   padding: 8px 16px;
-  background-color: orange;
-  color: #fff;
+  background-color: transparent;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
   outline: none;
 }
 
@@ -64,4 +48,20 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Styles for the menu */
+.menu {
+  display: inline-flex;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+  color: var(--disabled-text-color);
+  transition: color 0.5s;
+}
+
+.menu-item:hover {
+  color: var(--accent-color);
 }

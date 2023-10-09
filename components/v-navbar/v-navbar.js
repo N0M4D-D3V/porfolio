@@ -16,8 +16,13 @@ export class VNavbar extends HTMLElement {
             <a id="menu-button">
                 <img id="favicon" src="../../assets/icon/favicon.svg" alt="favicon" width="30" height="24">
             </a>
+            <div id="menu" class="menu">
+              <div class="menu-item">Blog</div>
+              <div class="menu-item">Portfolio</div>
+              <div class="menu-item">Contacto</div>
+            </div>
             <div id="search-container">
-                <button id="search-button">S</button>
+                <button id="search-button"><img src='../../assets/icon/search.svg'alt='search' width='30' height='24' /></button>
                 <input type="text" id="search-input" placeholder="Search...">
             </div>
         </div>
@@ -31,20 +36,7 @@ export class VNavbar extends HTMLElement {
     document.addEventListener("DOMContentLoaded", this.afterDOMLoaded());
   }
 
-  afterDOMLoaded() {
-    const favicon = this.shadowRoot.getElementById("favicon");
-    const menuButton = this.shadowRoot.getElementById("menu-button");
-
-    menuButton.addEventListener("click", () => {
-      // Add the 'rotated' class to trigger the rotation animation
-      favicon.classList.add("rotated");
-
-      // Remove the 'rotated' class after the animation completes
-      setTimeout(() => {
-        favicon.classList.remove("rotated");
-      }, 500); // Adjust the time to match the animation duration (0.5s in this case)
-    });
-  }
+  afterDOMLoaded() {}
 }
 
 // Define the custom element
