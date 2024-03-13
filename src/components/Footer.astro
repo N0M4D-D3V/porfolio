@@ -1,33 +1,21 @@
----
-import DownloadIcon from "../components/icons/Download.astro";
----
-
-<footer
-  class="rounded-lg shadow m-4 bg-black/5 dark:bg-black/20 backdrop-blur-lg w-full xl:w-[1120px] mx-auto mb-10"
->
-  <div
-    class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
-  >
-    <span
-      class="text-sm sm:text-center text-yellow-800/90 dark:text-yellow-200/90"
-      >© 2024 <a href="https://gg-victor.dev/" class="hover:underline"
-        >Víctor</a
-      >
-    </span>
-    <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
-    >
-      <li></li>
-      <li>
-        <span
-          class="flex gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2 border border-white/10"
-        >
-          <a href="/docs/victor-gonzalez-cv-en.pdf" target="_blank">
-            <DownloadIcon class="inline" />
-            Download CV
-          </a>
-        </span>
-      </li>
-    </ul>
-  </div>
+<footer>
+  <span>
+    &copy; {new Date().getFullYear()} Victor's Blog. Powered by <a
+      href="https://astro.build"
+      target="_blank"
+      rel="noopener">Astro</a
+    >.
+  </span>
 </footer>
+
+<style>
+  footer {
+    color: var(--text-secondary);
+    font-size: 0.8em;
+    margin: 1em auto;
+    max-width: 1400px;
+    padding: 1em 2em;
+    text-align: center;
+    width: 100%;
+  }
+</style>
