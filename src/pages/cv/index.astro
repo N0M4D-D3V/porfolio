@@ -1,0 +1,71 @@
+---
+import Badge from "../../components/Badge.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import SocialPill from "../../components/SocialPill.astro";
+import GitHubIcon from "../../icons/GitHubIcon.astro";
+import LinkedInIcon from "../../icons/LinkedInIcon.astro";
+import MailIcon from "../../icons/MailIcon.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const title = "CV";
+const description =
+  "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
+const permalink = `${Astro.site.href}cv`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="cv"
+>
+  <SectionContainer class="py-44 pb-32">
+    <img
+      class="rounded-full size-12 mb-4"
+      src="/assets/profile.jpg"
+      alt="victor profile"
+    />
+    <h1
+      class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+    >
+      {text.barev}
+      <a
+        href={links.linkedin}
+        target="_blank"
+        rel="noopener"
+        class="flex justify-center items-center"
+      >
+        <Badge>{text.status}</Badge>
+      </a>
+    </h1>
+    <h2
+      class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
+    >
+      <span>{text.description.white}</span><span
+        class="text-yellow-800 dark:text-yellow-200"
+      >
+        {text.description.yellow}</span
+      >
+      <span class="text-red-800 dark:text-red-200">
+        {text.description.red}</span
+      >
+      <span class="text-sky-800 dark:text-sky-200">{text.description.blue}</span
+      >
+    </h2>
+
+    <nav class="flex gap-4 mt-8 flex-wrap">
+      <SocialPill href={links.linkedin}>
+        <LinkedInIcon class="size-4 md:size-6" />
+        LinkedIn
+      </SocialPill>
+      <SocialPill href={links.github}>
+        <GitHubIcon class="size-4 md:size-6" />
+        GitHub
+      </SocialPill>
+      <SocialPill href={links.mailto}>
+        <MailIcon class="size-4 md:size-6" />
+        {links.mail}
+      </SocialPill>
+    </nav>
+  </SectionContainer>
+</BaseLayout>

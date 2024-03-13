@@ -1,0 +1,62 @@
+{
+  "basics": {
+    "name": "Víctor González",
+    "label": "Full-Stack developer with more than 3 years of experience",
+    "image": "/profile.jpg",
+    "email": "victor@gg-victor.dev",
+    "url": "https://gg-victor.dev",
+    "summary": "+3 years of experience. Full-Stack Developer. From Madrid, Spain. Specialized in crafting unique hybrid applications.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "victor-develops",
+        "url": "https://linkedin.com/in/victor-develops"
+      },
+      {
+        "network": "GitHub",
+        "username": "YandrosChaos",
+        "url": "https://github.com/YandrosChaos"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "midudev",
+      "position": "Web programming communicator",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2021-01-01",
+      "endDate": null,
+      "summary": "Most watched development streamer in Spanish on Twitch. +1 million followers across all my social networks. Recognised by Google, Microsoft and GitHub for my impact on the development community.",
+      "highlights": ["Started the company"]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universitat Oberta de Catalunya",
+      "url": "https://www.uoc.edu/portal/es/index.html",
+      "area": "Software Engineer",
+      "studyType": "Bachelor",
+      "startDate": "2003-01-01",
+      "endDate": "2009-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "isActive": true,
+      "description": "",
+      "highlights": [],
+      "url": ""
+    }
+  ]
+}
