@@ -1,0 +1,112 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import InfoIcon from "../components/icons/Info.astro";
+import Projects from "../components/Projects.astro";
+import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
+
+import { BAREV } from "../components/constants/barev";
+import { LINKS } from "../components/constants/resources";
+
+const text = BAREV;
+const links = LINKS;
+---
+
+<Layout
+  title="Víctor -  Software Developer with 3 years of experience"
+  description="Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications."
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32">
+      <img
+        class="rounded-full size-12 mb-4"
+        src={text.image}
+        alt="victor profile"
+      />
+      <h1
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        {text.barev}
+        <a
+          href={links.linkedin}
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>{text.status}</Badge>
+        </a>
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
+      >
+        <span>{text.description.white}</span><span
+          class="text-yellow-800 dark:text-yellow-200"
+        >
+          {text.description.yellow}</span
+        >
+        <span class="text-red-800 dark:text-red-200">
+          {text.description.red}</span
+        >
+        <span class="text-sky-800 dark:text-sky-200"
+          >{text.description.blue}</span
+        >
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href={links.linkedin}>
+          <LinkedInIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href={links.github}>
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href={links.mailto}>
+          <MailIcon class="size-4 md:size-6" />
+          {links.mail}
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <Briefcase class="size-7" />
+        Work
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <CodeIcon class="size-7" />
+        Projects
+      </h2>
+      <Projects />
+    </SectionContainer>
+    <SectionContainer id="contact">
+      <Contact />
+    </SectionContainer>
+    <SectionContainer id="about">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <InfoIcon />
+        About Me
+      </h2>
+      <About />
+    </SectionContainer>
+  </main>
+</Layout>
