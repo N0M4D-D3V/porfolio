@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Víctor González",
-    "label": "Software Developer with more than 3 years of experience",
+    "label": "Software Developer",
     "image": "assets/profile.jpg",
     "email": "victor@gg-victor.dev",
     "url": "https://gg-victor.dev",
-    "summary": "+3 years of experience as a web/mobile developer.",
+    "summary": "Frontend Developer with over three years of experience. Focused in Angular, with extensive technical expertise in building web and hybrid applications and native plugins. Proven ability to collaborate effectively in multidisciplinary teams using agile methods.",
     "location": {
       "address": "",
       "postalCode": "28300",

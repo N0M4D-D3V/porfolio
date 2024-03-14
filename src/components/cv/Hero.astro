@@ -21,7 +21,7 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
 ---
 
 <Section>
-  <div class="container">
+  <div class="cont">
     <div class="info">
       <h1>{name}</h1>
       <h2>{label}</h2>
@@ -37,7 +37,7 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
           email && (
             <a
               href={`mailto:${email}`}
-              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              title={`${email}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -52,7 +52,7 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
             return (
               <a
                 href={url}
-                title={`Visitar el perfil de ${name} en ${network}`}
+                title={`${network}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -70,10 +70,9 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
 </Section>
 
 <style>
-  .container {
+  .cont {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     gap: 1rem;
   }
