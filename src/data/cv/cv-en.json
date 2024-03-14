@@ -67,14 +67,14 @@
   ],
   "education": [
     {
-      "institution": "Universitat Oberta de Catalunya",
-      "url": "https://www.uoc.edu/portal/es/index.html",
-      "area": "Software Engineer",
-      "studyType": "Bachelor",
-      "startDate": "2003-01-01",
-      "endDate": "2009-01-01",
-      "score": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
+      "institution": "IES Barajas",
+      "url": "https://site.educa.madrid.org/ies.barajas.madrid/",
+      "area": "Multiplatform Apps Development",
+      "studyType": "",
+      "startDate": "2018-01-01",
+      "endDate": "2020-01-01",
+      "score": "",
+      "courses": []
     }
   ],
   "awards": [
