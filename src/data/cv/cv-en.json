@@ -28,30 +28,30 @@
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Web programming communicator",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "Airbus Defence & Space",
+      "position": "Hybrid Developer",
+      "url": "",
+      "startDate": "2022-03-01",
       "endDate": null,
-      "summary": "Most watched development streamer in Spanish on Twitch. +1 million followers across all my social networks. Recognised by Google, Microsoft and GitHub for my impact on the development community.",
-      "highlights": ["Started the company"]
+      "summary": "Analysis, management and implementation of new functionalities. Implementation of abstract observable service and factory patterns to enhance code reusability. Build Angular custom libraries from scratch. Migration of legacy projects to modern Angular technologies.",
+      "highlights": []
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
+      "name": "Kubide Tech Builder",
+      "position": "Frontend Developer",
       "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "I led a technical convergence between different products and migrated from a monolithic architecture to a more flexible and optimised one. I fostered best practices and performance culture improvements, as well as rapid delivery of value to users.",
-      "highlights": ["Started the company"]
+      "startDate": "2021-02-01",
+      "endDate": "2022-03-01",
+      "summary": "Development of a customized CRM for Merlin Properties and concurrent maintenance of mobile applications for startups. Analysis and implementation of new functionalities. Proposed solutions for various project challenges, contributing to problem-solving efforts.",
+      "highlights": []
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "I developed a geolocated news platform and an API to consume the information. Scaled services to support the load of over hundreds of thousands of requests per day. Cut delivery times and deployments to production by half. Collaborated with Mozilla and Telefónica to develop the first FirefoxOS TV app.",
-      "highlights": ["Started the company"]
+      "name": "Métrica Consulting S.L.",
+      "position": "Frontend Developer",
+      "startDate": "2020-09-01",
+      "endDate": "2020-12-01",
+      "summary": "Core software development for internal company use. Implementation of solutions, reactive forms and auth/roles  system.",
+      "highlights": []
     }
   ],
   "volunteer": [
