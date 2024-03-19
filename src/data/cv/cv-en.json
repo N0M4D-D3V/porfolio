@@ -1,0 +1,222 @@
+{
+  "basics": {
+    "name": "Víctor González",
+    "label": "Software Developer",
+    "image": "assets/profile.jpg",
+    "email": "victor@gg-victor.dev",
+    "url": "https://gg-victor.dev",
+    "summary": "Frontend Developer with over three years of experience. Focused in Angular, with extensive technical expertise in building web and hybrid applications and native plugins. Proven ability to collaborate effectively in multidisciplinary teams using agile methods.",
+    "location": {
+      "address": "",
+      "postalCode": "28300",
+      "city": "Aranjuez",
+      "countryCode": "ES",
+      "region": "Spain"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "victor-develops",
+        "url": "https://linkedin.com/in/victor-develops"
+      },
+      {
+        "network": "GitHub",
+        "username": "N0M4D-D3V",
+        "url": "https://github.com/N0M4D-D3V"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Airbus Defence & Space",
+      "position": "Hybrid Developer",
+      "url": "https://www.airbus.com/en/defence",
+      "startDate": "2022-03-01",
+      "endDate": null,
+      "summary": "Analysis, management and implementation of new functionalities. Implementation of abstract observable service and factory patterns to enhance code reusability. Build Angular custom libraries from scratch. Migration of legacy projects to modern Angular technologies.",
+      "highlights": []
+    },
+    {
+      "name": "Kubide Tech Builder",
+      "position": "Frontend Developer",
+      "url": "https://kubide.es/",
+      "startDate": "2021-02-01",
+      "endDate": "2022-03-01",
+      "summary": "Development of a customized CRM for Merlin Properties and concurrent maintenance of mobile applications for startups. Analysis and implementation of new functionalities. Proposed solutions for various project challenges, contributing to problem-solving efforts.",
+      "highlights": []
+    },
+    {
+      "name": "Métrica Consulting S.L.",
+      "position": "Frontend Developer",
+      "url": "https://metrica.es/en",
+      "startDate": "2020-09-01",
+      "endDate": "2020-12-01",
+      "summary": "Core software development for internal company use. Implementation of solutions, reactive forms and auth/roles  system.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "IES Barajas",
+      "url": "https://site.educa.madrid.org/ies.barajas.madrid/",
+      "area": "Multiplatform Apps Development",
+      "studyType": "",
+      "startDate": "2018-01-01",
+      "endDate": "2020-01-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Azure AI Fundamentals",
+      "date": "2024-11-07",
+      "issuer": "Microsoft",
+      "url": "https://learn.microsoft.com/en-gb/users/victor-9169/credentials/7cacee400b65680f?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+    }
+  ],
+  "publications": [
+    {
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Angular",
+      "level": "Expert",
+      "keywords": [
+        "Web development",
+        "Mobile development",
+        "Frontend",
+        "TypeScript",
+        "Google",
+        "Framework"
+      ]
+    },
+    {
+      "name": "Ionic",
+      "level": "Mid",
+      "keywords": [
+        "Web development",
+        "Mobile development",
+        "Frontend",
+        "TypeScript",
+        "Framework"
+      ]
+    },
+    {
+      "name": "Capacitor",
+      "level": "Advanced",
+      "keywords": ["Web development", "Fullstack", "Mobile development"]
+    },
+    {
+      "name": "NestJS",
+      "level": "Mid",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "TypeScript",
+        "Framework",
+        "Server"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Mid",
+      "keywords": ["Web development", "Backend", "JavaScript", "Server"]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": ["Version control", "Collaboration", "Source code"]
+    },
+    {
+      "name": "Linux",
+      "level": "User",
+      "keywords": ["Operating System", "Linux OS", "Ubuntu", "Arch Linux"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "French",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Books",
+      "keywords": ["Learning", "Novel", "Read", "Knowledge"]
+    },
+    {
+      "name": "Music",
+      "keywords": ["Guitars", "Metal", "Rock", "Blues", "Jazz"]
+    },
+    {
+      "name": "Health",
+      "keywords": ["Fitness", "Bodybuilding", "Nutrition", "Health care"]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "reference": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Blazebooks",
+      "isActive": true,
+      "description": "In Blazebooks, you'll immerse yourself in stories where every choice you make impacts the plot development and the fate of the characters.",
+      "highlights": ["Angular", "Capacitor"],
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/blazebooks-mobile"
+    },
+    {
+      "name": "Blaze Server",
+      "isActive": true,
+      "description": "NodeJS/NestJS server for blazebooks. User, files and database management.",
+      "highlights": ["NestJS & NodeJS"],
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/blazebooks-server"
+    },
+    {
+      "name": "Demiurge",
+      "isActive": true,
+      "description": "The word 'demiurge' is a word derived form of the Greek dēmiourgós. It was a noun meaning 'craftsman' or 'artisan', but gradually came to mean 'producer' and eventually 'creator'.",
+      "highlights": ["Custom Angular Library"],
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/demiurge"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/cv/Hero.astro";
+import About from "../../components/cv/About.astro";
+import Experience from "../../components/cv/Experience.astro";
+import Education from "../../components/cv/Education.astro";
+import Projects from "../../components/cv/Projects.astro";
+import Skills from "../../components/cv/Skills.astro";
+
+const title = "Curriculum";
+const description =
+  "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
+const permalink = `${Astro.site.href}cv`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="cv"
+>
+  <Hero />
+  <Skills />
+  <About />
+  <Experience />
+  <Education />
+  <Projects />
+</BaseLayout>
