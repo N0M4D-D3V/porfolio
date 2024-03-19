@@ -129,6 +129,11 @@
       "name": "Git",
       "level": "Advanced",
       "keywords": ["Version control", "Collaboration", "Source code"]
+    },
+    {
+      "name": "Linux",
+      "level": "User",
+      "keywords": ["Operating System", "Linux OS", "Ubuntu", "Arch Linux"]
     }
   ],
   "languages": [
