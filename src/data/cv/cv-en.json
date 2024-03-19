@@ -9,7 +9,7 @@
     "location": {
       "address": "",
       "postalCode": "28300",
-      "city": "Madrid",
+      "city": "Aranjuez",
       "countryCode": "ES",
       "region": "Spain"
     },
@@ -21,8 +21,8 @@
       },
       {
         "network": "GitHub",
-        "username": "YandrosChaos",
-        "url": "https://github.com/YandrosChaos"
+        "username": "N0M4D-D3V",
+        "url": "https://github.com/N0M4D-D3V"
       }
     ]
   },
@@ -30,7 +30,7 @@
     {
       "name": "Airbus Defence & Space",
       "position": "Hybrid Developer",
-      "url": "",
+      "url": "https://www.airbus.com/en/defence",
       "startDate": "2022-03-01",
       "endDate": null,
       "summary": "Analysis, management and implementation of new functionalities. Implementation of abstract observable service and factory patterns to enhance code reusability. Build Angular custom libraries from scratch. Migration of legacy projects to modern Angular technologies.",
@@ -39,7 +39,7 @@
     {
       "name": "Kubide Tech Builder",
       "position": "Frontend Developer",
-      "url": "https://twitch.tv/midudev",
+      "url": "https://kubide.es/",
       "startDate": "2021-02-01",
       "endDate": "2022-03-01",
       "summary": "Development of a customized CRM for Merlin Properties and concurrent maintenance of mobile applications for startups. Analysis and implementation of new functionalities. Proposed solutions for various project challenges, contributing to problem-solving efforts.",
@@ -48,6 +48,7 @@
     {
       "name": "Métrica Consulting S.L.",
       "position": "Frontend Developer",
+      "url": "https://metrica.es/en",
       "startDate": "2020-09-01",
       "endDate": "2020-12-01",
       "summary": "Core software development for internal company use. Implementation of solutions, reactive forms and auth/roles  system.",
@@ -56,13 +57,13 @@
   ],
   "volunteer": [
     {
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": ["Awarded 'Volunteer of the Month'"]
+      "organization": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
     }
   ],
   "education": [
@@ -79,50 +80,41 @@
   ],
   "awards": [
     {
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
     }
   ],
   "certificates": [
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Azure AI Fundamentals",
+      "date": "2024-11-07",
+      "issuer": "Microsoft",
+      "url": "https://learn.microsoft.com/en-gb/users/victor-9169/credentials/7cacee400b65680f?ref=https%3A%2F%2Fwww.linkedin.com%2F"
     }
   ],
   "publications": [
     {
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
     }
   ],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": ["Web development", "Frontend"]
-    },
-    {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": ["Web development", "Frontend", "Diseño Responsive"]
-    },
-    {
       "name": "JavaScript",
-      "level": "Master",
-      "keywords": ["Web development", "Frontend", "Backend", "Fullstack"]
+      "level": "Mid",
+      "keywords": ["Web development", "Frontend", "Backend", "Fullstack", "Mobile development"]
     },
     {
       "name": "TypeScript",
       "level": "Advanced",
       "keywords": [
         "Web development",
+        "Mobile development",
         "Frontend",
         "Backend",
         "JavaScript Superset"
@@ -130,35 +122,47 @@
     },
     {
       "name": "Node",
-      "level": "Advanced",
-      "keywords": ["Web development", "Backend", "JavaScript", "Servidor"]
+      "level": "Mid",
+      "keywords": ["Web development", "Backend", "JavaScript", "Server"]
     },
     {
       "name": "Git",
       "level": "Advanced",
-      "keywords": ["Version control", "Colaboración", "Source code"]
+      "keywords": ["Version control", "Collaboration", "Source code"]
     }
   ],
   "languages": [
     {
       "language": "Spanish",
-      "fluency": "Native speaker"
+      "fluency": "Native"
     },
     {
       "language": "English",
       "fluency": "Advanced"
+    },
+    {
+      "language": "French",
+      "fluency": "Beginner"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "name": "Books",
+      "keywords": ["Learning", "Novel", "Read", "Knowledge"]
+    },
+    {
+      "name": "Music",
+      "keywords": ["Guitars", "Metal", "Rock", "Blues", "Jazz"]
+    },
+    {
+      "name": "Health",
+      "keywords": ["Fitness", "Bodybuilding", "Nutrition", "Health care"]
     }
   ],
   "references": [
     {
-      "name": "Jane Doe",
-      "reference": "Reference…"
+      "name": "",
+      "reference": ""
     }
   ],
   "projects": [
@@ -167,24 +171,24 @@
       "isActive": true,
       "description": "In Blazebooks, you'll immerse yourself in stories where every choice you make impacts the plot development and the fate of the characters.",
       "highlights": ["Angular", "Capacitor"],
-      "url": "https://github.com/YandrosChaos/YandrosChaos",
-      "github": "https://github.com/YandrosChaos/YandrosChaos"
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/N0M4D-D3V"
     },
     {
       "name": "Blaze Server",
       "isActive": true,
       "description": "NodeJS/NestJS server for blazebooks. User, files and database management.",
       "highlights": ["NestJS & NodeJS"],
-      "url": "https://github.com/YandrosChaos/YandrosChaos",
-      "github": "https://github.com/YandrosChaos/YandrosChaos"
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/N0M4D-D3V"
     },
     {
       "name": "Demiurge",
       "isActive": true,
       "description": "The word 'demiurge' is a word derived form of the Greek dēmiourgós. It was a noun meaning 'craftsman' or 'artisan', but gradually came to mean 'producer' and eventually 'creator'.",
       "highlights": ["Custom Angular Library"],
-      "url": "https://github.com/YandrosChaos/YandrosChaos",
-      "github": "https://github.com/YandrosChaos/YandrosChaos"
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/N0M4D-D3V"
     }
   ]
 }
