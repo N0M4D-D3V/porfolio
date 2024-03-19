@@ -1,22 +1,24 @@
 ---
 import Section from "./Section.astro";
 
-import HTML from "@/icons/skills/HTML.astro";
-import CSS from "@/icons/skills/CSS.astro";
-import JavaScript from "@/icons/skills/Javascript.astro";
-import TypeScript from "@/icons/skills/Typescript.astro";
+import Capacitor from "@/icons/skills/Capacitor.astro";
 import Node from "@/icons/skills/Node.astro";
 import Git from "@/icons/skills/Git.astro";
+import Linux from "@/icons/skills/Linux.astro";
+import Angular from "@/icons/skills/Angular.astro";
+import Ionic from "@/icons/skills/Ionic.astro";
+import NestJS from "@/icons/skills/NestJS.astro";
 
 import { skills } from "../../data/cv/cv-en.json";
 
 const SKILLS_ICONS: Record<string, any> = {
-  HTML,
-  CSS,
-  JavaScript,
-  TypeScript,
+  Capacitor,
   Node,
   Git,
+  Linux,
+  Angular,
+  Ionic,
+  NestJS,
 };
 ---
 
@@ -24,8 +26,7 @@ const SKILLS_ICONS: Record<string, any> = {
   <ul>
     {
       skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name;
-        const Icon = SKILLS_ICONS[iconName];
+        const Icon = SKILLS_ICONS[name];
 
         return (
           <li>

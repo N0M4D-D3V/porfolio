@@ -105,19 +105,42 @@
   ],
   "skills": [
     {
-      "name": "JavaScript",
-      "level": "Mid",
-      "keywords": ["Web development", "Frontend", "Backend", "Fullstack", "Mobile development"]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Advanced",
+      "name": "Angular",
+      "level": "Expert",
       "keywords": [
         "Web development",
         "Mobile development",
         "Frontend",
+        "TypeScript",
+        "Google",
+        "Framework"
+      ]
+    },
+    {
+      "name": "Ionic",
+      "level": "Mid",
+      "keywords": [
+        "Web development",
+        "Mobile development",
+        "Frontend",
+        "TypeScript",
+        "Framework"
+      ]
+    },
+    {
+      "name": "Capacitor",
+      "level": "Advanced",
+      "keywords": ["Web development", "Fullstack", "Mobile development"]
+    },
+    {
+      "name": "NestJS",
+      "level": "Mid",
+      "keywords": [
+        "Web development",
         "Backend",
-        "JavaScript Superset"
+        "TypeScript",
+        "Framework",
+        "Server"
       ]
     },
     {
