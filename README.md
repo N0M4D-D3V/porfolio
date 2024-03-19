@@ -1,5 +1,3 @@
-# Personal Web
-
 This repository contains the code for my personal website, serving as both a blog and portfolio. Having my own website allows me to showcase my experiences, share my resume, and provide links to my courses and eBooks. Explore my work, learn about my journey, and connect with me through this platform.
 
 ## Tech Stack
