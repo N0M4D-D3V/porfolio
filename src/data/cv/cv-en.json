@@ -5,7 +5,7 @@
     "image": "assets/profile.jpg",
     "email": "victor@gg-victor.dev",
     "url": "https://gg-victor.dev",
-    "summary": "Frontend Developer with over three years of experience. Focused in Angular, with extensive technical expertise in building web and hybrid applications and native plugins. Proven ability to collaborate effectively in multidisciplinary teams using agile methods.",
+    "summary": "Frontend Developer with four years of experience. Focused in Angular, with extensive technical expertise in building web, hybrid applications and native plugins. Proven ability to collaborate effectively in multidisciplinary teams using agile methods.",
     "location": {
       "address": "",
       "postalCode": "28300",
@@ -28,12 +28,12 @@
   },
   "work": [
     {
-      "name": "Airbus Defence & Space",
+      "name": "AKKODIS",
       "position": "Hybrid Developer",
-      "url": "https://www.airbus.com/en/defence",
+      "url": "https://www.akkodis.com/",
       "startDate": "2022-03-01",
       "endDate": null,
-      "summary": "Analysis, management and implementation of new functionalities. Implementation of abstract observable service and factory patterns to enhance code reusability. Build Angular custom libraries from scratch. Migration of legacy projects to modern Angular technologies.",
+      "summary": "Customer: Airbus Defence & Space. I am involved in developing an aerospace calculator app for military inflight operations. As the first member of the team, I initiated the development process from scratch, taking it through to production.",
       "highlights": []
     },
     {
@@ -131,17 +131,6 @@
       "name": "Capacitor",
       "level": "Advanced",
       "keywords": ["Web development", "Fullstack", "Mobile development"]
-    },
-    {
-      "name": "NestJS",
-      "level": "Mid",
-      "keywords": [
-        "Web development",
-        "Backend",
-        "TypeScript",
-        "Framework",
-        "Server"
-      ]
     },
     {
       "name": "Node",
