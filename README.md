@@ -13,6 +13,13 @@ $ npm run build
 $ npm run start
 ```
 
+## TODO
+- [ ] Switch to new email
+- [ ] Add Services page
+- [ ] Improve CV: multiple paragraph on experience description
+- [ ] Sometimes the CV IMG is not loading correctly
+- [ ] Multilanguage
+
 >
 > References: [@midudev](https://github.com/midudev) [@charca](https://www.github.com/Charca) 
 >
