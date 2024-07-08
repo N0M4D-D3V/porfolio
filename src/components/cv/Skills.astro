@@ -9,8 +9,7 @@ import Angular from "@/icons/skills/Angular.astro";
 import Ionic from "@/icons/skills/Ionic.astro";
 import NestJS from "@/icons/skills/NestJS.astro";
 
-import { skills } from "../../data/cv/cv-en.json";
-
+const { dataset } = Astro.props;
 const SKILLS_ICONS: Record<string, any> = {
   Capacitor,
   Node,
@@ -25,7 +24,7 @@ const SKILLS_ICONS: Record<string, any> = {
 <Section>
   <ul>
     {
-      skills.map(({ name }) => {
+      dataset.map(({ name }) => {
         const Icon = SKILLS_ICONS[name];
 
         return (

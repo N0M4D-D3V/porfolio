@@ -18,8 +18,7 @@ $ npm run start
 
 ## TODO
 
-- Improve CV: multiple paragraph on experience description
-- Add related skills to the experience section
+- related skills section must have less space!
 - Add Services page
 - Sometimes the CV IMG is not loading correctly
 - Multilanguage

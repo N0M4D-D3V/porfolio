@@ -6,6 +6,7 @@ import Experience from "../../components/cv/Experience.astro";
 import Education from "../../components/cv/Education.astro";
 import Projects from "../../components/cv/Projects.astro";
 import Skills from "../../components/cv/Skills.astro";
+import { skills } from "../../data/cv/cv-en.json";
 
 const title = "Curriculum";
 const description =
@@ -20,7 +21,7 @@ const permalink = `${Astro.site.href}cv`;
   current="cv"
 >
   <Hero />
-  <Skills />
+  <Skills dataset={skills} />
   <About />
   <Experience />
   <Education />

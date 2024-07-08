@@ -39,6 +39,51 @@
         "Our work involves resolving a wide array of technical challenges, such as creating custom plugins (iOS/electron), developing Python scripts for automating processes and file encryption/decryption, designing custom themes and animations, building libraries, upgrading legacy projects to cutting-edge technology, and configuring Linux servers.",
         "I had the opportunity to manage the team one year. Analyze and assign new features was my main task in this time."
       ],
+      "skills": [
+        {
+          "name": "Angular",
+          "level": "Expert",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Google",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Ionic",
+          "level": "Mid",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Capacitor",
+          "level": "Advanced",
+          "keywords": ["Web development", "Fullstack", "Mobile development"]
+        },
+        {
+          "name": "Node",
+          "level": "Mid",
+          "keywords": ["Web development", "Backend", "JavaScript", "Server"]
+        },
+        {
+          "name": "Git",
+          "level": "Advanced",
+          "keywords": ["Version control", "Collaboration", "Source code"]
+        },
+        {
+          "name": "Linux",
+          "level": "User",
+          "keywords": ["Operating System", "Linux OS", "Ubuntu", "Arch Linux"]
+        }
+      ],
       "highlights": []
     },
     {
@@ -50,6 +95,41 @@
       "summary": [
         "Development of a customized CRM for Merlin Properties and concurrent maintenance of mobile applications for startups. Analysis and implementation of new functionalities. Proposed solutions for various project challenges, contributing to problem-solving efforts."
       ],
+      "skills": [
+        {
+          "name": "Angular",
+          "level": "Expert",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Google",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Ionic",
+          "level": "Mid",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Git",
+          "level": "Advanced",
+          "keywords": ["Version control", "Collaboration", "Source code"]
+        },
+        {
+          "name": "Linux",
+          "level": "User",
+          "keywords": ["Operating System", "Linux OS", "Ubuntu", "Arch Linux"]
+        }
+      ],
       "highlights": []
     },
     {
@@ -60,6 +140,25 @@
       "endDate": "2020-12-01",
       "summary": [
         "Core software development for internal company use. Implementation of solutions, reactive forms and auth/roles system."
+      ],
+      "skills": [
+        {
+          "name": "Angular",
+          "level": "Expert",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Google",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Git",
+          "level": "Advanced",
+          "keywords": ["Version control", "Collaboration", "Source code"]
+        }
       ],
       "highlights": []
     }
