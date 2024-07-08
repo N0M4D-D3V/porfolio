@@ -19,7 +19,7 @@ $ npm run start
 ## TODO
 
 - related skills section must have less space!
-- Add Services page
+- improve education section please!
 - Sometimes the CV IMG is not loading correctly
 - Multilanguage
 
