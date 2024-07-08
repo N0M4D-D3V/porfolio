@@ -30,8 +30,10 @@ import { work } from "../../data/cv/cv-en.json";
                   <time>{years}</time>
                 </header>
 
-                <footer>
-                  <p>{summary}</p>
+                <footer class="ps-5">
+                  {summary.map(text => {
+                    return (<p>{text}</p>)
+                  })}
                 </footer>
               </article>
             </li>

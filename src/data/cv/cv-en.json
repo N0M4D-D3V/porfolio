@@ -33,7 +33,12 @@
       "url": "https://www.akkodis.com/",
       "startDate": "2022-03-01",
       "endDate": null,
-      "summary": "Customer: Airbus Defence & Space. I am involved in developing an aerospace calculator app for military inflight operations. As the first member of the team, I initiated the development process from scratch, taking it through to production.",
+      "summary": [
+        "Customer: Airbus Defence & Space.",
+        "I am involved in developing an aerospace calculator app for military inflight operations. As the first member of the team, I initiated the development process from scratch, taking it through to production.",
+        "Our work involves resolving a wide array of technical challenges, such as creating custom plugins (iOS/electron), developing Python scripts for automating processes and file encryption/decryption, designing custom themes and animations, building libraries, upgrading legacy projects to cutting-edge technology, and configuring Linux servers.",
+        "I had the opportunity to manage the team one year. Analyze and assign new features was my main task in this time."
+      ],
       "highlights": []
     },
     {
@@ -42,7 +47,9 @@
       "url": "https://kubide.es/",
       "startDate": "2021-02-01",
       "endDate": "2022-03-01",
-      "summary": "Development of a customized CRM for Merlin Properties and concurrent maintenance of mobile applications for startups. Analysis and implementation of new functionalities. Proposed solutions for various project challenges, contributing to problem-solving efforts.",
+      "summary": [
+        "Development of a customized CRM for Merlin Properties and concurrent maintenance of mobile applications for startups. Analysis and implementation of new functionalities. Proposed solutions for various project challenges, contributing to problem-solving efforts."
+      ],
       "highlights": []
     },
     {
@@ -51,7 +58,9 @@
       "url": "https://metrica.es/en",
       "startDate": "2020-09-01",
       "endDate": "2020-12-01",
-      "summary": "Core software development for internal company use. Implementation of solutions, reactive forms and auth/roles  system.",
+      "summary": [
+        "Core software development for internal company use. Implementation of solutions, reactive forms and auth/roles system."
+      ],
       "highlights": []
     }
   ],

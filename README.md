@@ -18,8 +18,9 @@ $ npm run start
 
 ## TODO
 
-- Add Services page
 - Improve CV: multiple paragraph on experience description
+- Add related skills to the experience section
+- Add Services page
 - Sometimes the CV IMG is not loading correctly
 - Multilanguage
 
