@@ -7,7 +7,7 @@ import { education } from "../../data/cv/cv-en.json";
 <Section title="Academic Qualifications">
   <ul>
     {
-      education.map(({ institution, startDate, endDate, area }) => {
+      education.map(({ institution, startDate, endDate, area, summary }) => {
         const startYear = new Date(startDate).getFullYear();
         const endYear =
           endDate != null ? new Date(endDate).getFullYear() : "Current";
@@ -25,7 +25,12 @@ import { education } from "../../data/cv/cv-en.json";
               </header>
 
               <footer>
-                <p>{area}</p>
+                <h4> {area} </h4>
+
+                {summary.map(text => {
+                  return (<p class="ps-5">{text}</p>)
+                })}
+
               </footer>
             </article>
           </li>
