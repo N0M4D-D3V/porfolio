@@ -18,7 +18,7 @@ $ npm run start
 
 ## TODO
 
-- related skills section must have less space!
+- Add techstack to Academic Qualifications
 - Sometimes the CV IMG is not loading correctly
 - Multilanguage
 
