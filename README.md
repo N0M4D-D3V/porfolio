@@ -18,8 +18,7 @@ $ npm run start
 
 ## TODO
 
-- Add techstack to Academic Qualifications
-- Sometimes the CV IMG is not loading correctly
-- Multilanguage
+- Sometimes the CV IMG is not loading correctly - P2
+- Multilanguage - P3
 
 > References: [@midudev](https://github.com/midudev) [@charca](https://www.github.com/Charca)

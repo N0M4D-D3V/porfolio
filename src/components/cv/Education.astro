@@ -2,12 +2,13 @@
 import Section from "./Section.astro";
 
 import { education } from "../../data/cv/cv-en.json";
+import Skills from "../../components/cv/Skills.astro";
 ---
 
 <Section title="Academic Qualifications">
   <ul>
     {
-      education.map(({ institution, startDate, endDate, area, summary }) => {
+      education.map(({ institution, startDate, endDate, area, summary, skills }) => {
         const startYear = new Date(startDate).getFullYear();
         const endYear =
           endDate != null ? new Date(endDate).getFullYear() : "Current";
@@ -30,7 +31,7 @@ import { education } from "../../data/cv/cv-en.json";
                 {summary.map(text => {
                   return (<p class="ps-5">{text}</p>)
                 })}
-
+                <Skills dataset={skills} />
               </footer>
             </article>
           </li>
