@@ -389,16 +389,16 @@
   "projects": [
     {
       "name": "Blazebooks",
-      "isActive": true,
-      "description": "In Blazebooks, you'll immerse yourself in stories where every choice you make impacts the plot development and the fate of the characters.",
-      "highlights": ["Angular", "Capacitor"],
+      "isActive": false,
+      "description": "In Blazebooks, you'll immerse yourself in stories where every choice you make impacts the plot development and the fate of the characters. Inactive.",
+      "highlights": ["Angular & Capacitor"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
       "github": "https://github.com/N0M4D-D3V/blazebooks-mobile"
     },
     {
       "name": "Blaze Server",
-      "isActive": true,
-      "description": "NodeJS/NestJS server for blazebooks. User, files and database management.",
+      "isActive": false,
+      "description": "NodeJS/NestJS server for blazebooks. User, files and database management. Inactive.",
       "highlights": ["NestJS & NodeJS"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
       "github": "https://github.com/N0M4D-D3V/blazebooks-server"

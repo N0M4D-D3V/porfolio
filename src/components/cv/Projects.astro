@@ -8,8 +8,12 @@ import { projects } from "../../data/cv/cv-en.json";
 <Section title="Projects">
   <ul>
     {
-      projects.map(
-        ({ url, description, highlights, name, isActive, github }) => {
+      projects
+        .sort(
+          ({ isActive: activeA = false }, { isActive: activeB = false }) =>
+            Number(activeB) - Number(activeA)
+        )
+        .map(({ url, description, highlights, name, isActive, github }) => {
           return (
             <li>
               <article>
@@ -40,8 +44,7 @@ import { projects } from "../../data/cv/cv-en.json";
               </article>
             </li>
           );
-        }
-      )
+        })
     }
   </ul>
 </Section>
