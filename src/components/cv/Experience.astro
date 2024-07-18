@@ -1,16 +1,24 @@
 ---
-import Section from "./Section.astro";
+import Section from "../common/Section.astro";
 
 import { work } from "../../data/cv/cv-en.json";
 import Skills from "../../components/cv/Skills.astro";
-
 ---
 
 <Section title="Work History">
   <ul>
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url, skills }) => {
+        ({
+          name,
+          startDate,
+          endDate,
+          position,
+          summary,
+          highlights,
+          url,
+          skills,
+        }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Current";
@@ -33,8 +41,8 @@ import Skills from "../../components/cv/Skills.astro";
                 </header>
 
                 <footer class="ps-5">
-                  {summary.map(text => {
-                    return (<p>{text}</p>)
+                  {summary.map((text) => {
+                    return <p>{text}</p>;
                   })}
                   <Skills dataset={skills} />
                 </footer>

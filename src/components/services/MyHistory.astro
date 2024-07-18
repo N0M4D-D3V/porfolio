@@ -1,0 +1,18 @@
+---
+import Section from "../common/Section.astro";
+import { skills } from "../../data/services/services-es.json";
+---
+
+<Section title="Mi Historia">
+  {
+    skills.description.map((text: string) => {
+      return <p>{text}</p>;
+    })
+  }
+</Section>
+
+<style>
+  p {
+    margin-bottom: 2%;
+  }
+</style>

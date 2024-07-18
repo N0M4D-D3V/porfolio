@@ -1,0 +1,58 @@
+{
+  "skills": {
+    "description": [
+      "Mi nombre es Víctor. Soy un informático entrando en el mundo freelance, emprendedor y amante de la tecnología.",
+      "Desde 2020, he trabajado para grandes empresas como Merlin Properties o Airbus Defence And Space. Siempre ocupando cargos como desarrollador o consultor.",
+      "Este 2024 es el año en el que he decidido crear mi propia empresa de desarrollo de software: Rolling Release. Esto se debe a mi profundo interés no solo en el mundo de la tecnología, sino que también de la empresa y el emprendimiento.",
+      "Si estás buscando profesionalidad y dedicación, ¡cuenta conmigo!"
+    ],
+    "cards": [
+      {
+        "title": "web",
+        "icon": "Angular",
+        "stack": [
+          "Angular",
+          "Astro",
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "Node",
+          "TypeScript",
+          "JavaScript",
+          "Visual Studio Code"
+        ]
+      },
+      {
+        "title": "híbrido",
+        "icon": "Ionic",
+        "stack": [
+          "Ionic",
+          "Capacitor",
+          "XCode",
+          "Electron",
+          "Native Plugins",
+          "Swift",
+          "Kotlin",
+          "Java",
+          "Visual Studio Code"
+        ]
+      },
+      {
+        "title": "Multipropósito",
+        "icon": "Python",
+        "stack": [
+          "Python",
+          "Git",
+          "Docker",
+          "Linux",
+          "macOS",
+          "iPad",
+          "Windows",
+          "Firebase",
+          "SQLite",
+          "JSON"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+---
+import Section from "../common/Section.astro";
+import { skills } from "../../data/services/services-es.json";
+import CardList from "../common/CardList.astro";
+---
+
+<Section title="Mis Habilidades">
+  <p>
+    Mis principales competencias son la consultoría y el desarrollo de software,
+    centrado en desarrollo web y aplicaciones híbridas.
+  </p>
+
+  <CardList cards={skills.cards}  />
+</Section>
+
+<style>
+  p {
+    margin-bottom: 2%;
+  }
+</style>
