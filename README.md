@@ -18,6 +18,9 @@ $ npm run start
 
 ## TODO
 
+- Finish the SERVICES section
+- Translate into english
+- Fix Curriculum HR
 - Sometimes the CV IMG is not loading correctly - P2
 - Multilanguage - P3
 
