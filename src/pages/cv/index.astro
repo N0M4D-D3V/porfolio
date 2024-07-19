@@ -23,7 +23,24 @@ const permalink = `${Astro?.site?.href}cv`;
   <Hero />
   <Skills dataset={skills} />
   <About />
+
+  <hr />
+
   <Experience />
+
+  <hr />
+
   <Education />
+
+  <hr />
+
   <Projects />
 </BaseLayout>
+
+<style>
+  hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>

@@ -17,6 +17,16 @@ const permalink = `${Astro?.site?.href}about`;
   current="about"
 >
   <MyHistory />
+  <hr />
   <MySkills />
+  <hr />
   <MyContact />
 </BaseLayout>
+
+<style>
+  hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
