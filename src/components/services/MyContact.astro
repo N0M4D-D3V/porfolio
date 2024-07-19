@@ -1,16 +1,37 @@
 ---
-import Section from "../common/Section.astro";
+
 ---
 
-<Section>
+<div>
   <h3>¿Hablamos?</h3>
-  <button>CONTACTA CONMIGO</button>
-  <p>Aranjuéz, Spain</p>
-  <p>contact@gg-victor.dev</p>
-</Section>
+
+  <button>LINKEDIN</button>
+  <button>CONTACTO</button>
+</div>
 
 <style>
-  p {
-    margin-bottom: 2%;
+  button {
+    padding: 5px 15px 5px 15px;
+    font-size: large;
+    border: solid 3px var(--text-main);
+    background-color: var(--text-main);
+    color: var(--background-body);
+
+    transition: background-color 150ms ease-in-out;
+  }
+
+  span {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  button:hover {
+    background-color: transparent;
+    color: var(--text-main);
+  }
+
+  div {
+    text-align: center;
+    margin-top: 10%;
   }
 </style>
