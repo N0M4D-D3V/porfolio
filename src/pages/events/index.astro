@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const title = "Events";
+const description =
+  "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
+const permalink = `${Astro?.site?.href}events`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="cv"
+>
+  <h1>Events</h1>
+  <p>
+    En esta sección aparecen todos los eventos que me parecen interesantes.
+    Pondré eventos de tecnología, finanzas, empresa, negocio, economía y
+    cualquier materia que considere de mi interés.
+  </p>
+  <p>
+    Es probable que el equipo de Rolling Release asista a varios de estos
+    eventos. Si nos queréis conocer, ¡escríbenos al correo para preguntar si
+    vamos!
+  </p>
+</BaseLayout>
