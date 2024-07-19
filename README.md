@@ -19,6 +19,7 @@ $ npm run start
 ## TODO
 
 - Finish the SERVICES section
+- Add next-event dates
 - Translate into english
 - Fix Curriculum HR
 - Sometimes the CV IMG is not loading correctly - P2

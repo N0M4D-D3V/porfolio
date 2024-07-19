@@ -1,16 +1,20 @@
 ---
+import { basics } from "../../data/cv/cv-en.json";
 
+const linkedin = basics.profiles.find(
+  (x) => x.network.toLowerCase() === "linkedin"
+);
 ---
 
 <div>
   <h3>¿Hablamos?</h3>
 
-  <button>LINKEDIN</button>
-  <button>CONTACTO</button>
+  <a href={linkedin?.url} target="_blank">LINKEDIN</a>
+  <a href="/cv">CONTACTO</a>
 </div>
 
 <style>
-  button {
+  a {
     padding: 5px 15px 5px 15px;
     font-size: large;
     border: solid 3px var(--text-main);
@@ -19,17 +23,10 @@
 
     transition: background-color 150ms ease-in-out;
   }
-
-  span {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  button:hover {
+  a:hover {
     background-color: transparent;
     color: var(--text-main);
   }
-
   div {
     text-align: center;
     margin-top: 10%;

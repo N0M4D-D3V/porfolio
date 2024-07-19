@@ -9,7 +9,7 @@
     "cards": [
       {
         "title": "web",
-        "icon": "Angular",
+        "icon": "Web",
         "stack": [
           "Angular",
           "Astro",
@@ -24,7 +24,7 @@
       },
       {
         "title": "híbrido",
-        "icon": "Ionic",
+        "icon": "Hybrid",
         "stack": [
           "Ionic",
           "Capacitor",
@@ -39,7 +39,7 @@
       },
       {
         "title": "Multipropósito",
-        "icon": "Python",
+        "icon": "Multi",
         "stack": [
           "Python",
           "Git",
