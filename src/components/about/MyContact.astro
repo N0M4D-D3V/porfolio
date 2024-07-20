@@ -6,9 +6,9 @@ const { contact } = Astro.props;
   <h3>{contact?.title}</h3>
 
   {
-    contact?.options?.map(({ text, url }) => {
+    contact?.options?.map(({ text, url, target }) => {
       return (
-        <a href={url} target="_blank">
+        <a href={url} target={target}>
           {text}
         </a>
       );

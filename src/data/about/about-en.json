@@ -67,9 +67,10 @@
     "options": [
       {
         "text": "LINKEDIN",
-        "url": ""
+        "url": "https://www.linkedin.com/in/victor-develops/",
+        "target": "_blank"
       },
-      { "text": "CONTACT", "url": "/cv" }
+      { "text": "CONTACT", "url": "/cv", "target": "_parent" }
     ]
   }
 }
