@@ -1,11 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+import eventES from "../../data/events/event-es.json";
+import eventEN from "../../data/events/event-en.json";
 import { events } from "../../data/events/events.json";
 
 const title = "Events";
 const description =
   "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
 const permalink = `${Astro?.site?.href}events`;
+
+const lan = Astro.currentLocale;
+
+let eventLan = eventEN;
+if (lan === "es") {
+  eventLan = eventES;
+}
 ---
 
 <BaseLayout
@@ -14,17 +24,14 @@ const permalink = `${Astro?.site?.href}events`;
   permalink={permalink}
   current="events"
 >
-  <h1>Events</h1>
-  <p>
-    En esta sección aparecen todos los eventos que me parecen interesantes.
-    Pondré eventos de tecnología, finanzas, empresa, negocio, economía y
-    cualquier materia que considere de mi interés.
-  </p>
-  <p>
-    Es probable que el equipo de Rolling Release asista a varios de estos
-    eventos. Si nos queréis conocer, ¡escríbenos al correo para preguntar si
-    vamos!
-  </p>
+  <h1>{eventLan.title}</h1>
+
+  {
+    eventLan?.paragraphs?.map((text: string) => {
+      return <p>{text}</p>;
+    })
+  }
+
   <table class="table-auto text-center">
     <thead>
       <th>DATE</th>

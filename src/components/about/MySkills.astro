@@ -2,16 +2,17 @@
 import Section from "../common/Section.astro";
 import CardList from "../common/CardList.astro";
 
-const { cards } = Astro.props;
+const { skills } = Astro.props;
 ---
 
-<Section title="Mis Habilidades">
-  <p>
-    Mis principales competencias son la consultoría y el desarrollo de software,
-    centrado en desarrollo web y aplicaciones híbridas.
-  </p>
+<Section title={skills.title}>
+  {
+    skills?.description?.map((text: string) => {
+      return <p>{text}</p>;
+    })
+  }
 
-  <CardList cards={cards} />
+  <CardList cards={skills.cards} />
 </Section>
 
 <style>

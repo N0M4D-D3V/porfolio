@@ -1,12 +1,12 @@
 ---
 import Section from "../common/Section.astro";
 
-const { description } = Astro.props;
+const { history } = Astro.props;
 ---
 
-<Section title="Mi Historia">
+<Section title={history.title}>
   {
-    description?.map((text: string) => {
+    history.paragraphs?.map((text: string) => {
       return <p>{text}</p>;
     })
   }

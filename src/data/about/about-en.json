@@ -1,10 +1,17 @@
 {
-  "skills": {
-    "description": [
-      "Hi! My name is Victor. I am a developer running into freelance way, adventurer and tech-lover.",
+  "history": {
+    "title": "My History",
+    "paragraphs": [
+      "Hello there! My name is Victor. I am a developer running into freelance way, adventurer and tech-lover.",
       "Since 2020, I have been working for big companies as Merlin Properties or Airbus Defence And Space. I have always held developer positions.",
       "This 2024 is when I've decided to create my own Software Development company: Rolling Release. I've decided to create this company because I really like technology, business and entrepreneurship.",
       "If you are looking for professionalism and dedication, count on me!"
+    ]
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": [
+      "My main skills are consultancy and software development, focus on web and hybrid apps."
     ],
     "cards": [
       {
