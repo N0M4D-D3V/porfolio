@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "date": "2024-10-10",
+      "city": "Madrid",
+      "name": "Example event 0",
+      "url": "www.example-event.com",
+      "category": "Finances"
+    },
+    {
+      "date": "2024-10-11",
+      "city": "Madrid",
+      "name": "Example event 1",
+      "url": "www.example-event.com",
+      "category": "Finances"
+    },
+    {
+      "date": "2024-10-12",
+      "city": "Madrid",
+      "name": "Example event 2",
+      "url": "www.example-event.com",
+      "category": "Finances"
+    },
+    {
+      "date": "2024-10-13",
+      "city": "Madrid",
+      "name": "Example event 3",
+      "url": "www.example-event.com",
+      "category": "Finances"
+    },
+    {
+      "date": "2024-10-14",
+      "city": "Madrid",
+      "name": "Example event 4",
+      "url": "www.example-event.com",
+      "category": "Finances"
+    },
+    {
+      "date": "2024-10-15",
+      "city": "Madrid",
+      "name": "Example event 5",
+      "url": "www.example-event.com",
+      "category": "Finances"
+    }
+  ]
+}

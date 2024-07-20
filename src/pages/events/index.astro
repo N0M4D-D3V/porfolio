@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { events } from "../../data/events/events.json";
 
 const title = "Events";
 const description =
@@ -24,4 +25,32 @@ const permalink = `${Astro?.site?.href}events`;
     eventos. Si nos queréis conocer, ¡escríbenos al correo para preguntar si
     vamos!
   </p>
+  <table class="table-auto text-center">
+    <thead>
+      <th>DATE</th>
+      <th>CITY</th>
+      <th>NAME</th>
+      <th>CATEGORY</th>
+    </thead>
+    <tbody>
+      {
+        events.map((item) => {
+          return (
+            <tr class="even:bg-gray-100 even:text-gray-800">
+              <td>{item.date}</td>
+              <td>{item.city}</td>
+              <td>{item.name}</td>
+              <td>{item.category}</td>
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
 </BaseLayout>
+
+<style>
+  p {
+    margin-top: 2%;
+  }
+</style>
