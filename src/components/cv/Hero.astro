@@ -1,6 +1,4 @@
 ---
-import { basics } from "../../data/cv/cv-en.json";
-
 import WorldMap from "../../icons/WorldMap.astro";
 import GitHub from "../../icons/GitHub.astro";
 import LinkedIn from "../../icons/LinkedIn.astro";
@@ -8,6 +6,8 @@ import MailIcon from "../../icons/MailIcon.astro";
 import Section from "../common/Section.astro";
 
 import type { SocialIcon } from "@/types";
+
+const { basics } = Astro.props;
 
 const { name, label, image, location, profiles, email, url } = basics;
 const { city, region } = location;

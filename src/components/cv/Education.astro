@@ -1,14 +1,14 @@
 ---
 import Section from "../common/Section.astro";
-
-import { education } from "../../data/cv/cv-en.json";
 import Skills from "../../components/cv/Skills.astro";
+
+const { education } = Astro.props;
 ---
 
 <Section title="Academic Qualifications">
   <ul>
     {
-      education.map(
+      education?.map(
         ({ institution, startDate, endDate, area, summary, skills }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =

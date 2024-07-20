@@ -1,9 +1,8 @@
 ---
 import Section from "../common/Section.astro";
-import { skills } from "../../data/about/services-es.json";
 import CardList from "../common/CardList.astro";
 
-const cards = skills.cards;
+const { cards } = Astro.props;
 ---
 
 <Section title="Mis Habilidades">

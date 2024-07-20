@@ -5,12 +5,21 @@ import Experience from "../../components/cv/Experience.astro";
 import Education from "../../components/cv/Education.astro";
 import Projects from "../../components/cv/Projects.astro";
 import Skills from "../../components/cv/Skills.astro";
-import { skills } from "../../data/cv/cv-en.json";
+
+import enCV from "../../data/cv/cv-en.json";
+import esCV from "../../data/cv/cv-es.json";
 
 const title = "Curriculum";
 const description =
   "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
 const permalink = `${Astro?.site?.href}cv`;
+
+const lan = Astro.currentLocale;
+
+let cv = enCV;
+if (lan === "es") {
+  cv = esCV;
+}
 ---
 
 <BaseLayout
@@ -22,20 +31,20 @@ const permalink = `${Astro?.site?.href}cv`;
   <div class="w-100 text-center m-5">
     <a onclick="window.print();" class="no-print">PRINT ME!</a>
   </div>
-  <Hero />
-  <Skills dataset={skills} />
+  <Hero basics={cv.basics} />
+  <Skills skills={cv.skills} />
 
   <hr />
 
-  <Experience />
+  <Experience work={cv.work} />
 
   <hr />
 
-  <Education />
+  <Education education={cv.education} />
 
   <hr />
 
-  <Projects />
+  <Projects projects={cv.projects} />
 </BaseLayout>
 
 <style>

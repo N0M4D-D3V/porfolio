@@ -4,10 +4,20 @@ import MyHistory from "@/components/about/MyHistory.astro";
 import MySkills from "@/components/about/MySkills.astro";
 import MyContact from "@/components/about/MyContact.astro";
 
+import enAbout from "../../data/about/about-en.json";
+import esAbout from "../../data/about/about-es.json";
+
 const title = "About";
 const description =
   "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
 const permalink = `${Astro?.site?.href}about`;
+
+const lan = Astro.currentLocale;
+
+let about = enAbout;
+if (lan === "es") {
+  about = esAbout;
+}
 ---
 
 <BaseLayout
@@ -16,11 +26,11 @@ const permalink = `${Astro?.site?.href}about`;
   permalink={permalink}
   current="about"
 >
-  <MyHistory />
+  <MyHistory description={about.skills.description} />
   <hr />
-  <MySkills />
+  <MySkills cards={about.skills.cards} />
   <hr />
-  <MyContact />
+  <MyContact contact={about.contact} />
 </BaseLayout>
 
 <style>

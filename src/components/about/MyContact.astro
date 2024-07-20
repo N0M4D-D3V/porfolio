@@ -1,20 +1,24 @@
 ---
-import { basics } from "../../data/cv/cv-en.json";
-
-const linkedin = basics.profiles.find(
-  (x) => x.network.toLowerCase() === "linkedin"
-);
+const { contact } = Astro.props;
 ---
 
 <div>
-  <h3>¿Hablamos?</h3>
+  <h3>{contact?.title}</h3>
 
-  <a href={linkedin?.url} target="_blank">LINKEDIN</a>
-  <a href="/cv">CONTACTO</a>
+  {
+    contact?.options?.map(({ text, url }) => {
+      return (
+        <a href={url} target="_blank">
+          {text}
+        </a>
+      );
+    })
+  }
 </div>
 
 <style>
   a {
+    margin: 5px;
     padding: 5px 15px 5px 15px;
     font-size: large;
     border: solid 3px var(--text-main);

@@ -2,18 +2,18 @@
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../common/Section.astro";
 
-import { projects } from "../../data/cv/cv-en.json";
+const { projects } = Astro.props;
 ---
 
 <Section title="Projects">
   <ul>
     {
       projects
-        .sort(
+        ?.sort(
           ({ isActive: activeA = false }, { isActive: activeB = false }) =>
             Number(activeB) - Number(activeA)
         )
-        .map(({ url, description, highlights, name, isActive, github }) => {
+        ?.map(({ url, description, highlights, name, isActive, github }) => {
           return (
             <li>
               <article>

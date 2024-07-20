@@ -1,0 +1,68 @@
+{
+  "skills": {
+    "description": [
+      "Hi! My name is Victor. I am a developer running into freelance way, adventurer and tech-lover.",
+      "Since 2020, I have been working for big companies as Merlin Properties or Airbus Defence And Space. I have always held developer positions.",
+      "This 2024 is when I've decided to create my own Software Development company: Rolling Release. I've decided to create this company because I really like technology, business and entrepreneurship.",
+      "If you are looking for professionalism and dedication, count on me!"
+    ],
+    "cards": [
+      {
+        "title": "web",
+        "icon": "Web",
+        "stack": [
+          "Angular",
+          "Astro",
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "Node",
+          "TypeScript",
+          "JavaScript",
+          "Visual Studio Code"
+        ]
+      },
+      {
+        "title": "híbrido",
+        "icon": "Hybrid",
+        "stack": [
+          "Ionic",
+          "Capacitor",
+          "XCode",
+          "Electron",
+          "Native Plugins",
+          "Swift",
+          "Kotlin",
+          "Java",
+          "Visual Studio Code"
+        ]
+      },
+      {
+        "title": "Multipropósito",
+        "icon": "Multi",
+        "stack": [
+          "Python",
+          "Git",
+          "Docker",
+          "Linux",
+          "macOS",
+          "iPad",
+          "Windows",
+          "Firebase",
+          "SQLite",
+          "JSON"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Keep in touch!",
+    "options": [
+      {
+        "text": "LINKEDIN",
+        "url": ""
+      },
+      { "text": "CONTACT", "url": "/cv" }
+    ]
+  }
+}

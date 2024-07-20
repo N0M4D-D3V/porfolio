@@ -54,5 +54,15 @@
         ]
       }
     ]
+  },
+  "contact": {
+    "title": "¿Hablamos?",
+    "options": [
+      {
+        "text": "LINKEDIN",
+        "url": ""
+      },
+      { "text": "CONTACT", "url": "/cv" }
+    ]
   }
 }

@@ -18,9 +18,8 @@ $ npm run start
 
 ## TODO
 
-- Print CV option
-- Translate into english
-- Fix Curriculum HR
+- Translate into english P1
+- Add data to table P1
 - Sometimes the CV IMG is not loading correctly - P2
 - Multilanguage - P3
 

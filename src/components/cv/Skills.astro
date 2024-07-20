@@ -2,13 +2,13 @@
 import Section from "../common/Section.astro";
 import { SKILLS_ICONS } from "@/icons/icon.record";
 
-const { dataset } = Astro.props;
+const { skills } = Astro.props;
 ---
 
 <Section>
   <ul>
     {
-      dataset.map(({ name }) => {
+      skills?.map(({ name }) => {
         const Icon = SKILLS_ICONS[name];
 
         return (

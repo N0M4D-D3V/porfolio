@@ -6,7 +6,7 @@ const { cards = [] } = Astro.props;
 
 <ul>
   {
-    cards.map(({ title, icon, stack }) => {
+    cards?.map(({ title, icon, stack }) => {
       const Icon = SKILLS_ICONS[icon];
 
       return (

@@ -1,14 +1,14 @@
 ---
 import Section from "../common/Section.astro";
-
-import { work } from "../../data/cv/cv-en.json";
 import Skills from "../../components/cv/Skills.astro";
+
+const { work } = Astro.props;
 ---
 
 <Section title="Work History">
   <ul>
     {
-      work.map(
+      work?.map(
         ({
           name,
           startDate,
