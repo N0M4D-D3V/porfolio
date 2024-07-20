@@ -35,9 +35,8 @@
       "endDate": null,
       "summary": [
         "Customer: Airbus Defence & Space.",
-        "I am involved in developing an aerospace calculator app for military inflight operations. As the first member of the team, I initiated the development process from scratch, taking it through to production.",
-        "Our work involves resolving a wide array of technical challenges, such as creating custom plugins (iOS/electron), developing Python scripts for automating processes and file encryption/decryption, designing custom themes and animations, building libraries, upgrading legacy projects to cutting-edge technology, and configuring Linux servers.",
-        "I had the opportunity to manage the team one year. Analyze and assign new features was my main task in this time."
+        "I am involved in developing an aerospace calculator app for military inflight operations. I initiated the development process from scratch, taking it through to production.",
+        "Our work involves resolving technical challenges, such as coding custom plugins (iOS/electron), Python scripts for process automation, custom themes and animations, building libraries, upgrading legacy projects to cutting-edge technology, and configuring Linux servers."
       ],
       "skills": [
         {
@@ -181,8 +180,8 @@
       "startDate": "2020-09-01",
       "endDate": "2020-12-01",
       "summary": [
-        "Core software development for internal company use. Implementation of solutions, reactive forms and auth/roles system.",
-        "I collaborated with more than 27 people from different places. This project allowed me to develop my programming skills, while improving my teamwork and collaboration skills in a remote environment."
+        "Core software development for internal company use. Implementation of solutions and reactive forms.",
+        "This project allowed me to develop my programming skills, while improving my teamwork and collaboration skills in a remote environment."
       ],
       "skills": [
         {
@@ -398,8 +397,8 @@
     {
       "name": "Blaze Server",
       "isActive": false,
-      "description": "NodeJS/NestJS server for blazebooks. User, files and database management. Inactive.",
-      "highlights": ["NestJS & NodeJS"],
+      "description": "NodeJS/NestJS server for Blazebooks app. User, files and database management. Inactive.",
+      "highlights": ["Nest/Node", "Linux"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
       "github": "https://github.com/N0M4D-D3V/blazebooks-server"
     },
@@ -407,7 +406,7 @@
       "name": "Demiurge",
       "isActive": true,
       "description": "The word 'demiurge' is a word derived form of the Greek dēmiourgós. It was a noun meaning 'craftsman' or 'artisan', but gradually came to mean 'producer' and eventually 'creator'.",
-      "highlights": ["Custom Angular Library"],
+      "highlights": ["Angular Library"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
       "github": "https://github.com/N0M4D-D3V/demiurge"
     }

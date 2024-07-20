@@ -1,11 +1,13 @@
 ---
 import Section from "../common/Section.astro";
-import { skills } from "../../data/services/services-es.json";
+import { skills } from "../../data/about/services-es.json";
+
+const description: string[] = skills.description;
 ---
 
 <Section title="Mi Historia">
   {
-    skills.description.map((text: string) => {
+    description.map((text: string) => {
       return <p>{text}</p>;
     })
   }
