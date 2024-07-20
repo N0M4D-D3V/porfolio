@@ -18,7 +18,6 @@ $ npm run start
 
 ## TODO
 
-- Add next-event dates -> date, city, name, url, category
 - Print CV option
 - Translate into english
 - Fix Curriculum HR

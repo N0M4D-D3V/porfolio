@@ -258,6 +258,12 @@ input[name="theme-toggle"] {
   z-index: -1;
 }
 
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
 @media (max-width: 1020px) {
   h1 {
     font-size: 3em;

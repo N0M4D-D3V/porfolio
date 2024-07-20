@@ -20,6 +20,9 @@ const permalink = `${Astro?.site?.href}cv`;
   permalink={permalink}
   current="cv"
 >
+  <div class="w-100 text-center m-5">
+    <a onclick="window.print();" class="no-print">PRINT ME!</a>
+  </div>
   <Hero />
   <Skills dataset={skills} />
   <About />
@@ -42,5 +45,22 @@ const permalink = `${Astro?.site?.href}cv`;
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  a {
+    padding: 5px 15px 5px 15px;
+
+    text-align: center;
+    font-size: large;
+
+    border: solid 3px var(--text-main);
+    background-color: var(--text-main);
+    color: var(--background-body);
+
+    transition: background-color 150ms ease-in-out;
+  }
+  a:hover {
+    background-color: transparent;
+    color: var(--text-main);
   }
 </style>
