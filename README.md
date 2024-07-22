@@ -18,7 +18,7 @@ $ npm run start
 
 ## TODO
 
-- Translate into english P1
+- Translate into english P1 -> add switch or something
 - Add data to table P1
 - Sometimes the CV IMG is not loading correctly - P2
 - Multilanguage - P3

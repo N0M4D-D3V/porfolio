@@ -7,15 +7,15 @@ import MyContact from "@/components/about/MyContact.astro";
 import enAbout from "../../data/about/about-en.json";
 import esAbout from "../../data/about/about-es.json";
 
+const { language } = Astro.props;
+
 const title = "About";
 const description =
   "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
-const permalink = `${Astro?.site?.href}about`;
-
-const lan = Astro.currentLocale;
+const permalink = `${Astro?.site?.href}${language}/about`;
 
 let about = enAbout;
-if (lan === "es") {
+if (language === "es") {
   about = esAbout;
 }
 ---
@@ -25,6 +25,7 @@ if (lan === "es") {
   description={description}
   permalink={permalink}
   current="about"
+  lang={language}
 >
   <MyHistory history={about.history} />
   <hr />

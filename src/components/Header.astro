@@ -2,7 +2,7 @@
 import Logo from "./Logo.astro";
 import Nav from "./Nav.astro";
 
-const { current = "" } = Astro.props;
+const { current = "", lang } = Astro.props;
 ---
 
 <style>
@@ -17,5 +17,5 @@ const { current = "" } = Astro.props;
 
 <header class="no-print">
   <Logo />
-  <Nav current={current} />
+  <Nav current={current} lang={lang} />
 </header>

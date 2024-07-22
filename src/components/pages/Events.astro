@@ -5,15 +5,15 @@ import eventES from "../../data/events/event-es.json";
 import eventEN from "../../data/events/event-en.json";
 import { events } from "../../data/events/events.json";
 
+const { lang } = Astro.props;
+
 const title = "Events";
 const description =
   "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
-const permalink = `${Astro?.site?.href}events`;
-
-const lan = Astro.currentLocale;
+const permalink = `${Astro?.site?.href}${lang}/events`;
 
 let eventLan = eventEN;
-if (lan === "es") {
+if (lang === "es") {
   eventLan = eventES;
 }
 ---
@@ -23,6 +23,7 @@ if (lan === "es") {
   description={description}
   permalink={permalink}
   current="events"
+  lang={lang}
 >
   <h1>{eventLan.title}</h1>
 

@@ -1,6 +1,11 @@
 ---
 import ThemeToggleButton from "./ThemeToggleButton.svelte";
-const { current = "" } = Astro.props;
+const { current = "", lang } = Astro.props;
+
+const baseUrl: string = `/${lang}`;
+const aboutUrl: string = `${baseUrl}/about`;
+const eventsUrl: string = `${baseUrl}/events`;
+const blogUrl: string = `${baseUrl}/blog`;
 ---
 
 <style>
@@ -56,10 +61,10 @@ const { current = "" } = Astro.props;
 </style>
 
 <nav>
-  <a class={current === "" ? "selected" : ""} href="/">home</a>
-  <a class={current === "about" ? "selected" : ""} href="/about">about</a>
-  <a class={current === "events" ? "selected" : ""} href="/events">events</a>
-  <a class={current === "blog" ? "selected" : ""} href="/blog">blog</a>
+  <a class={current === "" ? "selected" : ""} href={baseUrl}>home</a>
+  <a class={current === "about" ? "selected" : ""} href={aboutUrl}>about</a>
+  <a class={current === "events" ? "selected" : ""} href={eventsUrl}>events</a>
+  <!-- <a class={current === "blog" ? "selected" : ""} href={blogUrl}>blog</a> -->
   <div class="theme-toggle-container">
     <ThemeToggleButton client:load />
   </div>
