@@ -58,6 +58,10 @@ const blogUrl: string = `${baseUrl}/blog`;
   .theme-toggle-container {
     width: 75px;
   }
+
+  .d-none {
+    display: none;
+  }
 </style>
 
 <nav>
@@ -65,6 +69,9 @@ const blogUrl: string = `${baseUrl}/blog`;
   <a class={current === "about" ? "selected" : ""} href={aboutUrl}>about</a>
   <a class={current === "events" ? "selected" : ""} href={eventsUrl}>events</a>
   <!-- <a class={current === "blog" ? "selected" : ""} href={blogUrl}>blog</a> -->
+  <a class={lang === "es" ? "d-none" : ""} href="/es">🇪🇸</a>
+  <a class={lang === "en" ? "d-none" : ""} href="/en">🇬🇧</a>
+
   <div class="theme-toggle-container">
     <ThemeToggleButton client:load />
   </div>
