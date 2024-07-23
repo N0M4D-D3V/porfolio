@@ -1,46 +1,46 @@
 {
   "events": [
     {
-      "date": "2024-10-10",
-      "city": "Madrid",
-      "name": "Example event 0",
-      "url": "www.example-event.com",
-      "category": "Finances"
+      "date": "2024-9-24",
+      "city": "Sevilla",
+      "name": "Al Andalus Innovation",
+      "url": "https://alandalusinnovation.com/",
+      "category": "Tech & Startups"
     },
     {
-      "date": "2024-10-11",
-      "city": "Madrid",
-      "name": "Example event 1",
-      "url": "www.example-event.com",
-      "category": "Finances"
+      "date": "2024-10-4",
+      "city": "Vigo",
+      "name": "PyConES 2024",
+      "url": "https://2024.es.pycon.org/",
+      "category": "Tech"
     },
     {
-      "date": "2024-10-12",
-      "city": "Madrid",
-      "name": "Example event 2",
-      "url": "www.example-event.com",
-      "category": "Finances"
+      "date": "2025-03-3",
+      "city": "Barcelona",
+      "name": "4YFN",
+      "url": "https://www.4yfn.com/",
+      "category": "Startups"
     },
     {
-      "date": "2024-10-13",
-      "city": "Madrid",
-      "name": "Example event 3",
-      "url": "www.example-event.com",
-      "category": "Finances"
+      "date": "2025-03-12",
+      "city": "Málaga",
+      "name": "Transfiere",
+      "url": "https://transfiere.fycma.com/",
+      "category": "Startups"
     },
     {
-      "date": "2024-10-14",
-      "city": "Madrid",
-      "name": "Example event 4",
-      "url": "www.example-event.com",
-      "category": "Finances"
+      "date": "2024-10-8",
+      "city": "Salamanca",
+      "name": "Startup olé",
+      "url": "https://startupole.eu/",
+      "category": "Startups"
     },
     {
-      "date": "2024-10-15",
-      "city": "Madrid",
-      "name": "Example event 5",
-      "url": "www.example-event.com",
-      "category": "Finances"
+      "date": "2024-11-11",
+      "city": "Lisboa",
+      "name": "Web Summit",
+      "url": "https://websummit.com/",
+      "category": "Tech & Startups"
     }
   ]
 }

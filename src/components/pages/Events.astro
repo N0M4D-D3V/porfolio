@@ -39,25 +39,48 @@ if (lang === "es") {
       <th>CITY</th>
       <th>NAME</th>
       <th>CATEGORY</th>
+      <th></th>
     </thead>
     <tbody>
       {
-        events.map((item) => {
-          return (
-            <tr class="even:bg-gray-100 even:text-gray-800">
-              <td>{item.date}</td>
-              <td>{item.city}</td>
-              <td>{item.name}</td>
-              <td>{item.category}</td>
-            </tr>
-          );
-        })
+        events
+          .sort((a, b) => {
+            const prev = new Date(a.date);
+            const next = new Date(b.date);
+
+            return prev.getTime() - next.getTime();
+          })
+          .map((item) => {
+            return (
+              <tr class="even:bg-gray-100 even:text-gray-800">
+                <td>{item.date}</td>
+                <td>{item.city}</td>
+                <td>{item.name}</td>
+                <td>{item.category}</td>
+                <td>
+                  <a href={item.url} target="_blank">
+                    🚀
+                  </a>
+                </td>
+              </tr>
+            );
+          })
       }
     </tbody>
   </table>
 </BaseLayout>
 
 <style>
+  a {
+    opacity: 0;
+  }
+  tr:hover {
+    color: red;
+
+    a {
+      opacity: 1;
+    }
+  }
   p {
     margin-top: 2%;
   }
