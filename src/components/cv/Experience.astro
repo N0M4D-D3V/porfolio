@@ -1,6 +1,6 @@
 ---
-import Section from "../common/Section.astro";
-import Skills from "../../components/cv/Skills.astro";
+import Section from "@/components/common/Section.astro";
+import Skills from "@/components/cv/Skills.astro";
 
 const { work } = Astro.props;
 ---
@@ -9,16 +9,7 @@ const { work } = Astro.props;
   <ul>
     {
       work?.map(
-        ({
-          name,
-          startDate,
-          endDate,
-          position,
-          summary,
-          highlights,
-          url,
-          skills,
-        }) => {
+        ({ name, startDate, endDate, position, summary, url, skills }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Current";
@@ -41,10 +32,12 @@ const { work } = Astro.props;
                 </header>
 
                 <footer class="ps-5">
-                  {summary.map((text) => {
+                  {summary.map((text: string) => {
                     return <p>{text}</p>;
                   })}
-                  <Skills dataset={skills} />
+                  <div class="text-end">
+                    <Skills skills={skills} />
+                  </div>
                 </footer>
               </article>
             </li>

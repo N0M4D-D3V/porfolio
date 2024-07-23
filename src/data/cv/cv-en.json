@@ -2,7 +2,7 @@
   "basics": {
     "name": "Víctor González",
     "label": "Software Developer",
-    "image": "assets/profile.jpg",
+    "image": "/assets/profile.jpg",
     "email": "contact@gg-victor.dev",
     "url": "https://gg-victor.dev",
     "summary": "Frontend Developer with four years of experience. Focused in Angular, with extensive technical expertise in building web, hybrid applications and native plugins. Proven ability to collaborate effectively in multidisciplinary teams using agile methods.",
@@ -63,6 +63,18 @@
           ]
         },
         {
+          "name": "Bootstrap",
+          "level": "Expert",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Facebook",
+            "Styles"
+          ]
+        },
+        {
           "name": "ElectronJs",
           "level": "Mid",
           "keywords": [
@@ -98,11 +110,6 @@
           "name": "Docker",
           "level": "Beginer",
           "keywords": []
-        },
-        {
-          "name": "Git",
-          "level": "Advanced",
-          "keywords": ["Version control", "Collaboration", "Source code"]
         },
         {
           "name": "Linux",
@@ -161,9 +168,16 @@
           ]
         },
         {
-          "name": "Git",
-          "level": "Advanced",
-          "keywords": ["Version control", "Collaboration", "Source code"]
+          "name": "Bootstrap",
+          "level": "Expert",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Facebook",
+            "Styles"
+          ]
         },
         {
           "name": "Linux",
@@ -197,14 +211,33 @@
           ]
         },
         {
+          "name": "Material",
+          "level": "Beginner",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Google",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Bootstrap",
+          "level": "Expert",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Facebook",
+            "Styles"
+          ]
+        },
+        {
           "name": "Spring",
           "level": "Beginer",
           "keywords": []
-        },
-        {
-          "name": "Git",
-          "level": "Advanced",
-          "keywords": ["Version control", "Collaboration", "Source code"]
         }
       ],
       "highlights": []

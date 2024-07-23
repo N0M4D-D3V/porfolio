@@ -70,7 +70,7 @@
         "url": "https://www.linkedin.com/in/victor-develops/",
         "target": "_blank"
       },
-      { "text": "CONTACT", "url": "/es/cv", "target": "_parent" }
+      { "text": "CURRICULUM", "url": "/es/cv", "target": "_parent" }
     ]
   }
 }

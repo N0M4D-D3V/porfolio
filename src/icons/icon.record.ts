@@ -19,6 +19,7 @@ import CSS from "@/icons/skills/CSS.astro";
 import Web from "./common/Web.astro";
 import Hybrid from "./common/Hybrid.astro";
 import Multi from "./common/Multi.astro";
+import Bootstrap from "./skills/Bootstrap.astro";
 
 export const SKILLS_ICONS: Record<any, any> = {
   Multi,
@@ -42,4 +43,6 @@ export const SKILLS_ICONS: Record<any, any> = {
   Docker,
   Web,
   Hybrid,
+  Bootstrap,
+  Material: Angular,
 };
