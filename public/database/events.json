@@ -41,6 +41,20 @@
       "name": "Web Summit",
       "url": "https://websummit.com/",
       "category": "Tech & Startups"
+    },
+    {
+      "date": "2024-11-09",
+      "city": "Andorra la Vella",
+      "name": "Andorra Economic Forum",
+      "url": "https://www.andorraef.com/es",
+      "category": "Economy"
+    },
+    {
+      "date": "2024-10-11",
+      "city": "Madrid",
+      "name": "Arnold Classic",
+      "url": "https://arnoldsportsfestivaleurope.com/",
+      "category": "Fitness"
     }
   ]
 }
