@@ -21,28 +21,47 @@ import Hybrid from "./common/Hybrid.astro";
 import Multi from "./common/Multi.astro";
 import Bootstrap from "./skills/Bootstrap.astro";
 
+// QA & Automation
+import Jasmine from "@/icons/skills/Jasmine.astro";
+import Appium from "@/icons/skills/Appium.astro";
+import WDIO from "@/icons/skills/WDIO.astro";
+
 export const SKILLS_ICONS: Record<any, any> = {
+  // common
   Multi,
-  Capacitor,
-  Node,
+  Web,
+  Hybrid,
   Git,
+  Docker,
+
+  // OS
   Linux,
   Apple,
   Windows,
+
+  // Tech
   Angular,
   Ionic,
   ElectronJs,
+  Node,
   NestJS,
+  Capacitor,
   Java,
   Python,
-  SQL,
   Kotlin,
   CSS,
   HTML,
   Spring,
-  Docker,
-  Web,
-  Hybrid,
+
+  // QA & Automation
+  Jasmine,
+  Appium,
+  WDIO,
+  
+  // Styling
   Bootstrap,
   Material: Angular,
+
+  // Databases
+  SQL,
 };

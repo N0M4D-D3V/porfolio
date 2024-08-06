@@ -25,8 +25,7 @@
           "Bootstrap",
           "Node",
           "TypeScript",
-          "JavaScript",
-          "Visual Studio Code"
+          "JavaScript"
         ]
       },
       {
@@ -40,12 +39,11 @@
           "Native Plugins",
           "Swift",
           "Kotlin",
-          "Java",
-          "Visual Studio Code"
+          "Java"
         ]
       },
       {
-        "title": "QA & Automatización",
+        "title": "Automatización",
         "icon": "Multi",
         "stack": [
           "Python",
