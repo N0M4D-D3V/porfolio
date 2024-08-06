@@ -102,6 +102,21 @@
           "keywords": []
         },
         {
+          "name": "Jasmine",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Appium",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "WDIO",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
           "name": "SQL",
           "level": "Mid",
           "keywords": []

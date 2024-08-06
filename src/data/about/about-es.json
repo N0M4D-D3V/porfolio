@@ -45,19 +45,17 @@
         ]
       },
       {
-        "title": "Multipropósito",
+        "title": "QA & Automatización",
         "icon": "Multi",
         "stack": [
           "Python",
           "Git",
           "Docker",
           "Linux",
-          "macOS",
-          "iPad",
-          "Windows",
-          "Firebase",
-          "SQLite",
-          "JSON"
+          "Allure",
+          "Jasmine",
+          "WDIO",
+          "Appium"
         ]
       }
     ]
