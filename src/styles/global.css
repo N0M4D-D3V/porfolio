@@ -8,6 +8,8 @@
 
   --font-family-serif: Merriweather, serif;
   --font-family-sans: "Fira Sans", sans-serif;
+
+  --fitness-hub-icon-bg: #a7cbd4;
 }
 
 :root.theme-dark {
@@ -17,6 +19,7 @@
   --text-secondary: #ccc;
 
   --primary-color: #548e9b;
+  --fitness-hub-icon-bg: #f9f6ee;
 }
 
 html {
