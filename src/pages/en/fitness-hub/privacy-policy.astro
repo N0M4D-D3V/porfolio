@@ -1,0 +1,188 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const { language } = Astro.props;
+
+const title = "Privacy Policy";
+const description =
+  "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
+const permalink = `${Astro?.site?.href}${language}/terms-and-conditions.astro`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="projects"
+  lang={language}
+>
+  <div>
+    <section>
+      <h1>Privacy Policy of Fitness Hub</h1>
+      <small>Last updated: February, 7 2025, at 21:20</small>
+    </section>
+
+    <hr />
+
+    <section>
+      <h3>1. Introduction</h3>
+
+      <p>
+        Welcome to Fitness Hub. Protecting user privacy is our top priority.
+        This policy explains how we collect, use, and protect information within
+        our app.
+      </p>
+
+      <p>
+        Fitness Hub is a <b>100% offline</b> application that allows users to track
+        their healthy habits without requiring an internet connection. <b
+          >We do not collect or share personal data with third parties
+        </b>. All data is stored locally on your device.
+      </p>
+
+      <p>
+        By using this application, you agree to the terms outlined in this
+        policy.
+      </p>
+    </section>
+
+    <section>
+      <h3>2. Information We Collect</h3>
+      <p>
+        Fitness Hub only collects and stores data locally on your device. We do
+        not transfer, share, or process any data on external servers. The
+        information you can track includes:
+      </p>
+
+      <ul>
+        <li><b>Water intake:</b> Daily glass consumption records.</li>
+        <li>
+          <b>Steps:</b> Data obtained from the device's activity sensor.
+        </li>
+        <li><b>Body weight:</b> Manually entered weight records.</li>
+        <li>
+          <b>Supplementation:</b> Manually entered supplement intake.
+        </li>
+        <li>
+          <b>Health history:</b> Historical weight and step data.
+        </li>
+      </ul>
+
+      <p>
+        Since the app does not require cloud accounts, all information remains
+        entirely private and accessible only on your device.
+      </p>
+    </section>
+
+    <section>
+      <h3>3. Device Permissions</h3>
+
+      <p>
+        To function properly, Fitness Hub requires the following permissions:
+      </p>
+      <ul>
+        <li>
+          <b>
+            Physical Activity (android.permission.ACTIVITY_RECOGNITION):
+          </b>To count steps using the device’s sensors.
+        </li>
+      </ul>
+
+      <p>
+        These permissions are used exclusively within the app and are not shared
+        with third parties.
+      </p>
+    </section>
+
+    <section>
+      <h3>4. Data Storage</h3>
+
+      <p>
+        All data entered in Fitness Hub is <b
+          >stored solely on the user’s device</b
+        >. We do not have access to this information, nor do we collect it on
+        external servers.
+      </p>
+      <p>
+        If the user uninstalls the app, all stored data will be permanently
+        deleted.
+      </p>
+    </section>
+
+    <section>
+      <h3>5. Data Security</h3>
+      <p>
+        Fitness Hub implements security measures to protect locally stored data,
+        including:
+      </p>
+
+      <ul>
+        <li>
+          <b>Restricted access: </b> Only the user can access their data within the
+          app.
+        </li>
+        <li>
+          <b>No cloud storage:</b> Eliminating any risk of external data leaks.
+        </li>
+        <li>
+          <b>System integrity:</b> We do not send any information to servers or use
+          third-party services that access your data.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>6. Children’s Privacy</h3>
+      <p>
+        Fitness Hub is not intended for children under 13 and does not knowingly
+        collect data from minors. If a minor uses the app, parental supervision
+        is recommended.
+      </p>
+    </section>
+
+    <section>
+      <h3>7. Changes to the Privacy Policy</h3>
+      <p>
+        We may update this Privacy Policy at any time. Users will be notified
+        within the app if significant changes are made.
+      </p>
+    </section>
+
+    <section>
+      <h3>8. Contact</h3>
+
+      <p>
+        If you have any questions about our Privacy Policy, you can contact us
+        at:
+      </p>
+
+      <ul>
+        <li>
+          <b> 📧 Email: </b>
+          <a href="mailto:contact@gg-victor.dev">contact@gg-victor.dev</a>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+  </div>
+</BaseLayout>
+
+<style>
+  h1 {
+    margin: 0;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+
+  ul {
+    list-style-type: square;
+    margin: 10px;
+  }
+
+  a {
+    font-weight: bold;
+  }
+</style>

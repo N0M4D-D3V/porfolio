@@ -1,0 +1,184 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const { language } = Astro.props;
+
+const title = "Política de Privacidad";
+const description =
+  "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
+const permalink = `${Astro?.site?.href}${language}/terms-and-conditions.astro`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="projects"
+  lang={language}
+>
+  <div>
+    <section>
+      <h1>Política de Privacidad de Fitness Hub</h1>
+      <small>Última actualización: 7 de Febrero de 2025, a las 21:14</small>
+    </section>
+
+    <hr />
+
+    <section>
+      <h3>1. Introducción</h3>
+
+      <p>
+        Bienvenido a Fitness Hub. La privacidad de nuestros usuarios es una
+        prioridad fundamental. Esta política describe cómo recopilamos, usamos y
+        protegemos la información dentro de nuestra aplicación. Fitness Hub es
+        una aplicación 100% offline que permite a los usuarios realizar un
+        seguimiento de sus hábitos saludables sin necesidad de conexión a
+        Internet. No recopilamos ni compartimos datos personales con terceros.
+        Todos los datos se almacenan localmente en su dispositivo. Al utilizar
+        la aplicación, aceptas los términos descritos en esta política.
+      </p>
+    </section>
+
+    <section>
+      <h3>2. Información que Recopilamos</h3>
+      <p>
+        Fitness Hub solo recopila y almacena datos localmente en tu dispositivo.
+        No transferimos, compartimos ni procesamos información en servidores
+        externos. La información que puedes registrar incluye:
+      </p>
+
+      <ul>
+        <li><b>Consumo de agua:</b> Registros de vasos diarios.</li>
+        <li>
+          <b>Pasos:</b> Datos obtenidos del sensor de actividad del dispositivo.
+        </li>
+        <li><b>Peso corporal:</b> Registro manual del usuario.</li>
+        <li>
+          <b>Suplementación:</b> Registro manual de suplementos ingeridos.
+        </li>
+        <li>
+          <b>Historial de salud:</b> Datos históricos de peso y pasos.
+        </li>
+      </ul>
+
+      <p>
+        Dado que la aplicación no requiere ni utiliza cuentas en la nube, toda
+        la información es completamente privada y solo accesible desde tu propio
+        dispositivo.
+      </p>
+    </section>
+
+    <section>
+      <h3>3. Permisos del Dispositivo</h3>
+
+      <p>
+        Para funcionar correctamente, Fitness Hub requiere los siguientes
+        permisos:
+      </p>
+      <ul>
+        <li>
+          <b> Actividad Física (android.permission.ACTIVITY_RECOGNITION): </b> Para
+          contar los pasos mediante los sensores del dispositivo.
+        </li>
+      </ul>
+
+      <p>
+        Estos permisos se utilizan exclusivamente dentro de la aplicación y no
+        se comparten con terceros.
+      </p>
+    </section>
+
+    <section>
+      <h3>4. Almacenamiento de Datos</h3>
+
+      <p>
+        Todos los datos introducidos en Fitness Hub se almacenan exclusivamente
+        en el dispositivo del usuario mediante IndexedDB y Capacitor Storage. No
+        tenemos acceso a esta información ni la recopilamos en servidores
+        externos.
+      </p>
+      <p>
+        Si el usuario desinstala la aplicación, todos los datos se eliminarán de
+        forma irreversible.
+      </p>
+    </section>
+
+    <section>
+      <h3>5. Seguridad de la Información</h3>
+      <p>
+        Fitness Hub implementa medidas de seguridad para proteger los datos
+        locales, incluyendo:
+      </p>
+
+      <ul>
+        <li>
+          <b>Acceso restringido:</b> Solo el usuario puede acceder a sus datos dentro
+          de la aplicación.
+        </li>
+        <li>
+          <b>Sin almacenamiento en la nube:</b> Eliminamos cualquier riesgo de filtración
+          externa.
+        </li>
+        <li>
+          <b>Integridad del sistema:</b> No enviamos información a servidores ni
+          utilizamos servicios de terceros que accedan a los datos.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>6. Menores de Edad</h3>
+      <p>
+        Fitness Hub no está dirigido a menores de 13 años y no recopila datos de
+        menores intencionalmente. Si un usuario menor de edad utiliza la
+        aplicación, se recomienda la supervisión de un adulto.
+      </p>
+    </section>
+
+    <section>
+      <h3>7. Cambios en la Política de Privacidad</h3>
+      <p>
+        Podemos actualizar esta Política de Privacidad en cualquier momento. Se
+        notificará a los usuarios dentro de la aplicación si se realizan cambios
+        significativos.
+      </p>
+    </section>
+
+    <section>
+      <h3>8. Contacto</h3>
+
+      <p>
+        Si tienes preguntas sobre nuestra Política de Privacidad, puedes
+        contactarnos en:
+      </p>
+
+      <ul>
+        <li>
+          <b> 📧 Correo Electrónico: </b>
+          <a href="mailto:contact@gg-victor.dev">contact@gg-victor.dev</a>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+  </div>
+</BaseLayout>
+
+<style>
+  h1 {
+    margin: 0;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+
+  ul {
+    list-style-type: square;
+    margin: 10px;
+  }
+
+  a {
+    font-weight: bold;
+  }
+</style>
