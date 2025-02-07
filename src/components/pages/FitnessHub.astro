@@ -16,6 +16,7 @@ if (language === "es") {
   literals = esLiterals;
 }
 
+const privacyPolicyUrl = `/${language}/fitness-hub/privacy-policy`;
 const appIcon = "/images/app-icon.svg";
 const appScreenshot = "/images/app-screenshot.png";
 const badges = [
@@ -82,6 +83,11 @@ const authors = [
         <img src={appScreenshot} class="app-screenshot" />
       </div>
     </main>
+  </div>
+  <div style="width: 100%; text-align: center;">
+    <small style="position:relative; top:30px">
+      <a href={privacyPolicyUrl}>Take a look to our Privacy Policy</a>
+    </small>
   </div>
 </BaseLayout>
 
