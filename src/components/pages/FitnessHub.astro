@@ -1,8 +1,8 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 
-import enAbout from "../../data/about/about-en.json";
-import esAbout from "../../data/about/about-es.json";
+import enLiterals from "@/data/fitness-hub/landing-en.json";
+import esLiterals from "@/data/fitness-hub/landing-es.json";
 
 const { language } = Astro.props;
 
@@ -11,23 +11,20 @@ const description =
   "Hire me to create your web, mobile, or hybrid application. Developer specialized in crafting unique applications.";
 const permalink = `${Astro?.site?.href}${language}/fitness-hub`;
 
-let about = enAbout;
+let literals = enLiterals;
 if (language === "es") {
-  about = esAbout;
+  literals = esLiterals;
 }
 
-const heading = "Fitness Hub";
-const subheading =
-  "Track steps, water, weight & supps offline. Stay healthy with no ads! Your fitness journey starts now";
 const appIcon = "/images/app-icon.svg";
 const appScreenshot = "/images/app-screenshot.png";
 const badges = [
   {
-    link: "https://apps.apple.com/us/app/party-banner/id1610931185",
+    link: "https://www.apple.com/es/app-store/",
     image: "/images/app-store-badge.svg",
   },
   {
-    link: "https://apps.apple.com/us/app/party-banner/id1610931185",
+    link: "https://play.google.com/store",
     image: "/images/google-play-badge.png",
   },
 ];
@@ -50,8 +47,8 @@ const authors = [
     <main>
       <div class="text-container">
         <img src={appIcon} class="app-icon" />
-        <h1 class="heading">{heading}</h1>
-        <h2 class="subheading">{subheading}</h2>
+        <h1 class="heading">{title}</h1>
+        <h2 class="subheading">{literals.subtitle}</h2>
         <div class="badge-container">
           {
             badges.map((badge) => (
