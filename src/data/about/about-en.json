@@ -1,21 +1,21 @@
 {
   "history": {
-    "title": "My History",
+    "title": "My Story",
     "paragraphs": [
-      "Hello there! My name is Victor. I am a developer running into freelance way, adventurer and tech-lover.",
-      "Since 2020, I have been working for big companies as Merlin Properties or Airbus Defence And Space. I have always held developer positions.",
-      "This 2024 is when I've decided to create my own Software Development company: Rolling Release. I've decided to create this company because I really like technology, business and entrepreneurship.",
-      "If you are looking for professionalism and dedication, count on me!"
+      "In 2020, I started in the tech industry. I have worked for major companies such as Merlin Properties, Airbus Defence And Space, and Codere NEWCO. I have always held positions as a frontend or hybrid application developer. However, I have done a bit of everything: hybrid applications, setting up servers, automation scripts, backends...",
+      "I am just a regular person with a regular story. I enjoy computing, music, and fitness. I have always been creative, analytical, and a bit restless.",
+      "In 2025, my goal is to publish my own applications and monetize them. In fact, I have a fitness app that is about to launch... What I am sure of is that one day I will be able to make a living from my own software without depending on third-party companies.",
+      "Freedom is within reach of any programmer, as many before have proven. You just have to seize it."
     ]
   },
   "skills": {
     "title": "My Skills",
     "description": [
-      "My main skills are consultancy and software development, focus on web and hybrid apps."
+      "My main expertise is software development, focused on web development and hybrid applications. However, I am fully capable of developing any other type of software if necessary: process automation, backend, CMS..."
     ],
     "cards": [
       {
-        "title": "web",
+        "title": "Web",
         "icon": "Web",
         "stack": [
           "Angular",
@@ -29,7 +29,7 @@
         ]
       },
       {
-        "title": "hybrid",
+        "title": "Hybrid",
         "icon": "Hybrid",
         "stack": [
           "Ionic",
@@ -39,7 +39,7 @@
           "Native Plugins",
           "Swift",
           "Kotlin",
-          "Java"      
+          "Java"
         ]
       },
       {
@@ -59,14 +59,14 @@
     ]
   },
   "contact": {
-    "title": "Keep in touch!",
+    "title": "Let's Talk?",
     "options": [
       {
         "text": "LINKEDIN",
         "url": "https://www.linkedin.com/in/victor-develops/",
         "target": "_blank"
       },
-      { "text": "CURRICULUM", "url": "/en/cv", "target": "_parent" }
+      { "text": "RESUME", "url": "/en/cv", "target": "_parent" }
     ]
   }
 }

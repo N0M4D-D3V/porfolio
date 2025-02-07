@@ -4,7 +4,7 @@ const { current = "", lang } = Astro.props;
 
 const baseUrl: string = `/${lang}`;
 const aboutUrl: string = `${baseUrl}/about`;
-const eventsUrl: string = `${baseUrl}/events`;
+const projectsUrl: string = `${baseUrl}/projects`;
 const blogUrl: string = `${baseUrl}/blog`;
 ---
 
@@ -67,7 +67,9 @@ const blogUrl: string = `${baseUrl}/blog`;
 <nav>
   <a class={current === "" ? "selected" : ""} href={baseUrl}>home</a>
   <a class={current === "about" ? "selected" : ""} href={aboutUrl}>about</a>
-  <a class={current === "events" ? "selected" : ""} href={eventsUrl}>events</a>
+  <a class={current === "projects" ? "selected" : ""} href={projectsUrl}
+    >projects</a
+  >
   <!-- <a class={current === "blog" ? "selected" : ""} href={blogUrl}>blog</a> -->
   <a class={lang === "es" ? "d-none" : ""} href="/es">🇪🇸</a>
   <a class={lang === "en" ? "d-none" : ""} href="/en">🇬🇧</a>

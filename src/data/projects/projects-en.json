@@ -1,0 +1,71 @@
+{
+  "projects": [
+    {
+      "name": "Fitness Hub",
+      "isActive": true,
+      "description": "📊 Track steps, water, weight & supps offline. Stay healthy with no ads! 💪 Your fitness journey starts now!",
+      "highlights": ["Angular & Capacitor"],
+      "url": "https://gg-victor.dev/projects/fitness-hub",
+      "github": "https://github.com/N0M4D-D3V/fitness-tracker"
+    },
+    {
+      "name": "Mi Codere",
+      "isActive": true,
+      "description": "Join, raise your bets, and earn points that you can redeem for fantastic rewards. Additionally, if available in your community, you can cash out your bets early and manage all your tickets from the app.",
+      "highlights": ["Hybrid App"],
+      "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share"
+    },
+    {
+      "name": "Codere LATAM",
+      "isActive": true,
+      "description": "In the Codere Club, you'll find information about events, promotions, the location of our venues, and much more. Check your points and redeem them.",
+      "highlights": ["Hybrid App"],
+      "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share"
+    },
+    {
+      "name": "Push Agent",
+      "isActive": true,
+      "description": "Push notification agent. It includes an embedded server, a database, and a system to send push notifications completely free of charge.",
+      "highlights": ["Backend", "Java & Angular"]
+    },
+    {
+      "name": "LTA+",
+      "isActive": false,
+      "description": "I am involved in developing an aerospace calculator app for military inflight operations.",
+      "highlights": ["Hybrid App"],
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/demiurge"
+    },
+    {
+      "name": "Blazebooks",
+      "isActive": false,
+      "description": "You'll immerse yourself in stories where every choice you make impacts the plot development and the fate of the characters. Interactive novels platform.",
+      "highlights": ["Angular & Capacitor"],
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/blazebooks-mobile"
+    },
+    {
+      "name": "Blaze Server",
+      "isActive": false,
+      "description": "NodeJS/NestJS server for Blazebooks app. User, files and database management.",
+      "highlights": ["Nest/Node", "Linux"],
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/blazebooks-server"
+    },
+    {
+      "name": "Rainclouds Web",
+      "isActive": false,
+      "description": "A website for the Atmospheric Black Metal band RAZAK. It was in production for a few years.",
+      "highlights": ["Firebase", "Angular"],
+      "github": "https://github.com/N0M4D-D3V/rainclouds-webapp"
+    },
+    {
+      "name": "Demiurge",
+      "isActive": false,
+      "description": "The word 'demiurge' is a word derived form of the Greek dēmiourgós. It was a noun meaning 'craftsman' or 'artisan', but gradually came to mean 'producer' and eventually 'creator'.",
+      "highlights": ["Angular Library"],
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/demiurge"
+    }
+  ]
+}

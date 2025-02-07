@@ -57,14 +57,27 @@ const { projects } = Astro.props;
     margin-inline: -16px;
   }
 
+  article:hover {
+    border: 1px solid transparent;
+    box-shadow:
+      0 0 1px red,
+      0 0 2px red,
+      0 0 4px red,
+      0 0 8px red;
+  }
+
   article {
-    border-radius: 8px;
+    border-radius: 15px;
     border: 1px solid #f2f2f2;
     gap: 16px;
     display: flex;
     flex-direction: column;
     padding: 16px;
     height: 100%;
+
+    transition:
+      box-shadow 0.3s ease,
+      border 0.3s ease;
   }
 
   article header {
