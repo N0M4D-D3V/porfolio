@@ -6,13 +6,16 @@ const { lang } = Astro.props;
 const title = "Blog";
 const description = "Latest articles.";
 const permalink = `${Astro.site.href}/${lang}/blog`;
+const datalink = `../../../data/blog-posts/${lang}/*.md`;
 
 let allPosts;
 switch (lang.toLowerCase()) {
   case "es":
     allPosts = await Astro.glob("../../../data/blog-posts/es/*.md");
+    break;
   default:
     allPosts = await Astro.glob("../../../data/blog-posts/en/*.md");
+    break;
 }
 
 const sortedPost = allPosts.sort(

@@ -3,26 +3,21 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Bio from "@/components/Bio.astro";
 import getPostData from "@/utils/getPostData";
 
-const { lang } = Astro.props;
+const lan = "es";
 
-// export async function getStaticPaths(): any {
-//   let allPosts;
-//   switch (lang.toLowerCase()) {
-//     case "es":
-//       allPosts = await Astro.glob("../../../data/blog-posts/es/*.md");
-//     default:
-//       allPosts = await Astro.glob("../../../data/blog-posts/en/*.md");
-//   }
-//   return allPosts.map((p) => ({
-//     params: { slug: p.file.split("/").pop().split(".").shift() },
-//     props: { post: p },
-//   }));
-// }
+export async function getStaticPaths(): any {
+  const allPosts = await Astro.glob(`../../../data/blog-posts/es/*.md`);
 
-// const { Content, frontmatter } = Astro.props.post;
-// const { title, description, publishDate } = frontmatter;
-// const { slug, readingTime } = getPostData(Astro.props.post);
-// const permalink = `${Astro.site.href}${lang}blog/${slug}`;
+  return allPosts.map((p) => ({
+    params: { slug: p.file.split("/").pop().split(".").shift() },
+    props: { post: p },
+  }));
+}
+
+const { Content, frontmatter } = Astro.props.post;
+const { title, description, publishDate } = frontmatter;
+const { slug, readingTime } = getPostData(Astro.props.post);
+const permalink = `${Astro.site.href}${lan}blog/${slug}`;
 ---
 
 <BaseLayout
@@ -30,9 +25,9 @@ const { lang } = Astro.props;
   description={description}
   permalink={permalink}
   current="blog"
-  lang={lang}
+  lang={lan}
 >
-  <!-- <header>
+  <header>
     <p>{publishDate} ~ {readingTime}</p>
     <h1>{title}</h1>
     <hr />
@@ -43,7 +38,7 @@ const { lang } = Astro.props;
     </article>
     <hr />
     <Bio />
-  </div> -->
+  </div>
 </BaseLayout>
 
 <style>
