@@ -5,6 +5,8 @@ import CaptionWrapper from "./CaptionWrapper.astro";
 import enLiterals from "@/data/fitness-hub/landing-en.json";
 import esLiterals from "@/data/fitness-hub/landing-es.json";
 
+import "@/styles/animations.css";
+
 const { language } = Astro.props;
 
 const title = "Fitness Hub";
@@ -48,10 +50,10 @@ const authors = [
   <div class="container">
     <main>
       <div class="text-container">
-        <img src={appIcon} class="app-icon" />
+        <img src={appIcon} class="app-icon fadein" />
         <h1 class="heading">{title}</h1>
         <h2 class="subheading">{literals.subtitle}</h2>
-        <div class="badge-container">
+        <div class="badge-container fadein">
           {
             badges.map((badge) => (
               <div>
@@ -81,7 +83,7 @@ const authors = [
         </p>
       </div>
       <div>
-        <div class="app-screenshot">
+        <div class="app-screenshot fadein">
           <CaptionWrapper captionUrl={appScreenshot} />
         </div>
       </div>
@@ -92,106 +94,106 @@ const authors = [
       </small>
     </div>
   </div>
-
-  <style>
-    h1,
-    h2,
-    h3 {
-      line-height: 1.2;
-    }
-
-    h1 {
-      font-size: 5em;
-      font-weight: 900;
-      margin-bottom: 0.1em;
-    }
-
-    h2 {
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 100vh;
-      padding: 0;
-    }
-
-    main {
-      margin: auto 0;
-      padding-top: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 80px;
-    }
-
-    .text-container {
-      width: 60%;
-    }
-
-    .app-icon {
-      width: 80px;
-      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-      border-radius: 24px;
-      margin-bottom: 10px;
-      background-color: var(--fitness-hub-icon-bg);
-    }
-
-    .heading {
-      font-family: "Titan One", sans-serif;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-
-    .subheading {
-      font-size: 1.75rem;
-      font-weight: 300;
-      margin-bottom: 30px;
-    }
-
-    .badge-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .badge {
-      margin-bottom: 20px;
-      height: 50px;
-    }
-    .badge:hover {
-      cursor: pointer;
-    }
-
-    .authors {
-      font-weight: 300;
-    }
-
-    .authors a {
-      color: inherit;
-      font-weight: 500;
-      text-decoration: none;
-    }
-    .authors a:hover {
-      text-decoration: underline;
-    }
-
-    .app-screenshot {
-      width: 220px;
-    }
-
-    @media (max-width: 768px) {
-      main {
-        flex-direction: column;
-        padding: 40px;
-      }
-      .text-container {
-        width: 100%;
-      }
-    }
-  </style>
 </BaseLayout>
+
+<style>
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 5em;
+    font-weight: 900;
+    margin-bottom: 0.1em;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  main {
+    margin: auto 0;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .text-container {
+    width: 60%;
+  }
+
+  .app-icon {
+    width: 80px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    margin-bottom: 10px;
+    background-color: var(--fitness-hub-icon-bg);
+  }
+
+  .heading {
+    font-family: "Titan One", sans-serif;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .subheading {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  .badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .badge {
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  .badge:hover {
+    cursor: pointer;
+  }
+
+  .authors {
+    font-weight: 300;
+  }
+
+  .authors a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .authors a:hover {
+    text-decoration: underline;
+  }
+
+  .app-screenshot {
+    width: 220px;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      padding: 40px;
+    }
+    .text-container {
+      width: 100%;
+    }
+  }
+</style>

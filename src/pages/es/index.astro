@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import "@/styles/animations.css";
 
 const title = "Victor - Software Developer";
 const description =
@@ -13,7 +14,7 @@ const permalink = `${Astro?.site?.href}`;
   permalink={permalink}
   lang="es"
 >
-  <div class="home-container">
+  <div class="home-container fadein">
     <div class="home-copy">
       <h1>Hey, soy Víctor</h1>
       <p>

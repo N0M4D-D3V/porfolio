@@ -1,10 +1,11 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import "@/styles/animations.css";
 
 const title = "Victor - Software Developer";
 const description =
   "Hire me to create your web, mobile, or hybrid application. Software developer specialized in crafting unique applications.";
-const permalink = Astro?.site?.href;
+const permalink = Astro.site!.href;
 ---
 
 <BaseLayout
@@ -13,12 +14,12 @@ const permalink = Astro?.site?.href;
   permalink={permalink}
   lang="en"
 >
-  <div class="home-container">
+  <div class="home-container fadein">
     <div class="home-copy">
       <h1>Hey, I'm Víctor</h1>
       <p>
         <img
-                    src="https://readme-typing-svg.herokuapp.com?color=08CE90&center=true&vCenter=true&lines=4+years+of+experience;Hybrid+APPs+Developer;Madrid,+Spain;Crafting+unique+apps"
+          src="https://readme-typing-svg.herokuapp.com?color=08CE90&center=true&vCenter=true&lines=4+years+of+experience;Hybrid+APPs+Developer;Madrid,+Spain;Crafting+unique+apps"
           alt="typing intro"
         />
       </p>
