@@ -1,12 +1,18 @@
 ---
 import { SKILLS_ICONS } from "@/icons/icon.record";
 
+interface Card {
+  title: string;
+  icon: string;
+  stack: string[];
+}
+
 const { cards = [] } = Astro.props;
 ---
 
 <ul>
   {
-    cards?.map(({ title, icon, stack }) => {
+    cards?.map(({ title, icon, stack }: Card) => {
       const Icon = SKILLS_ICONS[icon];
 
       return (
@@ -93,27 +99,10 @@ const { cards = [] } = Astro.props;
     margin-left: 10px;
   }
 
-  @keyframes flicker {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.25;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
   @media (width <= 700px) {
     ul {
       margin-inline: 0px;
-    }
-
-    article {
-      border: none;
-      box-shadow: 0 1px 1px #f2f2f2;
-      padding: 0 0 16px 0;
+      gap: 3%;
     }
   }
 

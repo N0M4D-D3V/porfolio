@@ -13,7 +13,7 @@ export interface Props {
 const { title, description, permalink, current, lang } = Astro.props;
 ---
 
-<html lang={lang} style="width:fit-content">
+<html lang={lang}>
   <head>
     <BaseHead title={title} description={description} permalink={permalink} />
   </head>
@@ -28,6 +28,12 @@ const { title, description, permalink, current, lang } = Astro.props;
       <Footer />
     </div>
     <style>
+      @media (max-width: 480px) {
+        html {
+          width: fit-content;
+        }
+      }
+
       .layout {
         display: flex;
         flex-direction: column;
