@@ -5,8 +5,7 @@ const { lang } = Astro.props;
 
 const title = "Blog";
 const description = "Latest articles.";
-const permalink = `${Astro.site.href}/${lang}/blog`;
-const datalink = `../../../data/blog-posts/${lang}/*.md`;
+const permalink = `${Astro.site!.href}/${lang}/blog`;
 
 let allPosts;
 switch (lang.toLowerCase()) {
@@ -73,6 +72,6 @@ const sortedPost = allPosts.sort(
   }
 
   hr {
-    margin: 60px auto;
+    margin: 30px auto;
   }
 </style>

@@ -13,7 +13,7 @@ export interface Props {
 const { title, description, permalink, current, lang } = Astro.props;
 ---
 
-<html lang={lang}>
+<html lang={lang} style="width:fit-content">
   <head>
     <BaseHead title={title} description={description} permalink={permalink} />
   </head>
