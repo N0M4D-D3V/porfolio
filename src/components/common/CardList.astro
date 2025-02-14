@@ -43,13 +43,19 @@ const { cards = [] } = Astro.props;
   }
 
   article {
-    border-radius: 8px;
+    border-radius: 15px;
     border: 1px solid #f2f2f2;
     gap: 16px;
     display: flex;
     flex-direction: column;
     padding: 16px;
     height: 100%;
+
+    box-shadow:
+      0 0 1px var(--text-secondary),
+      0 0 2px var(--text-secondary),
+      0 0 4px var(--text-secondary),
+      0 0 8px var(--text-secondary);
   }
 
   article header {
