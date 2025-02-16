@@ -3,37 +3,42 @@
     {
       "name": "Fitness Hub",
       "isActive": true,
-      "description": "📊 Rastrea agua, pasos, peso y suplementos. Gratis, sin anuncios y 100% offline. 💪 ¡Haz del fitness un hábito fácil y accesible!",
+      "description": "Rastrea agua, pasos, peso y suplementos. Gratis, sin anuncios y 100% offline. ¡Haz del fitness un hábito fácil y accesible!",
       "highlights": ["Hybrid App"],
       "url": "/es/fitness-hub",
-      "github": "https://github.com/N0M4D-D3V/fitness-tracker"
+      "github": "https://github.com/N0M4D-D3V/fitness-tracker",
+      "image": "/images/fitness-hub/app-icon.svg"
     },
     {
       "name": "Mi Codere",
       "isActive": true,
       "description": "Únete, sube tus apuestas y consigue puntos que podrás canjear por fantásticos regalos. Además si en tu comunidad está disponible, podrás cerrar tus apuestas anticipadamente y tener el control de todos tus tickets desde la app.",
       "highlights": ["Hybrid App"],
-      "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share"
+      "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share",
+      "image": "/images/codere/es.png"
     },
     {
       "name": "Codere LATAM",
       "isActive": true,
       "description": "En el Club Codere encontrarás información sobre eventos, promociones y la ubicación de nuestras salas y mucho más. Consulta tus puntos y canjéalos.",
       "highlights": ["Hybrid App"],
-      "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share"
+      "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share",
+      "image": "/images/codere/latam.png"
     },
     {
       "name": "Push Agent",
       "isActive": true,
       "description": "Agente de notificaciones push. Contiene un servidor embebido, una base de datos y un sistema para lanzar notificaciones push de forma totalmente gratuita.",
-      "highlights": ["Backend", "Java & Angular"]
+      "highlights": ["Backend", "Java & Angular"],
+      "image": "/images/pushagent/logo.png"
     },
     {
       "name": "LTA+",
       "isActive": false,
       "description": "I am involved in developing an aerospace calculator app for military inflight operations.",
       "highlights": ["Hybrid App", ".a/.dll usage"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V"
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "image": "/images/airbus/icon.png"
     },
     {
       "name": "Blazebooks",
@@ -41,7 +46,8 @@
       "description": "Te sumergirás en historias donde cada elección que hagas impacta en el desarrollo del guión y el comportamiento de los personajes. Aplicación de novelas interactivas.",
       "highlights": ["Hybrid App"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
-      "github": "https://github.com/N0M4D-D3V/blazebooks-mobile"
+      "github": "https://github.com/N0M4D-D3V/blazebooks-mobile",
+      "image": "/images/blazebooks/icon.svg"
     },
     {
       "name": "Blaze Server",
