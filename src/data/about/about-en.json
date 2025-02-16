@@ -2,16 +2,17 @@
   "history": {
     "title": "My Story",
     "paragraphs": [
-      "In 2020, I started in the tech industry. I have worked for major companies such as Merlin Properties, Airbus Defence And Space, and Codere NEWCO. I have always held positions as a frontend or hybrid application developer. However, I have done a bit of everything: hybrid applications, setting up servers, automation scripts, backends...",
-      "I am just a regular person with a regular story. I enjoy computing, music, and fitness. I have always been creative, analytical, and a bit restless.",
-      "In 2025, my goal is to publish my own applications and monetize them. In fact, I have a fitness app that is about to launch... What I am sure of is that one day I will be able to make a living from my own software without depending on third-party companies.",
-      "Freedom is within reach of any programmer, as many before have proven. You just have to seize it."
+      "In 2020, I started in the tech industry. I have worked for large companies such as Merlin Properties, Airbus Defence And Space, and Codere NEWCO. I have always held roles as a cross-platform developer specializing in multiplatform applications. I have done it all: hybrid and web applications, setting up servers, automation scripts, backends...",
+      "About me: I like computers, music, and fitness. I have always been creative, analytical, and a bit restless. If you want to know more about me, I invite you to visit my blog. I'm sure you'll find interesting articles.",
+      "In 2025, I will publish my applications and try to monetize them. In fact, I have a fitness app that is about to be released... What I am sure of is that one day, I will be able to make a living from software without relying on third-party companies.",
+      "Freedom is within reach of any programmer, as many before have proven. You just have to take it."
     ]
   },
   "skills": {
     "title": "My Skills",
     "description": [
-      "My main expertise is software development, focused on web development and hybrid applications. However, I am fully capable of developing any other type of software if necessary: process automation, backend, CMS..."
+      "My main expertise is software development, focused on web development and cross-platform applications. I am also fully capable of developing any other type of software if necessary: process automation, backend, CMS...",
+      "If you want to learn more about my work, I invite you to visit the projects section of this website. There, you will find all the projects I have completed to date, both professional and personal. There are even links so you can check them out."
     ],
     "cards": [
       {
@@ -59,7 +60,7 @@
     ]
   },
   "contact": {
-    "title": "Let's Talk?",
+    "title": "Let's Talk!",
     "options": [
       {
         "text": "LINKEDIN",

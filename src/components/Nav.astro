@@ -8,6 +8,21 @@ const projectsUrl: string = `${baseUrl}/projects`;
 const blogUrl: string = `${baseUrl}/blog`;
 ---
 
+<nav>
+  <a class={current === "" ? "selected" : ""} href={baseUrl}>home</a>
+  <a class={current === "about" ? "selected" : ""} href={aboutUrl}>about</a>
+  <a class={current === "projects" ? "selected" : ""} href={projectsUrl}
+    >projects</a
+  >
+  <a class={current === "blog" ? "selected" : ""} href={blogUrl}>blog</a>
+  <a class={lang === "es" ? "d-none" : ""} href="/es">🇪🇸</a>
+  <a class={lang === "en" ? "d-none" : ""} href="/en">🇬🇧</a>
+
+  <div class="theme-toggle-container">
+    <ThemeToggleButton client:load />
+  </div>
+</nav>
+
 <style>
   nav {
     align-items: center;
@@ -63,18 +78,3 @@ const blogUrl: string = `${baseUrl}/blog`;
     display: none;
   }
 </style>
-
-<nav>
-  <a class={current === "" ? "selected" : ""} href={baseUrl}>home</a>
-  <a class={current === "about" ? "selected" : ""} href={aboutUrl}>about</a>
-  <a class={current === "projects" ? "selected" : ""} href={projectsUrl}
-    >projects</a
-  >
-  <a class={current === "blog" ? "selected" : ""} href={blogUrl}>blog</a>
-  <a class={lang === "es" ? "d-none" : ""} href="/es">🇪🇸</a>
-  <a class={lang === "en" ? "d-none" : ""} href="/en">🇬🇧</a>
-
-  <div class="theme-toggle-container">
-    <ThemeToggleButton client:load />
-  </div>
-</nav>
