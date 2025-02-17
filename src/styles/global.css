@@ -11,6 +11,14 @@
   --font-family-sans: "Retro Gaming", sans-serif;
 
   --fitness-hub-icon-bg: #a7cbd4;
+
+  --primary-box-shadow: 0 0 1px var(--primary-color),
+    0 0 2px var(--primary-color), 0 0 4px var(--primary-color),
+    0 0 8px var(--primary-color);
+
+  --secondary-box-shadow: 0 0 1px var(--text-secondary),
+    0 0 2px var(--text-secondary), 0 0 4px var(--text-secondary),
+    0 0 8px var(--text-secondary);
 }
 
 :root.theme-dark {

@@ -80,14 +80,17 @@ const { projects } = Astro.props;
 
 <style>
   .logo-img {
-    padding: 5px;
     height: 100px;
     width: 100px;
     object-fit: cover;
     margin: 0 auto;
-    border: solid black 1px;
+    border: solid white 5px;
     border-radius: 25px;
     background-color: whitesmoke;
+
+    transition:
+      border 0.3s ease,
+      box-shadow 0.3s ease;
   }
   ul {
     display: grid;
@@ -98,14 +101,19 @@ const { projects } = Astro.props;
 
   article:hover {
     border: 1px solid transparent;
-    box-shadow:
-      0 0 1px var(--primary-color),
-      0 0 2px var(--primary-color),
-      0 0 4px var(--primary-color),
-      0 0 8px var(--primary-color);
+    box-shadow: var(--primary-box-shadow);
 
     h3 {
       color: var(--primary-color);
+    }
+
+    .github-code-link {
+      color: var(--primary-color);
+    }
+
+    .logo-img {
+      border: solid var(--primary-color) 3px;
+      box-shadow: var(--primary-box-shadow);
     }
   }
 
@@ -119,11 +127,7 @@ const { projects } = Astro.props;
     padding: 16px;
     height: 100%;
 
-    box-shadow:
-      0 0 1px var(--text-secondary),
-      0 0 2px var(--text-secondary),
-      0 0 4px var(--text-secondary),
-      0 0 8px var(--text-secondary);
+    box-shadow: var(--secondary-box-shadow);
 
     transition:
       box-shadow 0.3s ease,
@@ -160,8 +164,6 @@ const { projects } = Astro.props;
     width: 100%;
     flex-direction: row-reverse;
     display: flex;
-    /* flex-wrap: wrap;
-    gap: 4px; */
     font-size: 0.6rem;
   }
 

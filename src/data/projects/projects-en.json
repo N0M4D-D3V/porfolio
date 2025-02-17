@@ -55,7 +55,8 @@
       "description": "NodeJS/NestJS server for Blazebooks app. User, files and database management.",
       "highlights": ["Nest/Node", "Linux"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
-      "github": "https://github.com/N0M4D-D3V/blazebooks-server"
+      "github": "https://github.com/N0M4D-D3V/blazebooks-server",
+      "image": "/images/blazebooks/icon.svg"
     },
     {
       "name": "Rainclouds Web",
