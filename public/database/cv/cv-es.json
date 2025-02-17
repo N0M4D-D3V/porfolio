@@ -433,30 +433,5 @@
       "reference": ""
     }
   ],
-  "projects": [
-    {
-      "name": "Blazebooks",
-      "isActive": false,
-      "description": "En Blazebooks, te sumergirás en historias donde cada elección que hagas impacta en el desarrollo del guión y el comportamiento de los personajes. Inactivo.",
-      "highlights": ["Angular & Capacitor"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
-      "github": "https://github.com/N0M4D-D3V/blazebooks-mobile"
-    },
-    {
-      "name": "Blaze Server",
-      "isActive": false,
-      "description": "NodeJS/NestJS server para Blazebooks. User, ficheros y gestión de bases de datos. Inactivo.",
-      "highlights": ["Nest/Node", "Linux"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
-      "github": "https://github.com/N0M4D-D3V/blazebooks-server"
-    },
-    {
-      "name": "Demiurge",
-      "isActive": true,
-      "description": "La palabra 'demiurge' es una palabra derivada de su forma griega dēmiourgós. Significa 'hacedor', 'artesano' o 'productor' y eventualmente 'creador'.",
-      "highlights": ["Angular Library"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
-      "github": "https://github.com/N0M4D-D3V/demiurge"
-    }
-  ]
+  "projects": []
 }

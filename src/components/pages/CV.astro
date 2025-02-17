@@ -1,4 +1,6 @@
 ---
+import "src/styles/global.css";
+
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Hero from "@/components/cv/Hero.astro";
 import Experience from "@/components/cv/Experience.astro";
@@ -7,7 +9,9 @@ import Projects from "@/components/cv/Projects.astro";
 import Skills from "@/components/cv/Skills.astro";
 
 import enCV from "@pub/database/cv/cv-en.json";
+import enProjects from "@/data/projects/projects-en.json";
 import esCV from "@pub/database/cv/cv-es.json";
+import esProjects from "@/data/projects/projects-es.json";
 
 const { lang } = Astro.props;
 
@@ -19,8 +23,11 @@ const permalink = `${Astro?.site?.href}${lang}/cv`;
 const lan = Astro.currentLocale;
 
 let cv = enCV;
+let projects = enProjects.projects.slice(0, 6);
+
 if (lan === "es") {
   cv = esCV;
+  projects = esProjects.projects.slice(0, 6);
 }
 ---
 
@@ -46,8 +53,7 @@ if (lan === "es") {
   <Education education={cv.education} />
 
   <hr />
-
-  <Projects projects={cv.projects} />
+  <Projects projects={projects} title="Side Projects" />
 </BaseLayout>
 
 <style>
@@ -67,10 +73,15 @@ if (lan === "es") {
     background-color: var(--text-main);
     color: var(--background-body);
 
-    transition: background-color 150ms ease-in-out;
+    transition:
+      background-color 150ms ease-in-out,
+      border-color 150ms ease-in-out;
   }
+
   a:hover {
+    cursor: pointer;
     background-color: transparent;
-    color: var(--text-main);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
   }
 </style>

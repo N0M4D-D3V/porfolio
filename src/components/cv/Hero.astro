@@ -1,4 +1,6 @@
 ---
+import "src/styles/animations.css";
+
 import WorldMap from "@/icons/WorldMap.astro";
 import GitHub from "@/icons/GitHub.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
@@ -63,7 +65,7 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
         }
       </footer>
     </div>
-    <figure>
+    <figure class="fadein">
       <img src={image} alt={name} />
     </figure>
   </div>
@@ -85,8 +87,10 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0;
+
+    color: var(--primary-color);
   }
 
   h2 {
@@ -99,10 +103,13 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
   }
 
   img {
+    border: 5px solid var(--primary-color-accent);
+    box-shadow: var(--secondary-box-shadow);
+
     aspect-ratio: 1 / 1;
     object-fit: cover;
     width: 128px;
-    border-radius: 16px;
+    border-radius: 25px;
   }
 
   span {

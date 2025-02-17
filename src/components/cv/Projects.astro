@@ -12,10 +12,10 @@ interface Project {
   image?: string;
 }
 
-const { projects } = Astro.props;
+const { projects, title = "" } = Astro.props;
 ---
 
-<Section>
+<Section title={title}>
   <ul>
     {
       projects

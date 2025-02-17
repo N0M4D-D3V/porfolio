@@ -34,11 +34,20 @@
     },
     {
       "name": "LTA+",
-      "isActive": false,
+      "isActive": true,
       "description": "I am involved in developing an aerospace calculator app for military inflight operations.",
       "highlights": ["Hybrid App", ".a/.dll usage"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
       "image": "/images/airbus/icon.png"
+    },
+    {
+      "name": "Demiurge",
+      "isActive": false,
+      "description": "La palabra 'demiurge' es una palabra derivada de su forma griega dēmiourgós. Significa 'hacedor', 'artesano' o 'productor' y eventualmente 'creador'.",
+      "highlights": ["Angular Library"],
+      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "github": "https://github.com/N0M4D-D3V/demiurge",
+      "image": "/images/demiurge/logo.webp"
     },
     {
       "name": "Blazebooks",
@@ -63,15 +72,8 @@
       "isActive": false,
       "description": "Una página web para la banda de Black Metal Atmosférico RAZAK. Llegó a estar en producción durante unos años",
       "highlights": ["Firebase", "Angular"],
-      "github": "https://github.com/N0M4D-D3V/rainclouds-webapp"
-    },
-    {
-      "name": "Demiurge",
-      "isActive": false,
-      "description": "La palabra 'demiurge' es una palabra derivada de su forma griega dēmiourgós. Significa 'hacedor', 'artesano' o 'productor' y eventualmente 'creador'.",
-      "highlights": ["Angular Library"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
-      "github": "https://github.com/N0M4D-D3V/demiurge"
+      "github": "https://github.com/N0M4D-D3V/rainclouds-webapp",
+      "image": "/images/razak/logo.png"
     }
   ]
 }
