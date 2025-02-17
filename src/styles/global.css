@@ -10,7 +10,7 @@
   --font-family-serif: "Retro Gaming", serif;
   --font-family-sans: "Retro Gaming", sans-serif;
 
-  --fitness-hub-icon-bg: #a7cbd4;
+  --fitness-hub-icon-bg: var(--background-body);
 
   --primary-box-shadow: 0 0 1px var(--primary-color),
     0 0 2px var(--primary-color), 0 0 4px var(--primary-color),
