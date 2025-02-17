@@ -137,8 +137,9 @@ const authors = [
 
   .app-icon {
     width: 80px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 24px;
+    box-shadow: var(--primary-box-shadow);
+    border: solid 1px var(--primary-color);
+    border-radius: 25px;
     margin-bottom: 10px;
     background-color: var(--fitness-hub-icon-bg);
   }
@@ -164,9 +165,12 @@ const authors = [
   .badge {
     margin-bottom: 20px;
     height: 50px;
+
+    transition: transform 0.3s ease;
   }
   .badge:hover {
     cursor: pointer;
+    transform: scale(1.1);
   }
 
   .authors {
