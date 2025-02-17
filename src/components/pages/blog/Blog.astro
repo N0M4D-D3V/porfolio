@@ -17,11 +17,7 @@ switch (lang.toLowerCase()) {
     break;
 }
 
-const sortedPost = allPosts.sort(
-  (a, b) =>
-    new Date(b.frontmatter.publishDate).valueOf() -
-    new Date(a.frontmatter.publishDate).valueOf()
-);
+const sortedPost = allPosts.reverse();
 ---
 
 <BaseLayout
