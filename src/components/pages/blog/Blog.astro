@@ -28,25 +28,24 @@ const sortedPost = allPosts.reverse();
   lang={lang}
 >
   <div class="container">
-    <h1>Blog</h1>
     {
       sortedPost.map((post, index) => {
-        const href = `/${lang}/blog/${post.file.split("/").pop().split(".").shift()}`;
+        const href = `/${lang}/blog/${post.file.split("/").pop()?.split(".").shift()}`;
         return (
-          <div>
-            {index !== 0 && <hr />}
-            <div class="post-item">
-              <h2>
-                <a href={href}>{post.frontmatter.title}</a>
-              </h2>
-              <p>{post.frontmatter.description}</p>
-              <div class="post-item-footer">
-                <span class="post-item-date">
-                  — {post.frontmatter.publishDate}
-                </span>
+          <a href={href}>
+            <div>
+              {index !== 0 && <hr />}
+              <div class="post-item">
+                <h2>/> {post.frontmatter.title}</h2>
+                <p>{post.frontmatter.description}</p>
+                <div class="post-item-footer">
+                  <span class="post-item-date">
+                    {post.frontmatter.publishDate}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         );
       })
     }
@@ -62,9 +61,15 @@ const sortedPost = allPosts.reverse();
 
   .post-item-date {
     color: var(--text-secondary);
-    text-align: left;
+    display: block;
+    text-align: right;
     text-transform: uppercase;
-    margin-right: 16px;
+    margin-top: 16px;
+    transition: color 0.3s ease;
+  }
+
+  a:hover .post-item-date {
+    color: var(--primary-color);
   }
 
   hr {
