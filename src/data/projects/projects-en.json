@@ -15,7 +15,7 @@
       "description": "Join, raise your bets, and earn points that you can redeem for fantastic rewards. Additionally, if available in your community, you can cash out your bets early and manage all your tickets from the app.",
       "highlights": ["Hybrid App"],
       "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share",
-      "image": "/images/codere/es.png"
+      "image": "/images/codere/es.webp"
     },
     {
       "name": "Codere LATAM",
@@ -23,14 +23,14 @@
       "description": "In the Codere Club, you'll find information about events, promotions, the location of our venues, and much more. Check your points and redeem them.",
       "highlights": ["Hybrid App"],
       "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share",
-      "image": "/images/codere/latam.png"
+      "image": "/images/codere/latam.webp"
     },
     {
       "name": "Push Agent",
       "isActive": true,
       "description": "Push notification agent. It includes an embedded server, a database, and a system to send push notifications completely free of charge.",
       "highlights": ["Backend", "Java & Angular"],
-      "image": "/images/pushagent/logo.png"
+      "image": "/images/pushagent/logo.webp"
     },
     {
       "name": "LTA+",
@@ -38,7 +38,7 @@
       "description": "I am involved in developing an aerospace calculator app for military inflight operations.",
       "highlights": ["Hybrid App", ".a/.dll usage"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
-      "image": "/images/airbus/icon.png"
+      "image": "/images/airbus/icon.webp"
     },
     {
       "name": "Demiurge",
@@ -73,7 +73,7 @@
       "description": "A website for the Atmospheric Black Metal band RAZAK. It was in production for a few years.",
       "highlights": ["Firebase", "Angular"],
       "github": "https://github.com/N0M4D-D3V/rainclouds-webapp",
-      "image": "/images/razak/logo.png"
+      "image": "/images/razak/logo.webp"
     }
   ]
 }

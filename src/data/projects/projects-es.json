@@ -15,7 +15,7 @@
       "description": "Únete, sube tus apuestas y consigue puntos que podrás canjear por fantásticos regalos. Además si en tu comunidad está disponible, podrás cerrar tus apuestas anticipadamente y tener el control de todos tus tickets desde la app.",
       "highlights": ["Hybrid App"],
       "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share",
-      "image": "/images/codere/es.png"
+      "image": "/images/codere/es.webp"
     },
     {
       "name": "Codere LATAM",
@@ -23,14 +23,14 @@
       "description": "En el Club Codere encontrarás información sobre eventos, promociones y la ubicación de nuestras salas y mucho más. Consulta tus puntos y canjéalos.",
       "highlights": ["Hybrid App"],
       "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share",
-      "image": "/images/codere/latam.png"
+      "image": "/images/codere/latam.webp"
     },
     {
       "name": "Push Agent",
       "isActive": true,
       "description": "Agente de notificaciones push. Contiene un servidor embebido, una base de datos y un sistema para lanzar notificaciones push de forma totalmente gratuita.",
       "highlights": ["Backend", "Java & Angular"],
-      "image": "/images/pushagent/logo.png"
+      "image": "/images/pushagent/logo.webp"
     },
     {
       "name": "LTA+",
@@ -38,7 +38,7 @@
       "description": "I am involved in developing an aerospace calculator app for military inflight operations.",
       "highlights": ["Hybrid App", ".a/.dll usage"],
       "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
-      "image": "/images/airbus/icon.png"
+      "image": "/images/airbus/icon.webp"
     },
     {
       "name": "Demiurge",
@@ -73,7 +73,7 @@
       "description": "Una página web para la banda de Black Metal Atmosférico RAZAK. Llegó a estar en producción durante unos años",
       "highlights": ["Firebase", "Angular"],
       "github": "https://github.com/N0M4D-D3V/rainclouds-webapp",
-      "image": "/images/razak/logo.png"
+      "image": "/images/razak/logo.webp"
     }
   ]
 }
