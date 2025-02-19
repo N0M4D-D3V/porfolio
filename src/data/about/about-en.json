@@ -1,22 +1,22 @@
 {
   "history": {
-    "title": "My Story",
+    "title": "Story",
     "paragraphs": [
-      "In 2020, I started in the tech industry. I have worked for large companies such as Merlin Properties, Airbus Defence And Space, and Codere NEWCO. I have always held roles as a cross-platform developer specializing in multiplatform applications. I have done it all: hybrid and web applications, setting up servers, automation scripts, backends...",
-      "About me: I like computers, music, and fitness. I have always been creative, analytical, and a bit restless. If you want to know more about me, I invite you to visit my blog. I'm sure you'll find interesting articles.",
-      "In 2025, I will publish my applications and try to monetize them. In fact, I have a fitness app that is about to be released... What I am sure of is that one day, I will be able to make a living from software without relying on third-party companies.",
-      "Freedom is within reach of any programmer, as many before have proven. You just have to take it."
+      "In 2020, I started in the tech industry. Since then, I have worked for large companies such as Merlin Properties, Airbus Defence And Space, and Codere NEWCO. I have always held positions as a multidisciplinary developer/analyst specializing in cross-platform applications. I've done it all: hybrid and web applications, desktop applications, team management, setting up servers, automation scripts, backends...",
+      "About me: I like computing, music, and fitness. I've always been creative, analytical, and intellectually curious. If you want to know more about me, I invite you to visit my blog. I'm sure you'll find interesting articles.",
+      "In 2025, I will publish my applications and try to monetize them. In fact, I have a fitness app that is about to launch... My current goal is to make a living from software without depending on third-party companies.",
+      "Freedom is within reach of any programmer, as many before have demonstrated. You just have to take it."
     ]
   },
   "skills": {
-    "title": "My Skills",
+    "title": "Skills",
     "description": [
-      "My main expertise is software development, focused on web development and cross-platform applications. I am also fully capable of developing any other type of software if necessary: process automation, backend, CMS...",
-      "If you want to learn more about my work, I invite you to visit the projects section of this website. There, you will find all the projects I have completed to date, both professional and personal. There are even links so you can check them out."
+      "I have been in software development for many years, focusing on web development and, above all, cross-platform applications. I am also fully capable of developing any other type of software: process automation, backend, CMS, desktop applications...",
+      "If you want to learn more about my work, I invite you to visit the projects section of this website. There, you will find all the projects I have completed to date, both professional and personal. Many have links so you can check them out."
     ],
     "cards": [
       {
-        "title": "Web",
+        "title": "web",
         "icon": "Web",
         "stack": [
           "Angular",
@@ -30,16 +30,16 @@
         ]
       },
       {
-        "title": "Hybrid",
+        "title": "híbrido",
         "icon": "Hybrid",
         "stack": [
           "Ionic",
           "Capacitor",
           "XCode",
+          "Android Studio",
           "Electron",
           "Native Plugins",
           "Swift",
-          "Kotlin",
           "Java"
         ]
       },

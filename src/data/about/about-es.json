@@ -1,18 +1,18 @@
 {
   "history": {
-    "title": "Mi Historia",
+    "title": "Historia",
     "paragraphs": [
-      "En 2020 empecé en el sector tecnológico. He trabajado para grandes empresas como Merlin Properties, Airbus Defence And Space o Codere NEWCO. Siempre ocupando cargos como desarrollador transversal especializado en aplicaciones multiplataforma. He hecho de todo: aplicaciones híbridas y web, montar servidores, scripts de automatización, backends ...",
-      "Con respecto a mi: me gusta la informática, la música y el fitness. Siempre he sido creativo, analítico y un poco inquieto. Si quieres saber más sobre mi, te invito a visitar mi blog. Seguro que encuentras articulos interesantes.",
-      "En 2025 publicaré mis aplicaciones y trataré de monetizarlas. De hecho, tengo una aplicación fitness que está a punto de salir... Lo que tengo claro es que algún día podré vivir del software sin depender de empresas de terceros.",
+      "En 2020 empecé en el sector tecnológico. Deste entonces, he trabajado para grandes empresas como Merlin Properties, Airbus Defence And Space o Codere NEWCO. Siempre he ocupando cargos como desarrollador/analista multidisciplinar especializado en aplicaciones multiplataforma. He hecho de todo: aplicaciones híbridas y web, aplicaciones de escritorio, gestión de equipos, montar servidores, scripts de automatización, backends...",
+      "Con respecto a mi: me gusta la informática, la música y el fitness. Siempre he sido creativo, analítico y e intelectualmente inquieto. Si quieres saber más sobre mi, te invito a visitar mi blog. Seguro que encuentras articulos interesantes.",
+      "En 2025 publicaré mis aplicaciones y trataré de monetizarlas. De hecho, tengo una aplicación fitness que está a punto de salir... Mi objetivo actual e vivir del software sin depender de empresas de terceros.",
       "La libertad está al alcance de cualquier programador, como muchos antes han demostrado. Tan solo hay que cogerla."
     ]
   },
   "skills": {
-    "title": "Mis Habilidades",
+    "title": "Habilidades",
     "description": [
-      "Mi principal competencia es el desarrollo de software, centrado en desarrollo web y aplicaciones multiplataforma. También soy plenamente capáz de desarrollar cualquier otro tipo de software si es necesario: automatización de procesos, backend, CMS ...",
-      "Si quieres conocer mejor mi trabajo, te invito a visitar la sección de proyectos de esta web. Allí están todos los proyectos que he realizado hasta la fecha, tanto profesionales como personales. Incluso hay enlaces para que puedas visitarlos."
+      "Llevo muchos años en el desarrollo de software, centrado en desarrollo web y, sobre todo, en aplicaciones multiplataforma. También soy plenamente capáz de desarrollar cualquier otro tipo de software: automatización de procesos, backend, CMS, aplicaciones de escritorio...",
+      "Si quieres conocer mejor mi trabajo, te invito a visitar la sección de proyectos de esta web. Allí están todos los proyectos que he realizado hasta la fecha, tanto profesionales como personales. Muchos tienen enlaces para que puedas visitarlos."
     ],
     "cards": [
       {
@@ -36,10 +36,10 @@
           "Ionic",
           "Capacitor",
           "XCode",
+          "Android Studio",
           "Electron",
           "Native Plugins",
           "Swift",
-          "Kotlin",
           "Java"
         ]
       },

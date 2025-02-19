@@ -4,7 +4,7 @@
 
 ### About
 
-- [ ] Review About text (en/es)
+- [x] Review About text (en/es)
 - [ ] Review About UX
 
 ### Projects
@@ -14,8 +14,8 @@
 
 ### Blog (main)
 
-- [ ] Add preview image
 - [x] Add tags
+- [ ] Add preview image
 - [ ] Add filter by tag
 - [ ] Add searchbar
 - [ ] Add pagination
