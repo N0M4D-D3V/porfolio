@@ -15,7 +15,7 @@
 ### Blog (main)
 
 - [ ] Add preview image
-- [ ] Add tags
+- [x] Add tags
 - [ ] Add filter by tag
 - [ ] Add searchbar
 - [ ] Add pagination

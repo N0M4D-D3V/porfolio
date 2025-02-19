@@ -38,7 +38,12 @@ const sortedPost = allPosts.reverse();
               <div class="post-item">
                 <h2>/> {post.frontmatter.title}</h2>
                 <p>{post.frontmatter.description}</p>
+
                 <div class="post-item-footer">
+                  {post.frontmatter.tags &&
+                    post.frontmatter.tags.split(",").map((tag: string) => {
+                      return <span class="tag">{tag}</span>;
+                    })}
                   <span class="post-item-date">
                     {post.frontmatter.publishDate}
                   </span>
@@ -61,6 +66,16 @@ const sortedPost = allPosts.reverse();
 
   p {
     margin-top: 15px;
+  }
+
+  .tag {
+    border-radius: 6px;
+    background: #eee;
+    color: #444;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    margin-right: 0.5rem;
   }
 
   .post-item-date {
