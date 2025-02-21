@@ -1,17 +1,17 @@
 ---
-import "src/styles/global.css";
+import "@styles/global.css";
 
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import Hero from "@/components/cv/Hero.astro";
-import Experience from "@/components/cv/Experience.astro";
-import Education from "@/components/cv/Education.astro";
-import Projects from "@/components/projects/Projects.astro";
-import Skills from "@/components/cv/Skills.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Hero from "@components/cv/Hero.astro";
+import Experience from "@components/cv/Experience.astro";
+import Education from "@components/cv/Education.astro";
+import Projects from "@components/projects/Projects.astro";
+import Skills from "@components/cv/Skills.astro";
 
 import enCV from "@pub/database/cv/cv-en.json";
-import enProjects from "@/data/projects/projects-en.json";
 import esCV from "@pub/database/cv/cv-es.json";
-import esProjects from "@/data/projects/projects-es.json";
+import enProjects from "@data/projects/projects-en.json";
+import esProjects from "@data/projects/projects-es.json";
 
 const { lang } = Astro.props;
 

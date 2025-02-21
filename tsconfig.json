@@ -5,6 +5,10 @@
     "paths": {
       "@/*": ["src/*"],
       "@pub/*": ["public/*"],
+      "@utils/*": ["src/utils/*"],
+      "@styles/*": ["src/styles/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@data/*": ["src/data/*"],
       "@components/*": ["src/components/*"],
       "@common-components/*": ["src/components/common/*"],
       "@interfaces/*": ["src/interfaces/*"],

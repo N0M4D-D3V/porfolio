@@ -1,14 +1,14 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import Bio from "@/components/Bio.astro";
-import getPostData from "@/utils/getPostData";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Bio from "@components/Bio.astro";
+import getPostData from "@utils/getPostData";
 
 const lan = "en";
 
-export async function getStaticPaths(): any {
+export async function getStaticPaths(): Promise<any> {
   const allPosts = await Astro.glob(`../../../data/blog-posts/en/*.md`);
 
-  return allPosts.map((p) => ({
+  return allPosts.map((p: any) => ({
     params: { slug: p.file.split("/").pop().split(".").shift() },
     props: { post: p },
   }));
