@@ -8,7 +8,7 @@ const { skills } = Astro.props;
 <Section>
   <ul>
     {
-      skills?.map(({ name }) => {
+      skills?.map(({ name }: { name: string }) => {
         const Icon = SKILLS_ICONS[name];
 
         return (
@@ -32,7 +32,7 @@ const { skills } = Astro.props;
     align-items: center;
     background: #eee;
     border-radius: 6px;
-    color: black;
+    color: var(--primary-color-accent);
     display: flex;
     font-size: 0.8rem;
     font-weight: 500;

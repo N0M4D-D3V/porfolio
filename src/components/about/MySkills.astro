@@ -12,12 +12,18 @@ const { skills } = Astro.props;
     })
   }
 
-  <CardList cards={skills.cards} />
+  <div>
+    <CardList cards={skills.cards} />
+  </div>
 </Section>
 
 <style>
   p {
     margin-bottom: 2%;
     padding-left: 2%;
+  }
+
+  div {
+    margin: 3em 0 0 0;
   }
 </style>

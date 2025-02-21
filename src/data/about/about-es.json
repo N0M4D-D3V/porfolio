@@ -26,7 +26,8 @@
           "Bootstrap",
           "Node",
           "TypeScript",
-          "JavaScript"
+          "JavaScript",
+          "AssemblyScript"
         ]
       },
       {
@@ -54,7 +55,8 @@
           "Allure",
           "Jasmine",
           "WDIO",
-          "Appium"
+          "Appium",
+          "Selenium"
         ]
       }
     ]

@@ -56,9 +56,11 @@ const { cards = [] } = Astro.props;
 
   article header {
     flex: 1;
+    color: var(--primary-color-accent);
   }
 
   article h3 {
+    color: var(--primary-color) !important;
     margin-bottom: 4px;
     text-align: center;
   }
@@ -84,6 +86,7 @@ const { cards = [] } = Astro.props;
   footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 4px;
     font-size: 0.6rem;
   }
@@ -91,7 +94,7 @@ const { cards = [] } = Astro.props;
   footer span {
     border-radius: 6px;
     background: #eee;
-    color: #444;
+    color: var(--primary-color);
     font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;

@@ -9,7 +9,7 @@ const { education } = Astro.props;
   <ul>
     {
       education?.map(
-        ({ institution, startDate, endDate, area, summary, skills }) => {
+        ({ institution, startDate, endDate, area, summary, skills }: any) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Current";
@@ -29,7 +29,7 @@ const { education } = Astro.props;
                 <footer>
                   <h4> {area} </h4>
 
-                  {summary.map((text) => {
+                  {summary.map((text: string) => {
                     return <p class="ps-5">{text}</p>;
                   })}
                   <Skills dataset={skills} />
@@ -51,7 +51,12 @@ const { education } = Astro.props;
   }
 
   article h3 {
+    color: var(--primary-color-accent);
     font-weight: 500;
+  }
+
+  article h4 {
+    color: var(--primary-color-accent);
   }
 
   header {
@@ -62,7 +67,7 @@ const { education } = Astro.props;
   }
 
   time {
-    color: #555;
+    color: var(--primary-color-accent);
     font-size: 0.85rem;
     min-width: 102px;
   }

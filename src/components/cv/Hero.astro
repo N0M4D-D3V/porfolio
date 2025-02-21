@@ -48,7 +48,7 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
           )
         }
         {
-          profiles.map(({ network, url, username }) => {
+          profiles.map(({ network, url, username }: any) => {
             const Icon = SOCIAL_ICONS[network];
 
             return (
@@ -130,7 +130,7 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
   }
 
   footer a {
-    color: #777;
+    color: var(--primary-color);
     display: inline-flex;
     align-items: center;
     justify-content: center;
