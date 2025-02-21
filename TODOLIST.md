@@ -5,7 +5,7 @@
 ### About
 
 - [x] Review About text (en/es)
-- [ ] Review About UX
+- [x] Review About UX
 
 ### Projects
 
@@ -15,10 +15,10 @@
 ### Blog (main)
 
 - [x] Add tags
-- [ ] Add preview image
-- [ ] Add filter by tag
 - [ ] Add searchbar
 - [ ] Add pagination
+- [ ] Add filter by tag
+- [ ] Add preview image (?)
 
 ### Blog (article)
 
