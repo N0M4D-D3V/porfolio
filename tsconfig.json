@@ -4,7 +4,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@pub/*": ["public/*"]
+      "@pub/*": ["public/*"],
+      "@components/*": ["src/components/*"],
+      "@common-components/*": ["src/components/common/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@icons/*": ["src/icons/*"]
     }
   }
 }

@@ -1,0 +1,43 @@
+---
+import { type Project } from "@interfaces/project.interface";
+
+import Section from "@common-components/Section.astro";
+import FlipCard from "./FlipCard.astro";
+
+const { projects, title = "" } = Astro.props;
+---
+
+<Section title={title}>
+  <ul>
+    {
+      projects
+        ?.sort(
+          ({ isActive: activeA = false }, { isActive: activeB = false }) =>
+            Number(activeB) - Number(activeA)
+        )
+        ?.map((project: Project) => {
+          return (
+            <li>
+              <FlipCard project={project} />
+            </li>
+          );
+        })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-inline: -16px;
+  }
+
+  @media (width <= 700px) {
+    ul {
+      margin-inline: 0px;
+      gap: 2%;
+    }
+  }
+</style>

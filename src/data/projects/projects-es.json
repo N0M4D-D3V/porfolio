@@ -1,4 +1,8 @@
 {
+  "description": [
+    "A lo largo de mi trayectoria como programador, he trabajado en numerosos proyectos tanto personales como profesionales. Considero fundamental que un programador tenga siempre proyectos personales en los que involucrarse, ya que muchas veces el conocimiento adquirido en uno puede adaptarse y aplicarse en otro.",
+    "Detrás de cada tarjeta encontrarás información sobre mis funciones y los aspectos más relevantes de cada proyecto. También tendrás acceso a enlaces de GitHub para explorar el código, vínculos directos al producto, detalles sobre las tecnologías utilizadas y mi rol dentro del desarrollo."
+  ],
   "projects": [
     {
       "name": "Fitness Hub",

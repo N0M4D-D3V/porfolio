@@ -9,7 +9,7 @@
 
 ### Projects
 
-- [ ] Add little text main description (en/es) (?)
+- [x] Add little text main description (en/es) (?)
 - [ ] Review Project descriptions (en/es)
 
 ### Blog (main)

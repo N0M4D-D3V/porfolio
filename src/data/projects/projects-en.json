@@ -1,4 +1,8 @@
 {
+  "description": [
+    "Throughout my journey as a programmer, I have worked on numerous personal and professional projects. I believe it is essential for a programmer to always have personal projects to work on, as the knowledge gained from one project can often be adapted and applied to another.",
+    "Behind each card, you'll find details about my role and the most relevant aspects of each project. You'll also have access to GitHub links to explore the code, direct links to the product itself, information about the technologies used, and my contribution to the development."
+  ],
   "projects": [
     {
       "name": "Fitness Hub",
