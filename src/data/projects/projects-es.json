@@ -1,83 +1,174 @@
 {
   "description": [
-    "A lo largo de mi trayectoria como programador, he trabajado en numerosos proyectos tanto personales como profesionales. Considero fundamental que un programador tenga siempre proyectos personales en los que involucrarse, ya que muchas veces el conocimiento adquirido en uno puede adaptarse y aplicarse en otro.",
-    "Detrás de cada tarjeta encontrarás información sobre mis funciones y los aspectos más relevantes de cada proyecto. También tendrás acceso a enlaces de GitHub para explorar el código, vínculos directos al producto, detalles sobre las tecnologías utilizadas y mi rol dentro del desarrollo."
+    "A lo largo de mi carrera como programador, he trabajado en numerosos proyectos personales y profesionales. Creo que es esencial que un programador siempre tenga proyectos personales en los que involucrarse, ya que el conocimiento adquirido en uno puede adaptarse y aplicarse en otro.",
+    "Detrás de cada tarjeta, encontrarás información sobre mis roles y los aspectos más relevantes de cada proyecto. También tendrás acceso a enlaces de GitHub para explorar el código, enlaces directos al producto, detalles sobre las tecnologías utilizadas y mi papel en el desarrollo."
   ],
   "projects": [
     {
       "name": "Fitness Hub",
       "isActive": true,
-      "description": "Rastrea agua, pasos, peso y suplementos. Gratis, sin anuncios y 100% offline. ¡Haz del fitness un hábito fácil y accesible!",
-      "highlights": ["Hybrid App"],
+      "description": "Registra la ingesta de agua, pasos, peso y suplementos. Gratis, sin anuncios y 100% offline. ¡Haz del fitness un hábito fácil y accesible!",
+      "highlights": ["Aplicación Híbrida"],
       "url": "/es/fitness-hub",
-      "github": "https://github.com/N0M4D-D3V/fitness-tracker",
+      "image": "/images/fitness-hub/app-icon.svg"
+    },
+    {
+      "name": "Pedometer",
+      "isActive": true,
+      "description": "Relacionado con Fitness Hub. Plugin personalizado de Capacitor para conteo de pasos (solo compatible con Android).",
+      "highlights": ["Aplicación Híbrida", "Capacitor", "Java"],
+      "url": "/es/fitness-hub",
       "image": "/images/fitness-hub/app-icon.svg"
     },
     {
       "name": "Mi Codere",
       "isActive": true,
-      "description": "Únete, sube tus apuestas y consigue puntos que podrás canjear por fantásticos regalos. Además si en tu comunidad está disponible, podrás cerrar tus apuestas anticipadamente y tener el control de todos tus tickets desde la app.",
-      "highlights": ["Hybrid App"],
+      "description": "Únete, aumenta tus apuestas y gana puntos para canjear por fantásticas recompensas. Si está disponible en tu región, también puedes cerrar apuestas anticipadamente y gestionar todos tus tickets desde la app.",
+      "highlights": ["Aplicación Híbrida"],
       "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share",
       "image": "/images/codere/es.webp"
     },
     {
       "name": "Codere LATAM",
       "isActive": true,
-      "description": "En el Club Codere encontrarás información sobre eventos, promociones y la ubicación de nuestras salas y mucho más. Consulta tus puntos y canjéalos.",
-      "highlights": ["Hybrid App"],
+      "description": "En Club Codere encontrarás información sobre eventos, promociones, ubicaciones de nuestros locales y más. Consulta tus puntos y canjéalos.",
+      "highlights": ["Aplicación Híbrida"],
       "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share",
       "image": "/images/codere/latam.webp"
     },
     {
       "name": "Push Agent",
       "isActive": true,
-      "description": "Agente de notificaciones push. Contiene un servidor embebido, una base de datos y un sistema para lanzar notificaciones push de forma totalmente gratuita.",
-      "highlights": ["Backend", "Java & Angular"],
+      "description": "Agente de notificaciones push con un servidor integrado, una base de datos y un sistema para enviar notificaciones push de forma completamente gratuita.",
+      "highlights": ["Backend", "Java y Angular"],
       "image": "/images/pushagent/logo.webp"
     },
     {
-      "name": "LTA+",
+      "name": "Portfolio",
       "isActive": true,
-      "description": "I am involved in developing an aerospace calculator app for military inflight operations.",
-      "highlights": ["Hybrid App", ".a/.dll usage"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "description": "Mi sitio web personal: un espacio donde muestro todos mis proyectos, genero currículums y comparto mi blog personal.",
+      "highlights": ["AstroJS", "Tailwind", "Svelte", "Markdown"],
+      "url": "https://gg-victor.dev",
+      "github": "https://github.com/N0M4D-D3V/porfolio",
+      "image": "/favicon-dark.svg"
+    },
+    {
+      "name": "Youtube2ivooX",
+      "isActive": true,
+      "description": "Este proyecto se centra en automatizar el proceso de conversión y carga de contenido de YouTube a la plataforma de podcasts iVoox, utilizando Python y Selenium.",
+      "highlights": ["Python", "Selenium", "Automatización"],
+      "github": "https://github.com/N0M4D-D3V/youtube2ivoox-robot",
+      "image": "/images/demiurge/logo.webp"
+    },
+    {
+      "name": "LTA+",
+      "isActive": false,
+      "description": "Desarrollé desde cero una aplicación de cálculo aeroespacial para operaciones militares, liderando el equipo y gestionando desafíos técnicos como plugins personalizados, scripts de automatización y seguridad de archivos.",
+      "highlights": ["Aplicación Híbrida", "Uso de .a/.dll"],
+      "image": "/images/airbus/icon.webp"
+    },
+    {
+      "name": "EFB ZIP",
+      "isActive": false,
+      "description": "Relacionado con LTA+. Soporte para comprimir/descomprimir archivos. Compatible con Electron e iOS.",
+      "highlights": ["Aplicación Híbrida", "Capacitor"],
+      "image": "/images/airbus/icon.webp"
+    },
+    {
+      "name": "EFB Filesystem",
+      "isActive": false,
+      "description": "Relacionado con LTA+. Bifurcación del plugin oficial de Ionic Filesystem. Se añadió soporte para Electron. La API de Filesystem proporciona una interfaz similar a NodeJS para trabajar con archivos en el dispositivo. Totalmente compatible.",
+      "highlights": ["Aplicación Híbrida", "Capacitor"],
+      "image": "/images/airbus/icon.webp"
+    },
+    {
+      "name": "EFB SFTP",
+      "isActive": false,
+      "description": "Relacionado con LTA+. Integración nativa del protocolo SFTP. Compatible solo con Electron e iOS.",
+      "highlights": ["Aplicación Híbrida", "Capacitor"],
+      "image": "/images/airbus/icon.webp"
+    },
+    {
+      "name": "EFB E2E Testsuit",
+      "isActive": false,
+      "description": "Relacionado con LTA+. Herramienta de pruebas de extremo a extremo para sistemas iOS de LTA+. Construida con Appium, Jasmine y WebDriverIO.",
+      "highlights": [
+        "Aplicación Híbrida",
+        "NodeJS",
+        "Appium",
+        "Jasmine",
+        "WebDriverIO"
+      ],
       "image": "/images/airbus/icon.webp"
     },
     {
       "name": "Demiurge",
       "isActive": false,
-      "description": "La palabra 'demiurge' es una palabra derivada de su forma griega dēmiourgós. Significa 'hacedor', 'artesano' o 'productor' y eventualmente 'creador'.",
-      "highlights": ["Angular Library"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "description": "La palabra 'demiurge' proviene del griego 'dēmiourgós', que significa 'hacedor', 'artesano', 'productor' y, en última instancia, 'creador'.",
+      "highlights": ["Biblioteca Angular"],
       "github": "https://github.com/N0M4D-D3V/demiurge",
       "image": "/images/demiurge/logo.webp"
     },
     {
       "name": "Blazebooks",
       "isActive": false,
-      "description": "Te sumergirás en historias donde cada elección que hagas impacta en el desarrollo del guión y el comportamiento de los personajes. Aplicación de novelas interactivas.",
-      "highlights": ["Hybrid App"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "description": "Sumérgete en historias interactivas donde cada elección impacta en la trama y el comportamiento de los personajes.",
+      "highlights": ["Aplicación Híbrida"],
       "github": "https://github.com/N0M4D-D3V/blazebooks-mobile",
       "image": "/images/blazebooks/icon.svg"
     },
     {
       "name": "Blaze Server",
       "isActive": false,
-      "description": "NodeJS/NestJS server para Blazebooks. User, ficheros y gestión de bases de datos.",
+      "description": "Servidor NodeJS/NestJS para Blazebooks: gestión de usuarios, manejo de archivos y administración de bases de datos.",
       "highlights": ["Nest/Node", "Linux"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
       "github": "https://github.com/N0M4D-D3V/blazebooks-server",
       "image": "/images/blazebooks/icon.svg"
     },
     {
       "name": "Rainclouds Web",
       "isActive": false,
-      "description": "Una página web para la banda de Black Metal Atmosférico RAZAK. Llegó a estar en producción durante unos años",
+      "description": "Sitio web para la banda de Atmospheric Black Metal RAZAK, que estuvo en línea durante varios años.",
       "highlights": ["Firebase", "Angular"],
       "github": "https://github.com/N0M4D-D3V/rainclouds-webapp",
       "image": "/images/razak/logo.webp"
+    },
+    {
+      "name": "P4RZ1V4L",
+      "isActive": false,
+      "description": "Entorno experimental basado en consola para probar bots de trading, incorporando algoritmos genéticos y backtesting para optimizar estrategias de inversión.",
+      "highlights": ["Python", "Algoritmos Genéticos", "Backtesting"],
+      "github": "https://github.com/N0M4D-D3V/p4rz1v4l",
+      "image": "/images/other/p4rz1v4l.webp"
+    },
+    {
+      "name": "L4NC3L0T",
+      "isActive": false,
+      "description": "Bot de trading automatizado desarrollado en Python, diseñado para ejecutar estrategias de inversión de manera autónoma.",
+      "highlights": ["Python", "Automatización", "Trading Algorítmico"],
+      "github": "https://github.com/N0M4D-D3V/l4nc3l0t",
+      "image": "/images/other/p4rz1v4l.webp"
+    },
+    {
+      "name": "Retro Games",
+      "isActive": false,
+      "description": "Aplicación de juegos arcade retro desarrollada con Ionic y Phaser, que ofrece una colección de juegos clásicos optimizados para dispositivos móviles.",
+      "highlights": ["Ionic", "Phaser", "TypeScript"],
+      "github": "https://github.com/N0M4D-D3V/arcade-retro-games"
+    },
+    {
+      "name": "Stoic Manager",
+      "isActive": false,
+      "description": "Aplicación de gestión personal inspirada en principios estoicos, que ayuda a los usuarios a organizar sus tareas diarias.",
+      "highlights": ["Angular"],
+      "github": "https://github.com/N0M4D-D3V/stoic-manager"
+    },
+    {
+      "name": "Blazebooks (old)",
+      "isActive": false,
+      "description": "Plataforma de lectura rápida que ofrece una variedad de géneros literarios, lecturas técnicas y libros interactivos, acompañados de música y recomendaciones personalizadas.",
+      "highlights": ["Kotlin", "Android Development", "Multimedia Integration"],
+      "github": "https://github.com/N0M4D-D3V/Blazebooks-old"
     }
   ]
 }

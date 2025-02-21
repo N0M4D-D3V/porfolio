@@ -10,7 +10,6 @@ const { skills } = Astro.props;
     {
       skills?.map(({ name }: { name: string }) => {
         const Icon = SKILLS_ICONS[name];
-
         return (
           <li>
             {Icon && <Icon width="16" height="16" />} <span>{name}</span>

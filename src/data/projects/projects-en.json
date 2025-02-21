@@ -1,22 +1,29 @@
 {
   "description": [
-    "Throughout my journey as a programmer, I have worked on numerous personal and professional projects. I believe it is essential for a programmer to always have personal projects to work on, as the knowledge gained from one project can often be adapted and applied to another.",
-    "Behind each card, you'll find details about my role and the most relevant aspects of each project. You'll also have access to GitHub links to explore the code, direct links to the product itself, information about the technologies used, and my contribution to the development."
+    "Throughout my career as a programmer, I have worked on numerous personal and professional projects. I believe it is essential for a programmer to always have personal projects to engage with, as the knowledge gained from one can often be adapted and applied to another.",
+    "Behind each card, you will find information about my roles and the most relevant aspects of each project. You will also have access to GitHub links to explore the code, direct links to the product, details about the technologies used, and my role in the development."
   ],
   "projects": [
     {
       "name": "Fitness Hub",
       "isActive": true,
-      "description": "Track steps, water, weight & supps offline. Stay healthy with no ads! Your fitness journey starts now!",
-      "highlights": ["Angular & Capacitor"],
+      "description": "Track water intake, steps, weight, and supplements. Free, ad-free, and 100% offline. Make fitness an easy and accessible habit!",
+      "highlights": ["Hybrid App"],
       "url": "/en/fitness-hub",
-      "github": "https://github.com/N0M4D-D3V/fitness-tracker",
+      "image": "/images/fitness-hub/app-icon.svg"
+    },
+    {
+      "name": "Pedometer",
+      "isActive": true,
+      "description": "Fitness Hub-related. Custom Capacitor plugin for step counting (Android only).",
+      "highlights": ["Hybrid App", "Capacitor", "Java"],
+      "url": "/en/fitness-hub",
       "image": "/images/fitness-hub/app-icon.svg"
     },
     {
       "name": "Mi Codere",
       "isActive": true,
-      "description": "Join, raise your bets, and earn points that you can redeem for fantastic rewards. Additionally, if available in your community, you can cash out your bets early and manage all your tickets from the app.",
+      "description": "Join, increase your bets, and earn points to redeem for fantastic rewards. If available in your region, you can also close bets early and manage all your tickets from the app.",
       "highlights": ["Hybrid App"],
       "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share",
       "image": "/images/codere/es.webp"
@@ -24,7 +31,7 @@
     {
       "name": "Codere LATAM",
       "isActive": true,
-      "description": "In the Codere Club, you'll find information about events, promotions, the location of our venues, and much more. Check your points and redeem them.",
+      "description": "In Club Codere, you'll find information about events, promotions, venue locations, and more. Check your points and redeem them.",
       "highlights": ["Hybrid App"],
       "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share",
       "image": "/images/codere/latam.webp"
@@ -32,52 +39,136 @@
     {
       "name": "Push Agent",
       "isActive": true,
-      "description": "Push notification agent. It includes an embedded server, a database, and a system to send push notifications completely free of charge.",
+      "description": "Push notification agent featuring an integrated server, a database, and a system to send push notifications completely free of charge.",
       "highlights": ["Backend", "Java & Angular"],
       "image": "/images/pushagent/logo.webp"
     },
     {
-      "name": "LTA+",
+      "name": "Portfolio",
       "isActive": true,
-      "description": "I am involved in developing an aerospace calculator app for military inflight operations.",
+      "description": "My personal website: a space where I showcase all my projects, generate resumes, and share my personal blog.",
+      "highlights": ["AstroJS", "Tailwind", "Svelte", "Markdown"],
+      "url": "https://gg-victor.dev",
+      "github": "https://github.com/N0M4D-D3V/porfolio",
+      "image": "/favicon-dark.svg"
+    },
+    {
+      "name": "Youtube2ivooX",
+      "isActive": true,
+      "description": "This project focuses on automating the process of converting and uploading YouTube content to the iVoox podcast platform using Python and Selenium.",
+      "highlights": ["Python", "Selenium", "Automation"],
+      "github": "https://github.com/N0M4D-D3V/youtube2ivoox-robot",
+      "image": "/images/demiurge/logo.webp"
+    },
+    {
+      "name": "LTA+",
+      "isActive": false,
+      "description": "Developed an aerospace calculation application for military operations from scratch, leading the team and managing technical challenges like custom plugins, automation scripts, and file security.",
       "highlights": ["Hybrid App", ".a/.dll usage"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "image": "/images/airbus/icon.webp"
+    },
+    {
+      "name": "EFB ZIP",
+      "isActive": false,
+      "description": "LTA+ related. Zip/Unzip file support. Electron and iOS compatible.",
+      "highlights": ["Hybrid App", "Capacitor"],
+      "image": "/images/airbus/icon.webp"
+    },
+    {
+      "name": "EFB Filesystem",
+      "isActive": false,
+      "description": "LTA+ related. Fork of the official Ionic Filesystem plugin. Electron support added. The Filesystem API provides a NodeJS-like API for working with files on the device. Fully supported.",
+      "highlights": ["Hybrid App", "Capacitor"],
+      "image": "/images/airbus/icon.webp"
+    },
+    {
+      "name": "EFB SFTP",
+      "isActive": false,
+      "description": "LTA+ related. Native SFTP protocol integration. Supports Electron and iOS only.",
+      "highlights": ["Hybrid App", "Capacitor"],
+      "image": "/images/airbus/icon.webp"
+    },
+    {
+      "name": "EFB E2E Testsuit",
+      "isActive": false,
+      "description": "LTA+ related. End-to-end testing tool for LTA+ iOS systems. Built with Appium, Jasmine, and WebDriverIO.",
+      "highlights": [
+        "Hybrid App",
+        "NodeJS",
+        "Appium",
+        "Jasmine",
+        "WebDriverIO"
+      ],
       "image": "/images/airbus/icon.webp"
     },
     {
       "name": "Demiurge",
       "isActive": false,
-      "description": "The word 'demiurge' is a word derived form of the Greek dēmiourgós. It was a noun meaning 'craftsman' or 'artisan', but gradually came to mean 'producer' and eventually 'creator'.",
+      "description": "The word 'demiurge' comes from the Greek 'dēmiourgós,' meaning 'maker,' 'craftsman,' 'producer,' and ultimately 'creator.'",
       "highlights": ["Angular Library"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
       "github": "https://github.com/N0M4D-D3V/demiurge",
       "image": "/images/demiurge/logo.webp"
     },
     {
       "name": "Blazebooks",
       "isActive": false,
-      "description": "You'll immerse yourself in stories where every choice you make impacts the plot development and the fate of the characters. Interactive novels platform.",
-      "highlights": ["Angular & Capacitor"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
+      "description": "Immerse yourself in interactive stories where every choice impacts the plot and character behavior.",
+      "highlights": ["Hybrid App"],
       "github": "https://github.com/N0M4D-D3V/blazebooks-mobile",
       "image": "/images/blazebooks/icon.svg"
     },
     {
       "name": "Blaze Server",
       "isActive": false,
-      "description": "NodeJS/NestJS server for Blazebooks app. User, files and database management.",
+      "description": "NodeJS/NestJS server for Blazebooks: user management, file handling, and database management.",
       "highlights": ["Nest/Node", "Linux"],
-      "url": "https://github.com/N0M4D-D3V/N0M4D-D3V",
       "github": "https://github.com/N0M4D-D3V/blazebooks-server",
       "image": "/images/blazebooks/icon.svg"
     },
     {
       "name": "Rainclouds Web",
       "isActive": false,
-      "description": "A website for the Atmospheric Black Metal band RAZAK. It was in production for a few years.",
+      "description": "Website for the Atmospheric Black Metal band RAZAK, which was live for several years.",
       "highlights": ["Firebase", "Angular"],
       "github": "https://github.com/N0M4D-D3V/rainclouds-webapp",
       "image": "/images/razak/logo.webp"
+    },
+    {
+      "name": "P4RZ1V4L",
+      "isActive": false,
+      "description": "Experimental console-based environment for testing trading bots, featuring genetic algorithms and backtesting for optimizing investment strategies.",
+      "highlights": ["Python", "Genetic Algorithms", "Backtesting"],
+      "github": "https://github.com/N0M4D-D3V/p4rz1v4l",
+      "image": "/images/other/p4rz1v4l.webp"
+    },
+    {
+      "name": "L4NC3L0T",
+      "isActive": false,
+      "description": "Automated trading bot built in Python, designed to execute investment strategies autonomously.",
+      "highlights": ["Python", "Automation", "Algorithmic Trading"],
+      "github": "https://github.com/N0M4D-D3V/l4nc3l0t",
+      "image": "/images/other/p4rz1v4l.webp"
+    },
+    {
+      "name": "Retro Games",
+      "isActive": false,
+      "description": "Retro arcade game app developed with Ionic and Phaser, offering a collection of classic games optimized for mobile devices.",
+      "highlights": ["Ionic", "Phaser", "TypeScript"],
+      "github": "https://github.com/N0M4D-D3V/arcade-retro-games"
+    },
+    {
+      "name": "Stoic Manager",
+      "isActive": false,
+      "description": "Personal management app inspired by Stoic principles, helping users organize their daily tasks.",
+      "highlights": ["Angular"],
+      "github": "https://github.com/N0M4D-D3V/stoic-manager"
+    },
+    {
+      "name": "Blazebooks (old)",
+      "isActive": false,
+      "description": "Speed reading platform offering a variety of literary genres, technical readings, and interactive books, accompanied by music and personalized recommendations.",
+      "highlights": ["Kotlin", "Android Development", "Multimedia Integration"],
+      "github": "https://github.com/N0M4D-D3V/Blazebooks-old"
     }
   ]
 }
