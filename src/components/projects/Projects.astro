@@ -1,43 +1,74 @@
 ---
+import "swiper/css/bundle";
+
 import { type Project } from "@interfaces/project.interface";
 
 import Section from "@common-components/Section.astro";
-import FlipCard from "./FlipCard.astro";
+import Card from "./Card.astro";
 
 const { projects, title = "" } = Astro.props;
 ---
 
 <Section title={title}>
-  <ul>
-    {
-      projects
-        ?.sort(
-          ({ isActive: activeA = false }, { isActive: activeB = false }) =>
-            Number(activeB) - Number(activeA)
-        )
-        ?.map((project: Project) => {
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      {
+        projects.map((project: Project) => {
           return (
-            <li>
-              <FlipCard project={project} />
-            </li>
+            <div class="swiper-slide">
+              <Card project={project} />
+            </div>
           );
         })
-    }
-  </ul>
+      }
+    </div>
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </Section>
 
+<script>
+  import Swiper from "swiper/bundle";
+  const swiper = new Swiper(".swiper", {
+    effect: "cube",
+    cubeEffect: {
+      slideShadows: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
 <style>
-  ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-inline: -16px;
+  .swiper {
+    --swiper-pagination-color: var(--primary-color);
+    --swiper-navigation-color: var(--primary-color);
+    --swiper-pagination-bottom: -40px;
+    --swiper-navigation-sides-offset: 10px;
+    height: 60vh;
   }
 
-  @media (width <= 700px) {
-    ul {
-      margin-inline: 0px;
-      gap: 2%;
+  .swiper-button-prev,
+  .swiper-button-next {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.2);
     }
+  }
+  .swiper-slide {
+    padding-inline: 80px;
+    padding-bottom: 40px;
+    padding-top: 10px;
   }
 </style>

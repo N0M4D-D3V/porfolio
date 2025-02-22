@@ -1,0 +1,248 @@
+---
+import { type Project } from "@interfaces/project.interface";
+
+import Skills from "@components/cv/Skills.astro";
+import GitHub from "@icons/GitHub.astro";
+
+const { project }: Project = Astro.props;
+---
+
+<article>
+  <header>
+    <h3>
+      {project.name}
+    </h3>
+    <div class="header-card">
+      {
+        project.image && (
+          <div
+            style="min-height: 150px; min-width: 150px;"
+            class={project.url ? "" : "disabled"}
+          >
+            <a href={project.url} target="_blank" title={`${project.name}`}>
+              <img
+                class="logo-img"
+                src={project.image}
+                alt="project logo image"
+              />
+            </a>
+          </div>
+        )
+      }
+
+      <p>{project.description}</p>
+    </div>
+  </header>
+  <ul class="subproject-list">
+    {
+      project.children &&
+        project.children.map((subproject: Project) => {
+          return (
+            <li class="subproject-card">
+              <header>
+                <h3>{subproject.name}</h3>
+                {subproject.image && (
+                  <div
+                    style="margin-top: 10px;margin-bottom: 10px;"
+                    class={subproject.url ? "" : "disabled"}
+                  >
+                    <a
+                      href={subproject.url}
+                      target="_blank"
+                      title={`${subproject.name}`}
+                    >
+                      <img
+                        class="logo-img"
+                        src={subproject.image}
+                        alt="subproject logo image"
+                      />
+                    </a>
+                  </div>
+                )}
+              </header>
+              <body>
+                <p>{subproject.description}</p>
+              </body>
+              <footer>
+                {subproject.github && (
+                  <a
+                    class="github-code-link"
+                    href={subproject.github}
+                    target="_blank"
+                    title={`${subproject.name}`}
+                  >
+                    <GitHub />
+                  </a>
+                )}
+                {subproject.highlights && (
+                  <Skills skills={subproject.highlights} />
+                )}
+              </footer>
+            </li>
+          );
+        })
+    }
+  </ul>
+</article>
+<footer class="main-footer">
+  {
+    project.github && (
+      <a
+        class="github-code-link"
+        href={project.github}
+        target="_blank"
+        title={`${project.name}`}
+      >
+        <GitHub />
+      </a>
+    )
+  }
+</footer>
+
+<style>
+  .header-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+
+    padding-bottom: 10px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-inline: -16px;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .subproject-card {
+    background-color: var(--card-bg-color);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (width <= 740px) {
+    ul {
+      margin-inline: 0px;
+      gap: 2%;
+    }
+  }
+
+  .disabled {
+    .logo-img:hover,
+    a:hover .logo-img {
+      border: solid 5px var(--text-secondary);
+      box-shadow: none;
+    }
+  }
+
+  .logo-img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+    border: solid 5px var(--text-secondary);
+    border-radius: 25px;
+    background-color: whitesmoke;
+
+    transition:
+      border 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      border: solid var(--primary-color) 3px;
+      box-shadow: var(--primary-box-shadow);
+    }
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: row-reverse;
+    display: flex;
+    font-size: 0.6rem;
+  }
+
+  .main-footer {
+    position: relative;
+    bottom: 40px;
+    padding-right: 10px;
+  }
+
+  article {
+    cursor: default;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--background-body);
+
+    box-shadow: var(--primary-box-shadow);
+
+    header {
+      max-height: 40%;
+      width: 100%;
+    }
+
+    .subproject-list {
+      overflow-x: hidden;
+      overflow-y: auto;
+      max-height: 80%;
+      width: 100%;
+    }
+
+    body {
+    }
+
+    h3 {
+      margin-bottom: 4px;
+      color: var(--primary-color);
+    }
+
+    p {
+      height: 100%;
+      font-size: 0.75rem;
+      line-height: 1.2rem;
+      margin-bottom: 4px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+
+      .logo-img {
+        border: solid var(--primary-color) 3px;
+        box-shadow: var(--primary-box-shadow);
+      }
+    }
+
+    transition:
+      box-shadow 0.3s ease,
+      border 0.3s ease;
+  }
+
+  .github-code-link {
+    margin-left: 10px;
+  }
+</style>

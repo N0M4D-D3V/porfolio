@@ -6,4 +6,6 @@ export interface Project {
   isActive?: boolean;
   github?: string;
   image?: string;
+
+  children?: Project[];
 }

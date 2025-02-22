@@ -21,7 +21,7 @@ const { title, description, permalink, current, lang } = Astro.props;
     <div class="layout">
       <Header current={current} lang={lang} />
 
-      <main>
+      <main transition:animate="slide">
         <slot />
       </main>
 

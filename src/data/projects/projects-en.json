@@ -5,170 +5,275 @@
   ],
   "projects": [
     {
-      "name": "Fitness Hub",
-      "isActive": true,
-      "description": "Track water intake, steps, weight, and supplements. Free, ad-free, and 100% offline. Make fitness an easy and accessible habit!",
-      "highlights": ["Hybrid App"],
-      "url": "/en/fitness-hub",
-      "image": "/images/fitness-hub/app-icon.svg"
-    },
-    {
-      "name": "Pedometer",
-      "isActive": true,
-      "description": "Fitness Hub-related. Custom Capacitor plugin for step counting (Android only).",
-      "highlights": ["Hybrid App", "Capacitor", "Java"],
-      "url": "/en/fitness-hub",
-      "image": "/images/fitness-hub/app-icon.svg"
-    },
-    {
-      "name": "Mi Codere",
-      "isActive": true,
-      "description": "Join, increase your bets, and earn points to redeem for fantastic rewards. If available in your region, you can also close bets early and manage all your tickets from the app.",
-      "highlights": ["Hybrid App"],
-      "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share",
-      "image": "/images/codere/es.webp"
-    },
-    {
-      "name": "Codere LATAM",
-      "isActive": true,
-      "description": "In Club Codere, you'll find information about events, promotions, venue locations, and more. Check your points and redeem them.",
-      "highlights": ["Hybrid App"],
-      "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share",
-      "image": "/images/codere/latam.webp"
-    },
-    {
-      "name": "Push Agent",
-      "isActive": true,
-      "description": "Push notification agent featuring an integrated server, a database, and a system to send push notifications completely free of charge.",
-      "highlights": ["Backend", "Java & Angular"],
-      "image": "/images/pushagent/logo.webp"
-    },
-    {
-      "name": "Portfolio",
-      "isActive": true,
-      "description": "My personal website: a space where I showcase all my projects, generate resumes, and share my personal blog.",
-      "highlights": ["AstroJS", "Tailwind", "Svelte", "Markdown"],
-      "url": "https://gg-victor.dev",
-      "github": "https://github.com/N0M4D-D3V/porfolio",
-      "image": "/favicon-dark.svg"
-    },
-    {
-      "name": "Youtube2ivooX",
-      "isActive": true,
-      "description": "This project focuses on automating the process of converting and uploading YouTube content to the iVoox podcast platform using Python and Selenium.",
-      "highlights": ["Python", "Selenium", "Automation"],
-      "github": "https://github.com/N0M4D-D3V/youtube2ivoox-robot",
-      "image": "/images/demiurge/logo.webp"
+      "name": "CODERE NEWCO",
+      "image": "/images/codere/grupocodere.png",
+      "url": "https://www.grupocodere.com",
+      "description": "Responsible for developing applications for the loyalty club. We use a powerful architecture (ARCA) to encapsulate REDUX. I integrated the core part of this architecture myself. I also kept dependencies up to date and integrated native functionalities into plugins to ensure clean and structured code.",
+      "children": [
+        {
+          "name": "Mi Codere",
+          "description": "Improved overall performance using @defer and independent loaders. The app features a communication layer with Electron, reusable components, and animation implementations using CSS, Ionic Animations, and Angular Animations.",
+          "url": "https://play.google.com/store/apps/details?id=codere.club.es&pcampaignid=web_share",
+          "image": "/images/codere/es.webp",
+          "highlights": [
+            { "name": "Hybrid" },
+            { "name": "Electron" },
+            { "name": "Web" },
+            { "name": "Angular" }
+          ]
+        },
+        {
+          "name": "Codere LATAM",
+          "description": "The apps are built on a robust architecture that unifies code across multiple applications in Latin America, making maintenance easier, improving scalability, and reducing development time. Successfully handled push notifications across all scenarios and systems.",
+          "highlights": [
+            { "name": "Hybrid" },
+            { "name": "Ionic" },
+            { "name": "Push Notifications" }
+          ],
+          "url": "https://play.google.com/store/apps/details?id=pa.codere.club&pcampaignid=web_share",
+          "image": "/images/codere/latam.webp"
+        },
+        {
+          "name": "Push Agent",
+          "description": "Developed a push notification management system. It includes a custom-built server, an internal database (Derby), and a mechanism for sending push notifications at no cost. The system uses its own internal communication protocol and exposes endpoints, WebSockets, and file ingestion for integration with external systems.",
+          "highlights": [
+            { "name": "Java" },
+            { "name": "Angular" },
+            { "name": "I+D+i" },
+            { "name": "Server" }
+          ],
+          "image": "/images/pushagent/logo.webp"
+        },
+        {
+          "name": "ARCA",
+          "description": "ARCA (Automatic REDUX Core Architecture) is a technical framework that encapsulates NgRx. I extracted the software into a standalone library and replaced NgRx dependencies with a custom REDUX implementation, making it significantly lighter and faster.",
+          "highlights": [
+            { "name": "NgRx/RxJs" },
+            { "name": "Angular" },
+            { "name": "I+D+i" },
+            { "name": "Architecture" }
+          ],
+          "image": "/images/codere/arca.png"
+        }
+      ]
     },
     {
       "name": "LTA+",
-      "isActive": false,
-      "description": "Developed an aerospace calculation application for military operations from scratch, leading the team and managing technical challenges like custom plugins, automation scripts, and file security.",
-      "highlights": ["Hybrid App", ".a/.dll usage"],
-      "image": "/images/airbus/icon.webp"
+      "description": "Aerospace calculation application for military operations. A technical challenge that led me to take on a leadership role, create custom plugins, develop automation scripts, and implement file security measures.",
+      "image": "/images/airbus/icon.webp",
+      "children": [
+        {
+          "name": "LTA+",
+          "description": "Developed the application from scratch, making key decisions regarding the technical architecture and communication between modules.",
+          "highlights": [
+            { "name": "Hybrid" },
+            { "name": "Angular" },
+            { "name": "Ionic" },
+            { "name": "I+D+i" },
+            { "name": "Architecture" }
+          ]
+        },
+        {
+          "name": "E2E Testsuit",
+          "description": "Own initiative. End-to-end (E2E) testing architecture for iOS applications. Dynamically builds tests based on an Excel file, allowing non-technical staff to modify tests easily.",
+          "highlights": [
+            { "name": "Architecture" },
+            { "name": "I+D+i" },
+            { "name": "Appium" },
+            { "name": "Jasmine" },
+            { "name": "WebDriverIO" }
+          ]
+        },
+        {
+          "name": "Filesystem Fork",
+          "description": "Fork of the official Ionic Filesystem plugin with added support for Electron. The project required file operations on Windows and iOS. Since no suitable alternatives were available, we iterated on the official plugin and added additional functionality.",
+          "highlights": [
+            { "name": "Capacitor" },
+            { "name": "Fork" },
+            { "name": "Electron" },
+            { "name": "iOS" }
+          ]
+        },
+        {
+          "name": "EFB SFTP",
+          "description": "Native implementation of the SFTP (SSH File Transfer Protocol), integrated for both Electron and iOS.",
+          "highlights": [
+            { "name": "Capacitor" },
+            { "name": "I+D+i" },
+            { "name": "Electron" },
+            { "name": "iOS" }
+          ]
+        },
+
+        {
+          "name": "EFB ZIP",
+          "description": "Native plugin for file compression and decompression operations. Supports password management and is implemented for Electron and iOS.",
+          "highlights": [
+            { "name": "Capacitor" },
+            { "name": "Electron" },
+            { "name": "iOS" }
+          ]
+        }
+      ]
     },
     {
-      "name": "EFB ZIP",
-      "isActive": false,
-      "description": "LTA+ related. Zip/Unzip file support. Electron and iOS compatible.",
-      "highlights": ["Hybrid App", "Capacitor"],
-      "image": "/images/airbus/icon.webp"
+      "name": "Fitness Hub",
+      "description": "Hybrid application. Tracks your water intake, steps, weight, and supplements. Free, ad-free, and 100% offline. Make fitness an easy and accessible habit!",
+      "url": "/es/fitness-hub",
+      "image": "/images/fitness-hub/app-icon.svg",
+      "children": [
+        {
+          "name": "Fitness Hub (APP)",
+          "description": "Hybrid tracking, fitness, and health app. I handled the entire process—from design to architecture, including publishing on the app stores. Additionally, I developed a strategy to grow the user base, scale the business, and implement monetization.",
+          "highlights": [{ "name": "Angular" }, { "name": "Ionic" }]
+        },
+        {
+          "name": "Pedometer",
+          "description": "Custom plugin for native layer interaction. Manages step counting (Android-only).",
+          "highlights": [{ "name": "Capacitor" }, { "name": "Java" }]
+        }
+      ]
     },
     {
-      "name": "EFB Filesystem",
-      "isActive": false,
-      "description": "LTA+ related. Fork of the official Ionic Filesystem plugin. Electron support added. The Filesystem API provides a NodeJS-like API for working with files on the device. Fully supported.",
-      "highlights": ["Hybrid App", "Capacitor"],
-      "image": "/images/airbus/icon.webp"
-    },
-    {
-      "name": "EFB SFTP",
-      "isActive": false,
-      "description": "LTA+ related. Native SFTP protocol integration. Supports Electron and iOS only.",
-      "highlights": ["Hybrid App", "Capacitor"],
-      "image": "/images/airbus/icon.webp"
-    },
-    {
-      "name": "EFB E2E Testsuit",
-      "isActive": false,
-      "description": "LTA+ related. End-to-end testing tool for LTA+ iOS systems. Built with Appium, Jasmine, and WebDriverIO.",
-      "highlights": [
-        "Hybrid App",
-        "NodeJS",
-        "Appium",
-        "Jasmine",
-        "WebDriverIO"
-      ],
-      "image": "/images/airbus/icon.webp"
+      "name": "Portfolio",
+      "description": "My personal website: A space where I showcase all my projects, design my resumes, and share opinions and experiences on my blog.",
+      "highlights": ["AstroJS", "Tailwind", "Svelte", "Markdown"],
+      "url": "https://gg-victor.dev",
+      "github": "https://github.com/N0M4D-D3V/porfolio",
+      "image": "/favicon-dark.svg",
+      "children": [
+        {
+          "name": "Porfolio",
+          "description": "Development, design, and deployment. Dynamically generates content based on JSON files, making it highly flexible for adding new experiences, projects, or blog articles.",
+          "highlights": [{ "name": "Astro" }, { "name": "Tailwind" }]
+        },
+        {
+          "name": "Blog",
+          "description": "A place to write about my interests—technology, fitness, fashion, entertainment, and more. Uses Markdown to create posts, ensuring a smooth and convenient writing process.",
+          "highlights": [{ "name": "Markdown" }, { "name": "Writting" }]
+        }
+      ]
     },
     {
       "name": "Demiurge",
-      "isActive": false,
-      "description": "The word 'demiurge' comes from the Greek 'dēmiourgós,' meaning 'maker,' 'craftsman,' 'producer,' and ultimately 'creator.'",
-      "highlights": ["Angular Library"],
-      "github": "https://github.com/N0M4D-D3V/demiurge",
-      "image": "/images/demiurge/logo.webp"
+      "image": "/images/demiurge/logo.webp",
+      "description": "The word 'Demiurge' comes from the Greek 'dēmiourgós' meaning 'maker,' 'artisan,' 'producer,' and ultimately, 'creator.' Demiurge is a set of utilities designed to streamline my workflows and automate processes.",
+      "children": [
+        {
+          "name": "Demiurge",
+          "description": "Component library to accelerate Angular application development, specifically tailored for hybrid applications.",
+          "github": "https://github.com/N0M4D-D3V/demiurge",
+          "highlights": [{ "name": "Angular" }, { "name": "Library" }]
+        },
+        {
+          "name": "Youtube2ivooX",
+          "isActive": true,
+          "description": "Automation of the process for downloading and extracting audio from YouTube, then uploading it to iVoox.",
+          "highlights": [{ "name": "Python" }, { "name": "Selenium" }],
+          "github": "https://github.com/N0M4D-D3V/youtube2ivoox-robot"
+        }
+      ]
     },
     {
       "name": "Blazebooks",
-      "isActive": false,
-      "description": "Immerse yourself in interactive stories where every choice impacts the plot and character behavior.",
-      "highlights": ["Hybrid App"],
-      "github": "https://github.com/N0M4D-D3V/blazebooks-mobile",
-      "image": "/images/blazebooks/icon.svg"
+      "description": "Dive into interactive stories where every choice impacts the plot and character behavior.",
+      "highlights": ["Aplicación Híbrida"],
+      "image": "/images/blazebooks/icon.svg",
+      "children": [
+        {
+          "name": "Blazebooks",
+          "description": "Mobile and web application for reading interactive books. Features a technical architecture designed to interpret interactive stories in an abstract way.",
+          "highlights": [{ "name": "Hybrid" }],
+          "github": "https://github.com/N0M4D-D3V/blazebooks-mobile"
+        },
+        {
+          "name": "Blaze Server",
+          "description": "NodeJS/NestJS server that manages users, handles files, and administers the database. Hosted on a dedicated local PC, separate from the frontend.",
+          "highlights": [{ "name": "Node" }, { "name": "Nest" }],
+          "github": "https://github.com/N0M4D-D3V/blazebooks-server"
+        },
+        {
+          "name": "Blazebooks (old)",
+          "description": "Old application. Native. It was my final degree project. I received top honors.",
+          "highlights": [{ "name": "Kotlin" }, { "name": "Java" }],
+          "github": "https://github.com/N0M4D-D3V/Blazebooks-old"
+        }
+      ]
     },
     {
-      "name": "Blaze Server",
-      "isActive": false,
-      "description": "NodeJS/NestJS server for Blazebooks: user management, file handling, and database management.",
-      "highlights": ["Nest/Node", "Linux"],
-      "github": "https://github.com/N0M4D-D3V/blazebooks-server",
-      "image": "/images/blazebooks/icon.svg"
+      "name": "Trading Bots",
+      "image": "/images/other/p4rz1v4l.webp",
+      "description": "Automation bots for trading strategies.",
+      "children": [
+        {
+          "name": "P4RZ1V4L",
+          "description": "Terminal-based environment for backtesting trading bots. Includes genetic algorithms and other systems to fine-tune input parameters. Uses an architecture that abstracts the backtesting process.",
+          "highlights": [
+            { "name": "Python" },
+            { "name": "Backtest" },
+            { "name": "Architecture" },
+            { "name": "I+D+i" },
+            { "name": "Genetic Algorithms" }
+          ],
+          "github": "https://github.com/N0M4D-D3V/p4rz1v4l"
+        },
+        {
+          "name": "L4NC3L0T",
+          "description": "Automated trading bot. Executes trading strategies autonomously within a terminal environment.",
+          "highlights": [
+            { "name": "Python" },
+            { "name": "Linux" },
+            { "name": "Algorithmic Trading" },
+            { "name": "Automation" }
+          ],
+          "github": "https://github.com/N0M4D-D3V/l4nc3l0t"
+        },
+        {
+          "name": "Trading Bots",
+          "description": "Collection of bots designed to operate with MultiCharts.",
+          "highlights": [{ "name": "C#" }],
+          "github": "https://github.com/N0M4D-D3V/trad-bots"
+        }
+      ]
     },
     {
-      "name": "Rainclouds Web",
-      "isActive": false,
-      "description": "Website for the Atmospheric Black Metal band RAZAK, which was live for several years.",
-      "highlights": ["Firebase", "Angular"],
-      "github": "https://github.com/N0M4D-D3V/rainclouds-webapp",
-      "image": "/images/razak/logo.webp"
-    },
-    {
-      "name": "P4RZ1V4L",
-      "isActive": false,
-      "description": "Experimental console-based environment for testing trading bots, featuring genetic algorithms and backtesting for optimizing investment strategies.",
-      "highlights": ["Python", "Genetic Algorithms", "Backtesting"],
-      "github": "https://github.com/N0M4D-D3V/p4rz1v4l",
-      "image": "/images/other/p4rz1v4l.webp"
-    },
-    {
-      "name": "L4NC3L0T",
-      "isActive": false,
-      "description": "Automated trading bot built in Python, designed to execute investment strategies autonomously.",
-      "highlights": ["Python", "Automation", "Algorithmic Trading"],
-      "github": "https://github.com/N0M4D-D3V/l4nc3l0t",
-      "image": "/images/other/p4rz1v4l.webp"
-    },
-    {
-      "name": "Retro Games",
-      "isActive": false,
-      "description": "Retro arcade game app developed with Ionic and Phaser, offering a collection of classic games optimized for mobile devices.",
-      "highlights": ["Ionic", "Phaser", "TypeScript"],
-      "github": "https://github.com/N0M4D-D3V/arcade-retro-games"
-    },
-    {
-      "name": "Stoic Manager",
-      "isActive": false,
-      "description": "Personal management app inspired by Stoic principles, helping users organize their daily tasks.",
-      "highlights": ["Angular"],
-      "github": "https://github.com/N0M4D-D3V/stoic-manager"
-    },
-    {
-      "name": "Blazebooks (old)",
-      "isActive": false,
-      "description": "Speed reading platform offering a variety of literary genres, technical readings, and interactive books, accompanied by music and personalized recommendations.",
-      "highlights": ["Kotlin", "Android Development", "Multimedia Integration"],
-      "github": "https://github.com/N0M4D-D3V/Blazebooks-old"
+      "name": "Legacy",
+      "description": "Collection of old, unrelated projects. Some of them were very useful for building certain architectural components and acquiring new knowledge.",
+      "children": [
+        {
+          "name": "Rainclouds Web",
+          "description": "Website for the Atmospheric Black Metal band RAZAK. It was in production for several years.",
+          "highlights": [
+            { "name": "Angular" },
+            { "name": "Firebase" },
+            { "name": "Bootstrap" }
+          ],
+          "github": "https://github.com/N0M4D-D3V/rainclouds-webapp",
+          "image": "/images/razak/logo.webp"
+        },
+        {
+          "name": "Retro Games",
+          "description": "Retro arcade game application. The goal was to offer a collection of classic games optimized for mobile devices. To integrate Phaser with Angular, I had to build an architecture component based on RXJS. This component has remained a core part of all the systems I've integrated since, due to its usefulness and versatility.",
+          "highlights": [
+            { "name": "Hybrid" },
+            { "name": "Phaser" },
+            { "name": "Architecture" }
+          ],
+          "github": "https://github.com/N0M4D-D3V/arcade-retro-games"
+        },
+        {
+          "name": "Stoic Manager",
+          "description": "Personal management application inspired by Stoic principles. Designed to help users organize their daily tasks.",
+          "highlights": [{ "name": "Angular" }, { "name": "Ionic" }],
+          "github": "https://github.com/N0M4D-D3V/stoic-manager"
+        },
+        {
+          "name": "Battle of Numbers",
+          "description": "Terminal-based game. Developed using Termux on a mobile phone. It has no dependencies.",
+          "highlights": [{ "name": "Python" }, { "name": "Typescript" }],
+          "github": "https://github.com/N0M4D-D3V/BattleOfNumbers"
+        }
+      ]
     }
   ]
 }
