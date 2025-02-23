@@ -138,13 +138,6 @@ const { project }: Project = Astro.props;
     }
   }
 
-  @media (width <= 740px) {
-    ul {
-      margin-inline: 0px;
-      gap: 2%;
-    }
-  }
-
   .disabled {
     .logo-img:hover,
     a:hover .logo-img {
@@ -202,18 +195,13 @@ const { project }: Project = Astro.props;
     box-shadow: var(--primary-box-shadow);
 
     header {
-      max-height: 40%;
       width: 100%;
     }
 
     .subproject-list {
       overflow-x: hidden;
       overflow-y: auto;
-      max-height: 80%;
       width: 100%;
-    }
-
-    body {
     }
 
     h3 {
@@ -244,5 +232,26 @@ const { project }: Project = Astro.props;
 
   .github-code-link {
     margin-left: 10px;
+  }
+
+  @media (width <= 740px) {
+    ul {
+      margin-inline: 0px;
+      gap: 2%;
+    }
+  }
+
+  @media (width <=360px) {
+    p {
+      font-size: 1.5rem !important;
+      line-height: 1.5 !important;
+    }
+
+    .subproject-list {
+      grid-template-columns: none !important;
+    }
+    .subproject-card {
+      padding-inline: 2rem;
+    }
   }
 </style>
