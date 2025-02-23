@@ -10,7 +10,8 @@
 ### Projects
 
 - [x] Add little text main description (en/es) (?)
-- [ ] Review Project descriptions (en/es)
+- [x] Review Project descriptions (en/es)
+- [ ] FIX Phone view
 
 ### Blog (main)
 
