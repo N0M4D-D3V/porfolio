@@ -30,6 +30,13 @@ const { projects, title = "" } = Astro.props;
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
+
+  <div class="swiper-not-available">
+    <h3>
+      Project Explorer is not available. Please, use a higher resolution to
+      explore :C
+    </h3>
+  </div>
 </Section>
 
 <script>
@@ -51,6 +58,10 @@ const { projects, title = "" } = Astro.props;
 </script>
 
 <style>
+  .swiper-not-available {
+    display: none;
+  }
+
   .swiper {
     --swiper-pagination-color: var(--primary-color);
     --swiper-navigation-color: var(--primary-color);
@@ -72,9 +83,15 @@ const { projects, title = "" } = Astro.props;
     padding-top: 10px;
   }
 
-  @media (width <= 360px) {
+  @media (width <= 700px) {
     .swiper {
-      height: 170vh;
+      display: none;
+    }
+
+    .swiper-not-available {
+      display: block;
+      text-align: center;
+      color: var(--danger-color);
     }
   }
 </style>

@@ -16,6 +16,7 @@ const { project }: Project = Astro.props;
       {
         project.image && (
           <div
+            class="project-header-logo-block"
             style="min-height: 150px; min-width: 150px;"
             class={project.url ? "" : "disabled"}
           >
@@ -238,20 +239,6 @@ const { project }: Project = Astro.props;
     ul {
       margin-inline: 0px;
       gap: 2%;
-    }
-  }
-
-  @media (width <=360px) {
-    p {
-      font-size: 1.5rem !important;
-      line-height: 1.5 !important;
-    }
-
-    .subproject-list {
-      grid-template-columns: none !important;
-    }
-    .subproject-card {
-      padding-inline: 2rem;
     }
   }
 </style>
