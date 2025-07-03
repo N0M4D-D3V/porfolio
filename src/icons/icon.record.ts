@@ -25,6 +25,8 @@ import Bootstrap from "./skills/Bootstrap.astro";
 import Jasmine from "@icons/skills/Jasmine.astro";
 import Appium from "@icons/skills/Appium.astro";
 import WDIO from "@icons/skills/WDIO.astro";
+import Swift from "./skills/Swift.astro";
+import Liferay from "./skills/Liferay.astro";
 
 export const SKILLS_ICONS: Record<any, any> = {
   // common
@@ -52,6 +54,8 @@ export const SKILLS_ICONS: Record<any, any> = {
   CSS,
   HTML,
   Spring,
+  Swift,
+  Liferay,
 
   // QA & Automation
   Jasmine,

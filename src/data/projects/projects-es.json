@@ -64,6 +64,7 @@
       "children": [
         {
           "name": "LTA+",
+          "image": "/images/airbus/icon.webp",
           "description": "Desarrollé la aplicación desde cero, tomando decisiones importantes en la arquitectura técnica y en la comunicación entre módulos.",
           "highlights": [
             { "name": "Hybrid" },
@@ -74,7 +75,8 @@
           ]
         },
         {
-          "name": "E2E Testsuit",
+          "name": "Automated E2E Testsuit",
+          "image": "/images/airbus/icon.webp",
           "description": "Iniciativa propia. Arquitectura de test E2E para aplicaciones iOS. Construye test dinámicamente en base a un fichero excel, permitiendo modificar tests por personal no técnico.",
           "highlights": [
             { "name": "Architecture" },
@@ -85,7 +87,8 @@
           ]
         },
         {
-          "name": "Filesystem Fork",
+          "name": "EFB Filesystem",
+          "image": "/images/airbus/icon.webp",
           "description": "Fork del plugin oficial de Ionic Filesystem que integra soporte para Electron. El proyecto necesita operar contra ficheros en Windows e iOS. No encontramos alternativas, a si que tuvimos que iterar sobre el plugin oficial e incluir funcionalidad adicional.",
           "highlights": [
             { "name": "Capacitor" },
@@ -96,6 +99,7 @@
         },
         {
           "name": "EFB SFTP",
+          "image": "/images/airbus/icon.webp",
           "description": "Implementación nativa del protocolo SFTP (SSH FIle Transfer Protocol). Integración para Electron e iOS.",
           "highlights": [
             { "name": "Capacitor" },
@@ -107,6 +111,7 @@
 
         {
           "name": "EFB ZIP",
+          "image": "/images/airbus/icon.webp",
           "description": "Plugin nativo de operaciones de compresión y descompresión de archivos. Permite la gestión de contraseñas. Implementado para Electron e iOS.",
           "highlights": [
             { "name": "Capacitor" },
@@ -124,11 +129,13 @@
       "children": [
         {
           "name": "Fitness Hub (APP)",
+          "image": "/images/fitness-hub/app-icon.svg",
           "description": "Aplicación híbrida de tracking, fitness y salud. Me encargué de todo el proceso. Desde el diseño hasta la arquitectura, incluyendo la publicación en las stores. Además, diseñé una estrategia para ampliar la base de usuarios, escalar el negocio y monetizar.",
           "highlights": [{ "name": "Angular" }, { "name": "Ionic" }]
         },
         {
           "name": "Pedometer",
+          "image": "/images/fitness-hub/app-icon.svg",
           "description": "Plugin custom para interacción con la capa nativa. Se encarga del conteo de pasos (solo compatible con Android).",
           "highlights": [{ "name": "Capacitor" }, { "name": "Java" }]
         }
@@ -144,11 +151,13 @@
       "children": [
         {
           "name": "Porfolio",
+          "image": "/favicon-dark.svg",
           "description": "Codificación, diseño y subida a producción. Genera el contenido dinámicamente basándose en ficheros JSON. Muy flexible para añadir nuevas experiencias, proyectos o artículos al blog.",
           "highlights": [{ "name": "Astro" }, { "name": "Tailwind" }]
         },
         {
           "name": "Blog",
+          "image": "/favicon-dark.svg",
           "description": "Un sitio para escribir sobre mis intereses: tecnología, fitness, ropa, ocio, etc. Utiliza Markdown para construir los post, de modo que el proceso de escribir es fácil y cómodo.",
           "highlights": [{ "name": "Markdown" }, { "name": "Writting" }]
         }
@@ -160,13 +169,19 @@
       "description": "La palabra 'demiurge' proviene del griego 'dēmiourgós', que significa 'hacedor', 'artesano', 'productor' y, en última instancia, 'creador'. Demiurge es un conjunto de utilidades para agilizar mis flujos de trabajo y automatizar procesos.",
       "children": [
         {
-          "name": "Demiurge",
-          "description": "Librería de componentes para agilizar el desarrollo de aplicaciones Angular. Orientado a aplicaciones híbridas.",
-          "github": "https://github.com/N0M4D-D3V/demiurge",
-          "highlights": [{ "name": "Angular" }, { "name": "Library" }]
+          "name": "Lazy Vim IDE",
+          "image": "/images/demiurge/logo.webp",
+          "description": "Mi propia configuración de NeoVIM con Lazy Vim. Incluye configuraciones para trabajar con Astro, Javascript, Typescript, Python, Angular, Bash Script, etc.",
+          "github": "https://github.com/N0M4D-D3V/lazyvim-custom",
+          "highlights": [
+            { "name": "Tools" },
+            { "name": "Lua" },
+            { "name": "shell" }
+          ]
         },
         {
           "name": "Youtube2ivooX",
+          "image": "/images/demiurge/logo.webp",
           "isActive": true,
           "description": "Automatización del proceso de descarga y extracción de audio de YouTube. Después sube el audio a iVoox.",
           "highlights": [{ "name": "Python" }, { "name": "Selenium" }],
@@ -182,18 +197,21 @@
       "children": [
         {
           "name": "Blazebooks",
+          "image": "/images/blazebooks/icon.svg",
           "description": "Aplicación móvil y web para la lectura de libros interactivos. Incorpora una arquitectura técnica para interpretar historias interactivas de forma abstracta.",
           "highlights": [{ "name": "Hybrid" }],
           "github": "https://github.com/N0M4D-D3V/blazebooks-mobile"
         },
         {
           "name": "Blaze Server",
+          "image": "/images/blazebooks/icon.svg",
           "description": "Servidor NodeJS/NestJS que gestiona usuarios, maneja archivos y administra la base de datos. Montado en un PC local dedicado, diferente al del frontal.",
           "highlights": [{ "name": "Node" }, { "name": "Nest" }],
           "github": "https://github.com/N0M4D-D3V/blazebooks-server"
         },
         {
           "name": "Blazebooks (old)",
+          "image": "/images/blazebooks/icon.svg",
           "description": "Antigua aplicación. Nativa. Fue mi trabajo final de grado. Obtuve una matrícula de honor.",
           "highlights": [{ "name": "Kotlin" }, { "name": "Java" }],
           "github": "https://github.com/N0M4D-D3V/Blazebooks-old"
@@ -203,10 +221,11 @@
     {
       "name": "Trading Bots",
       "image": "/images/other/p4rz1v4l.webp",
-      "description": "Bots de automatización de estrategias de trading.",
+      "description": "Proyectos de robotización y automatización de procesos relacionados con el trading algorítmico.",
       "children": [
         {
           "name": "P4RZ1V4L",
+          "image": "/images/other/p4rz1v4l.webp",
           "description": "Entorno de terminal para hacer backtest de bots de trading. Incorpora algoritmos genéticos y otros sistemas para afinar los parámetros de entrada. Utiliza una arquitectura para la abstracción del backtest.",
           "highlights": [
             { "name": "Python" },
@@ -219,6 +238,7 @@
         },
         {
           "name": "L4NC3L0T",
+          "image": "/images/other/p4rz1v4l.webp",
           "description": "Bot de trading automatizado. Es el brazo ejecutor de estrategias de trading. Actúa de manera autónoma utilizando un entorno de terminal.",
           "highlights": [
             { "name": "Python" },
@@ -230,6 +250,7 @@
         },
         {
           "name": "Trading Bots",
+          "image": "/images/other/p4rz1v4l.webp",
           "description": "Recopilación de bots diseñados para operar con MultiCharts.",
           "highlights": [{ "name": "C#" }],
           "github": "https://github.com/N0M4D-D3V/trad-bots"

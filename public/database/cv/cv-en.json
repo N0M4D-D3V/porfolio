@@ -28,15 +28,113 @@
   },
   "work": [
     {
-      "name": "AKKODIS",
-      "position": "Hybrid Developer",
-      "url": "https://www.akkodis.com/",
-      "startDate": "2022-03-01",
+      "name": "Codere",
+      "position": "Hybrid Developer - I+D",
+      "url": "https://www.grupocodere.com/",
+      "img": "/images/codere/latam.webp",
+      "startDate": "2024-08-01",
       "endDate": null,
       "summary": [
-        "Customer: Airbus Defence & Space.",
-        "I am involved in developing an aerospace calculator app for military inflight operations. I initiated the development process from scratch, taking it through to production.",
-        "Our work involves resolving technical challenges, such as coding custom plugins (iOS/electron), Python scripts for process automation, custom themes and animations, building libraries, upgrading legacy projects to cutting-edge technology, and configuring Linux servers."
+        "Thanks to Cartagon, I was able to work on the development and production rollout of the <b>Club Codere apps.</b> I also participated in migrating the <b>corporate website and new CMS</b> to LifeRay.",
+        "<b>-Technical tasks:</b> feature enhancements, development of custom Capacitor plugins (Android/iOS), automation scripts in NodeJS/Bash, extracting architectures into Angular libraries, club kiosks using ElectronJS, project updates and maintenance, and administration and migration of sites to LifeRay.",
+        "<b>-Own initiative:</b> development of a bespoke push notification agent, complete with integrated server and database. Still in testing, it has the potential to save the company significant costs."
+      ],
+      "skills": [
+        {
+          "name": "Angular",
+          "level": "Expert",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Google",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Ionic",
+          "level": "Mid",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Framework"
+          ]
+        },
+        {
+          "name": "ElectronJs",
+          "level": "Mid",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Desktop",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Capacitor",
+          "level": "Advanced",
+          "keywords": ["Web development", "Fullstack", "Mobile development"]
+        },
+        {
+          "name": "Node",
+          "level": "Mid",
+          "keywords": ["Web development", "Backend", "JavaScript", "Server"]
+        },
+        {
+          "name": "Python",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Java",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Swift",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Liferay",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Apple",
+          "level": "User",
+          "keywords": ["Operating System", "macOS", "iPad"]
+        },
+        {
+          "name": "Windows",
+          "level": "User",
+          "keywords": [
+            "Operating System",
+            "windows 11",
+            "windows 10",
+            "windows arm"
+          ]
+        }
+      ],
+      "highlights": []
+    },
+    {
+      "name": "Airbus Defence & Space",
+      "position": "Hybrid Developer - Team Lead - I+D",
+      "url": "https://www.akkodis.com/",
+      "img": "/images/airbus/icon.webp",
+      "startDate": "2022-03-01",
+      "endDate": "2024-08-01",
+      "summary": [
+        "Through Akkodis, I had the opportunity to work on military projects for Airbus Defence & Space. As the main project, I developed a hybrid <b>aerospace calculation application for military operations</b>. I initiated the project from scratch and carried it through to production.",
+        "<b>- Technical tasks:</b> feature enhancements, development of custom Capacitor plugins (iOS/Electron), automation scripts in Python, custom Angular libraries, legacy project updates, Linux server setup with GitLab… even interoperability between different systems: a calculation engine in Fortran converted to C, communicating with Swift/TypeScript.",
+        "<b>- Team management for six months:</b> analysis and assignment of new feature enhancements.",
+        "<b>- Own initiative:</b> development of an E2E testing system based on Appium and CS: automating the process and saving countless hours of routine work and human error."
       ],
       "skills": [
         {
@@ -152,6 +250,7 @@
     {
       "name": "Kubide Tech Builder",
       "position": "Frontend Developer",
+      "img": "/images/kubide/icon.webp",
       "url": "https://kubide.es/",
       "startDate": "2021-02-01",
       "endDate": "2022-03-01",
@@ -206,6 +305,7 @@
       "name": "Métrica Consulting S.L.",
       "position": "Frontend Developer",
       "url": "https://metrica.es/en",
+      "img": "/images/metrica/icon.webp",
       "startDate": "2020-09-01",
       "endDate": "2020-12-01",
       "summary": [
@@ -272,10 +372,11 @@
   "education": [
     {
       "institution": "IES Barajas",
-      "url": "https://site.educa.madrid.org/ies.barajas.madrid/",
       "area": "Multiplatform Apps Development",
+      "img": "/images/other/gob.webp",
+      "url": "https://site.educa.madrid.org/ies.barajas.madrid/",
       "summary": [
-        "As a Technician in Multiplatform Application Development with honors in the TFG, I have acquired skills in technologies such as Java/Kotlin, SQL, Android, Odoo, Linux, XML, HTML & CSS, MongoDB, Testing & Unit Testing, Angular, Git, object-oriented programming, Spring Framework, and Firebase.",
+        "As a Technician in Multiplatform Application Development <b>graduated with honors in the TFG</b>, I have acquired skills in technologies such as Java/Kotlin, SQL, Android, Odoo, Linux, XML, HTML & CSS, MongoDB, Testing & Unit Testing, Angular, Git, object-oriented programming, Spring Framework, and Firebase.",
         "These skills have allowed me to work on challenging projects and develop creative and innovative solutions in the field of computer science. My education and experience have prepared me to play a valuable role in software development teams in any IT company."
       ],
       "studyType": "",

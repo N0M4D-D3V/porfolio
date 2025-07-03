@@ -11,6 +11,19 @@ const { project }: Project = Astro.props;
   <header>
     <h3>
       {project.name}
+
+      {
+        project.github && (
+          <a
+            class="github-code-link"
+            href={project.github}
+            target="_blank"
+            title={`${project.name}`}
+          >
+            <GitHub />
+          </a>
+        )
+      }
     </h3>
     <div class="header-card">
       {
@@ -40,31 +53,8 @@ const { project }: Project = Astro.props;
         project.children.map((subproject: Project) => {
           return (
             <li class="subproject-card">
-              <header>
-                <h3>{subproject.name}</h3>
-                {subproject.image && (
-                  <div
-                    style="margin-top: 10px;margin-bottom: 10px;"
-                    class={subproject.url ? "" : "disabled"}
-                  >
-                    <a
-                      href={subproject.url}
-                      target="_blank"
-                      title={`${subproject.name}`}
-                    >
-                      <img
-                        class="logo-img"
-                        src={subproject.image}
-                        alt="subproject logo image"
-                      />
-                    </a>
-                  </div>
-                )}
-              </header>
-              <body>
-                <p>{subproject.description}</p>
-              </body>
-              <footer>
+              <h3 class="subproject-card-title">
+                {subproject.name}{" "}
                 {subproject.github && (
                   <a
                     class="github-code-link"
@@ -75,30 +65,43 @@ const { project }: Project = Astro.props;
                     <GitHub />
                   </a>
                 )}
-                {subproject.highlights && (
-                  <Skills skills={subproject.highlights} />
-                )}
-              </footer>
+              </h3>
+              <div class="subproject-card-content">
+                <header>
+                  {subproject.image && (
+                    <div
+                      style="margin-top: 10px;margin-bottom: 10px;"
+                      class={subproject.url ? "" : "disabled"}
+                    >
+                      <a
+                        href={subproject.url}
+                        target="_blank"
+                        title={`${subproject.name}`}
+                      >
+                        <img
+                          class="logo-img"
+                          src={subproject.image}
+                          alt="subproject logo image"
+                        />
+                      </a>
+                    </div>
+                  )}
+                </header>
+                <body>
+                  <p>{subproject.description}</p>
+                </body>
+                <footer>
+                  {subproject.highlights && (
+                    <Skills skills={subproject.highlights} />
+                  )}
+                </footer>
+              </div>
             </li>
           );
         })
     }
   </ul>
 </article>
-<footer class="main-footer">
-  {
-    project.github && (
-      <a
-        class="github-code-link"
-        href={project.github}
-        target="_blank"
-        title={`${project.name}`}
-      >
-        <GitHub />
-      </a>
-    )
-  }
-</footer>
 
 <style>
   .header-card {
@@ -112,39 +115,16 @@ const { project }: Project = Astro.props;
   }
 
   ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    display: contents;
     margin-inline: -16px;
-
-    h3 {
-      text-align: center;
-    }
   }
 
-  .subproject-card {
-    background-color: var(--card-bg-color);
-    border: var(--card-border);
-    border-radius: var(--card-border-radius);
-    padding: 10px;
-
+  h3 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-
-    .logo-img {
-      width: 100px;
-      height: 100px;
-    }
-  }
-
-  .disabled {
-    .logo-img:hover,
-    a:hover .logo-img {
-      border: solid 5px var(--text-secondary);
-      box-shadow: none;
-    }
+    justify-content: space-between;
+    margin-bottom: 4px;
+    color: var(--primary-color);
   }
 
   .logo-img {
@@ -166,17 +146,43 @@ const { project }: Project = Astro.props;
     }
   }
 
-  footer {
+  .subproject-card {
+    background-color: var(--card-bg-color);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    padding: 10px;
+
     width: 100%;
-    flex-direction: row-reverse;
+  }
+
+  .subproject-card-content {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    .logo-img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .disabled {
+    .logo-img:hover,
+    a:hover .logo-img {
+      border: solid 5px var(--text-secondary);
+      box-shadow: none;
+    }
+  }
+
+  footer {
     font-size: 0.6rem;
   }
 
-  .main-footer {
-    position: relative;
-    bottom: 40px;
-    padding-right: 10px;
+  header {
+    min-width: 120px;
   }
 
   article {
@@ -194,45 +200,17 @@ const { project }: Project = Astro.props;
     background-color: var(--background-body);
 
     box-shadow: var(--primary-box-shadow);
-
-    header {
-      width: 100%;
-    }
-
-    .subproject-list {
-      overflow-x: hidden;
-      overflow-y: auto;
-      width: 100%;
-    }
-
-    h3 {
-      margin-bottom: 4px;
-      color: var(--primary-color);
-    }
-
-    p {
-      height: 100%;
-      font-size: 0.75rem;
-      line-height: 1.2rem;
-      margin-bottom: 4px;
-    }
-
-    a:hover {
-      text-decoration: underline;
-
-      .logo-img {
-        border: solid var(--primary-color) 3px;
-        box-shadow: var(--primary-box-shadow);
-      }
-    }
-
-    transition:
-      box-shadow 0.3s ease,
-      border 0.3s ease;
   }
 
   .github-code-link {
     margin-left: 10px;
+
+    color: black;
+    transition: all 0.5s ease;
+  }
+
+  .github-code-link:hover {
+    color: var(--primary-color);
   }
 
   @media (width <= 740px) {

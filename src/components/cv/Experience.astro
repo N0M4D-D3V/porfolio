@@ -9,31 +9,47 @@ const { work } = Astro.props;
   <ul>
     {
       work?.map(
-        ({ name, startDate, endDate, position, summary, url, skills }: any) => {
-          const startYear = new Date(startDate).getFullYear();
+        ({
+          name,
+          startDate,
+          endDate,
+          position,
+          summary,
+          url,
+          skills,
+          img,
+        }: any) => {
+          const strDate = new Date(startDate);
+          const enddate = new Date(endDate);
+          const startYear =
+            strDate.getMonth() + 1 + "/" + strDate.getFullYear();
           const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Current";
+            endDate != null
+              ? enddate.getMonth() + 1 + "/" + enddate.getFullYear()
+              : "Current";
           const years = `${startYear} - ${endYear}`;
 
           return (
             <li>
               <article>
                 <header>
-                  <div>
-                    <h3>
-                      <a href={url} title={`${name}`} target="_blank">
-                        {name}
-                      </a>
-                    </h3>
-                    <h4>{position}</h4>
+                  <div class="logo-header">
+                    <img src={`${img}`} alt="work icon" />
+                    <div>
+                      <h3>
+                        <a href={url} title={`${name}`} target="_blank">
+                          {name}
+                        </a>
+                      </h3>
+                      <h4>{position}</h4>
+                    </div>
                   </div>
-
                   <time>{years}</time>
                 </header>
 
                 <footer class="ps-5">
                   {summary.map((text: string) => {
-                    return <p>{text}</p>;
+                    return <p set:html={text} />;
                   })}
                   <div class="text-end">
                     <Skills skills={skills} />
@@ -49,6 +65,15 @@ const { work } = Astro.props;
 </Section>
 
 <style>
+  img {
+    object-fit: cover;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    border: black solid 1px;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -58,6 +83,7 @@ const { work } = Astro.props;
   article h3 {
     color: var(--primary-color-accent);
     font-weight: 500;
+    margin: 0;
   }
 
   article a:hover {
@@ -65,9 +91,10 @@ const { work } = Astro.props;
   }
 
   article h4 {
-    color: var(--primary-color-accent);
-
+    color: var(--primary-color);
+    font-size: 1rem;
     font-weight: 200;
+    margin: 0;
   }
 
   header {
@@ -83,9 +110,20 @@ const { work } = Astro.props;
     min-width: 102px;
   }
 
+  .logo-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
   @media (width <= 700px) {
     time {
       text-align: right;
+    }
+  }
+  @media print {
+    p {
+      font-family: Arial, sans-serif;
     }
   }
 </style>

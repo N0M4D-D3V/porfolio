@@ -103,9 +103,7 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
   }
 
   img {
-    border: 5px solid var(--primary-color-accent);
-    box-shadow: var(--secondary-box-shadow);
-
+    border: black 1px solid;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     width: 128px;
@@ -171,6 +169,12 @@ const printInfo = [email, url].filter(Boolean).join(" • ");
 
     figure {
       margin: 0 auto;
+    }
+  }
+
+  @media print {
+    section {
+      margin-bottom: 0px !important;
     }
   }
 </style>

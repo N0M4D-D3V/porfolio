@@ -10,88 +10,24 @@ const { projects, title = "" } = Astro.props;
 ---
 
 <Section title={title}>
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      {
-        projects.map((project: Project) => {
-          return (
-            <div class="swiper-slide">
-              <Card project={project} />
-            </div>
-          );
-        })
-      }
-    </div>
-
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-
-  <div class="swiper-not-available">
-    <h3>
-      Project Explorer is not available. Please, use a higher resolution to
-      explore :C
-    </h3>
+  <div>
+    {
+      projects.map((project: Project) => {
+        return (
+          <div class="my-5">
+            <Card project={project} />
+          </div>
+        );
+      })
+    }
   </div>
 </Section>
 
-<script>
-  import Swiper from "swiper/bundle";
-  const swiper = new Swiper(".swiper", {
-    effect: "cube",
-    cubeEffect: {
-      slideShadows: false,
-    },
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
-
 <style>
-  .swiper-not-available {
-    display: none;
-  }
-
-  .swiper {
-    --swiper-pagination-color: var(--primary-color);
-    --swiper-navigation-color: var(--primary-color);
-    --swiper-pagination-bottom: -40px;
-    --swiper-navigation-sides-offset: 10px;
-    height: 60vh;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    transition: transform 0.3s ease;
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-  .swiper-slide {
-    padding-inline: 80px;
-    padding-bottom: 40px;
-    padding-top: 10px;
-  }
-
-  @media (width <= 700px) {
-    .swiper {
-      display: none;
-    }
-
+  @media print {
+    .swiper,
     .swiper-not-available {
-      display: block;
-      text-align: center;
-      color: var(--danger-color);
+      display: none !important;
     }
   }
 </style>

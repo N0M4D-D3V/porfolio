@@ -38,4 +38,11 @@ const { skills } = Astro.props;
     gap: 4px;
     padding: 0.2rem 0.6rem;
   }
+
+  @media print {
+    section {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+    }
+  }
 </style>

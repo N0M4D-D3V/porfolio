@@ -4,18 +4,17 @@
 
 ### About
 
-- [x] Review About text (en/es)
-- [x] Review About UX
+### CV
+
+- [x] Add images of each XP
+- [ ] Update profile picture
 
 ### Projects
 
-- [x] Add little text main description (en/es) (?)
-- [x] Review Project descriptions (en/es)
 - [ ] FIX Phone view
 
 ### Blog (main)
 
-- [x] Add tags
 - [ ] Add searchbar
 - [ ] Add pagination
 - [ ] Add filter by tag

@@ -9,7 +9,15 @@ const { education } = Astro.props;
   <ul>
     {
       education?.map(
-        ({ institution, startDate, endDate, area, summary, skills }: any) => {
+        ({
+          institution,
+          startDate,
+          endDate,
+          area,
+          summary,
+          skills,
+          img,
+        }: any) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Current";
@@ -19,18 +27,21 @@ const { education } = Astro.props;
             <li>
               <article>
                 <header>
-                  <div>
-                    <h3>{institution}</h3>
+                  <div class="logo-header">
+                    <img src={`${img}`} alt="work icon" />
+
+                    <div>
+                      <h3>{institution}</h3>
+                      <h4> {area} </h4>
+                    </div>
                   </div>
 
                   <time>{years}</time>
                 </header>
 
                 <footer>
-                  <h4> {area} </h4>
-
                   {summary.map((text: string) => {
-                    return <p class="ps-5">{text}</p>;
+                    return <p class="ps-5" set:html={text} />;
                   })}
                   <Skills dataset={skills} />
                 </footer>
@@ -44,6 +55,13 @@ const { education } = Astro.props;
 </Section>
 
 <style>
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    border: black solid 1px;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -53,10 +71,14 @@ const { education } = Astro.props;
   article h3 {
     color: var(--primary-color-accent);
     font-weight: 500;
+    margin: 0;
   }
 
   article h4 {
-    color: var(--primary-color-accent);
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;
   }
 
   header {
@@ -72,9 +94,21 @@ const { education } = Astro.props;
     min-width: 102px;
   }
 
+  .logo-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
   @media (width <= 700px) {
     time {
       text-align: right;
+    }
+  }
+
+  @media print {
+    p {
+      font-family: Arial, sans-serif;
     }
   }
 </style>

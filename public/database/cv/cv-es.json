@@ -5,7 +5,7 @@
     "image": "/assets/profile.webp",
     "email": "contact@gg-victor.dev",
     "url": "https://gg-victor.dev",
-    "summary": "Frontend Developer with four years of experience. Focused in Angular, with extensive technical expertise in building web, hybrid applications and native plugins. Proven ability to collaborate effectively in multidisciplinary teams using agile methods.",
+    "summary": "Software developer especializado en desarrollo de aplicaciones híbridas. Especializado en Angular, con una extensa experiencia en construir web apps, aplicaciones híbridas y plugins nativos. Habilidad para colaborar efectivamente en equipos multidisciplinares.",
     "location": {
       "address": "",
       "postalCode": "28022",
@@ -28,15 +28,113 @@
   },
   "work": [
     {
-      "name": "AKKODIS",
-      "position": "Hybrid Developer",
-      "url": "https://www.akkodis.com/",
-      "startDate": "2022-03-01",
+      "name": "Codere",
+      "position": "Hybrid Developer - I+D",
+      "url": "https://www.grupocodere.com/",
+      "img": "/images/codere/latam.webp",
+      "startDate": "2024-08-01",
       "endDate": null,
       "summary": [
-        "Cliente: Airbus Defence & Space.",
-        "Aplicación de cálculo aeroespacial para operaciones militares en vuelo. Inicié el proceso de desarrollo desde cero y lo llevé hasta producción.",
-        "Nuestro trabajo implica resolver desafíos técnicos, como codificar plugins custom para Capacitor (iOS/electron), scripts en Python de automatización, bibliotecas custom Angular, la actualización de proyectos legacy y la configuración de servidores Linux."
+        "Gracias a Cartagon pude trabajar en el desarrollo y puesta en producción de las <b>apps del Club Codere.</b> También trabajé en la migración de la <b>web corporativa y el CMS</b> nuevo: LifeRay.",
+        "<b>- Tareas técnicas:</b> evolutivos, desarrollo de plugins custom Capacitor (android/ios), scripts de automatización en NodeJS/Bash, extracción de arquitecturas a librerías Angular, kioskos del club con ElectronJS, actualización y mantenimiento del proyecto, administración y migración de sites a LifeRay.",
+        "<b>- Iniciativa propia:</b> Desarrollo de un agente propio de notificaciones push, con servidor y base de datos integrados. Aún en fase de pruebas, podría ahorrar mucho dinero a la empresa."
+      ],
+      "skills": [
+        {
+          "name": "Angular",
+          "level": "Expert",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Google",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Ionic",
+          "level": "Mid",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Framework"
+          ]
+        },
+        {
+          "name": "ElectronJs",
+          "level": "Mid",
+          "keywords": [
+            "Web development",
+            "Mobile development",
+            "Frontend",
+            "TypeScript",
+            "Desktop",
+            "Framework"
+          ]
+        },
+        {
+          "name": "Capacitor",
+          "level": "Advanced",
+          "keywords": ["Web development", "Fullstack", "Mobile development"]
+        },
+        {
+          "name": "Node",
+          "level": "Mid",
+          "keywords": ["Web development", "Backend", "JavaScript", "Server"]
+        },
+        {
+          "name": "Python",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Java",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Swift",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Liferay",
+          "level": "Beginer",
+          "keywords": []
+        },
+        {
+          "name": "Apple",
+          "level": "User",
+          "keywords": ["Operating System", "macOS", "iPad"]
+        },
+        {
+          "name": "Windows",
+          "level": "User",
+          "keywords": [
+            "Operating System",
+            "windows 11",
+            "windows 10",
+            "windows arm"
+          ]
+        }
+      ],
+      "highlights": []
+    },
+    {
+      "name": "Airbus Defence & Space",
+      "position": "Hybrid Developer - Team Lead - I+D",
+      "url": "https://www.airbus.com/en/products-services/defence",
+      "img": "/images/airbus/icon.webp",
+      "startDate": "2022-03-01",
+      "endDate": "2024-08-01",
+      "summary": [
+        "De la mano de Akkodis, pude trabajar para proyectos militares en Airbus Defence & Space. Como proyecto principal, desarrollé una aplicación híbrida de <b>cálculo aeroespacial para operaciones militares</b>. Inicié el proyecto desde cero y lo llevé hasta producción.",
+        "<b>- Tareas técnicas:</b> evolutivos, desarrollo de plugins custom Capacitor (iOS/electron), scripts de automatización en Python, bibliotecas custom Angular, actualización de proyectos legacy, la configuración de servidores Linux con GitLab... Incluso la comunicación entre diferentes sistemas: motor de cálculo en fortran transformado a C, que se comunica con Swift/Typescript.",
+        "<b>- Gestión del equipo durante seis meses:</b> análisis y asignación de nuevos evolutivos.",
+        "<b>- Iniciativa propia:</b> desarrollo de un sistema de testing E2E basado en Appium y CS: automatización del proceso y ahorro de muchas horas de trabajo rutinario y errores humanos."
       ],
       "skills": [
         {
@@ -153,6 +251,7 @@
       "name": "Kubide Tech Builder",
       "position": "Frontend Developer",
       "url": "https://kubide.es/",
+      "img": "/images/kubide/icon.webp",
       "startDate": "2021-02-01",
       "endDate": "2022-03-01",
       "summary": [
@@ -205,12 +304,13 @@
     {
       "name": "Métrica Consulting S.L.",
       "position": "Frontend Developer",
-      "url": "https://metrica.es/en",
+      "url": "https://metrica.es",
+      "img": "/images/metrica/icon.webp",
       "startDate": "2020-09-01",
       "endDate": "2020-12-01",
       "summary": [
         "Desarrollo de herramientas core internas. Tareas de soporte.",
-        "Este proyecto me permitió desarrollar mis habilidades, a la vez que mejorar mi capacidad de trabajo en equipo en un entorno remoto."
+        "Este proyecto me permitió desarrollar mis habilidades, a la vez que mejorar mi capacidad de trabajo en equipo en un entorno 100% remoto."
       ],
       "skills": [
         {
@@ -273,10 +373,11 @@
     {
       "institution": "IES Barajas",
       "url": "https://site.educa.madrid.org/ies.barajas.madrid/",
-      "area": "Multiplatform Apps Development",
+      "img": "/images/other/gob.webp",
+      "area": "Técnico Superior en Desarrollo de Apps Multiplataforma",
       "summary": [
-        "Como Técnico Superior en Desarrollo de Aplicaciones Multiplataforma con mención honorífica en el TFG, he adquirido habilidades en tecnologías como Java/Kotlin, SQL, Android, Odoo, Linux, XML, HTML & CSS, MongoDB, Testing & Pruebas Unitarias, Angular, Git, programación orientada a objetos, Spring Framework y Firebase.",
-        "Estas habilidades me han permitido trabajar en proyectos desafiantes y desarrollar soluciones creativas e innovadoras en el campo de la informática. Mi formación y experiencia me han preparado para desempeñar un papel valioso en equipos de desarrollo de software en cualquier empresa del sector IT."
+        "Con <b>mención honorífica en el TFG,</b> aprendí habilidades fundamentales sobre lógica de programación y bases de datos.",
+        "Utilicé tecnologías como Java/Kotlin, SQL, Android, Odoo, Linux, XML, HTML & CSS, MongoDB, Testing & Pruebas Unitarias, Angular, Git, programación orientada a objetos, Spring Framework y Firebase."
       ],
       "studyType": "",
       "startDate": "2018-01-01",

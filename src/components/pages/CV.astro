@@ -53,7 +53,9 @@ if (lan === "es") {
   <Education education={cv.education} />
 
   <hr />
-  <Projects projects={projects} title="Side Projects" />
+  <div id="cv-sideproj-container">
+    <Projects projects={projects} title="Side Projects" />
+  </div>
 </BaseLayout>
 
 <style>
@@ -83,5 +85,15 @@ if (lan === "es") {
     background-color: transparent;
     border-color: var(--primary-color);
     color: var(--primary-color);
+  }
+
+  @media print {
+    #cv-sideproj-container {
+      display: none;
+    }
+
+    hr {
+      display: none;
+    }
   }
 </style>
