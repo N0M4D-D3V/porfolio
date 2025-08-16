@@ -92,6 +92,24 @@ const home = defineCollection({
     }),
 });
 
+const privacyPolicy = defineCollection({
+  loader: glob({
+    pattern: "-index.{md,mdx}",
+    base: "./src/content/privacy-policy",
+  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      sections: z.array(
+        z.object({
+          title: z.string(),
+          paragraphs: z.array(z.string()),
+        })
+      ),
+    }),
+});
+
 const indexCards = defineCollection({
   loader: glob({
     pattern: "-index.{md,mdx}",
@@ -125,10 +143,11 @@ const portfolio = defineCollection({
       z.object({
         title: z.string(),
         github: z.string().optional(),
+        privacyPolicy: z.string().optional(),
         link: z.string().optional(),
         technologies: z.array(z.string()).optional(),
         content: z.array(z.string()).optional(),
-      }),
+      })
     ),
   }),
 });
@@ -175,4 +194,5 @@ export const collections = {
   portfolio,
   recipes,
   terms,
+  privacyPolicy,
 };

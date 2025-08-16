@@ -6,7 +6,6 @@ import { markdownify } from "@lib/textConverter";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 
-
 interface Props {
   entry: PortfolioEntry;
 }
@@ -45,6 +44,18 @@ const { title, description, projects } = entry.data;
                     <a
                       aria-label="link"
                       href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      class="mr-2 glass-t shadow-none rounded flex h-8 w-8 text-txt-p dark:text-darkmode-txt-p items-center justify-center text-center"
+                    >
+                      <FaLink className="h-6 w-6" />
+                    </a>
+                  )}
+
+                  {project.privacyPolicy && (
+                    <a
+                      aria-label="link"
+                      href={project.privacyPolicy}
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="mr-2 glass-t shadow-none rounded flex h-8 w-8 text-txt-p dark:text-darkmode-txt-p items-center justify-center text-center"

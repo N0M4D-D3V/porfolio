@@ -1,0 +1,9 @@
+---
+import type { PolicyPrivacyEntry } from "@/types";
+import PrivacyPolicyLayout from "@components/portfolio/PrivacyPolicyLayout.astro";
+import { getIndex } from "@lib/contentParser";
+
+const entry = (await getIndex("privacyPolicy")) as PolicyPrivacyEntry;
+---
+
+<PrivacyPolicyLayout entry={entry} />

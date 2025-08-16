@@ -11,6 +11,7 @@ export type HomeEntry = CollectionEntry<"home">;
 export type IndexCardsEntry = CollectionEntry<"indexCards">;
 export type PoetryEntry = CollectionEntry<"poetry">;
 export type PortfolioEntry = CollectionEntry<"portfolio">;
+export type PolicyPrivacyEntry = CollectionEntry<"privacyPolicy">;
 export type RecipesEntry = CollectionEntry<"recipes">;
 export type TermsEntry = CollectionEntry<"terms">;
 
@@ -21,6 +22,7 @@ export type SearchableEntry =
   | DocsEntry
   | PoetryEntry
   | PortfolioEntry
+  | PolicyPrivacyEntry
   | RecipesEntry
   | TermsEntry;
 
@@ -35,7 +37,7 @@ export type SocialLinks = {
   tiktok?: string;
   website?: string;
   youtube?: string;
-}
+};
 
 export type EntryReference = {
   id: string;
