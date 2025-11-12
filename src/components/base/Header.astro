@@ -15,14 +15,18 @@ const menu = [
     name: "About",
     url: "/about",
   },
-  // {
-  //   name: "Docs",
-  //   url: "/docs",
-  // },
   {
     name: "Blog",
     url: "/blog",
   },
+  {
+    name: "Portfolio",
+    url: "/portfolio",
+  },
+  // {
+  //   name: "Docs",
+  //   url: "/docs",
+  // },
   // {
   //   name: "Recipes",
   //   url: "/recipes",
@@ -39,10 +43,6 @@ const menu = [
   //   name: "Authors",
   //   url: "/authors",
   // },
-  {
-    name: "Portfolio",
-    url: "/portfolio",
-  },
 ];
 ---
 
@@ -78,7 +78,7 @@ const menu = [
           <li class="">
             <a
               href={item.url}
-              class={`block p-2 font-secondary font-semibold text-txt-p transition dark:text-darkmode-txt-p lg:px-2 lg:py-3 ${
+              class={`block p-2 font-tertiary font-bold text-txt-p transition dark:text-darkmode-txt-p lg:px-2 lg:py-3 ${
                 (pathname === `${item.url}/` || pathname === item.url) &&
                 "active"
               }`}
@@ -97,7 +97,7 @@ const menu = [
       >
         <IoSearch />
       </a>
-        <ThemeSwitcher />
+      <ThemeSwitcher />
     </div>
   </nav>
 </header>

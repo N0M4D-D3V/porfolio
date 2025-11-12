@@ -40,7 +40,7 @@ projects:
       - <b>· Filesystem Fork:</b> Fork of the official Ionic Filesystem plugin with added support for Electron. The project required file operations on Windows and iOS. Since no suitable alternatives were available, we iterated on the official plugin and added additional functionality.
       - <b>· EFB SFTP:</b> Native implementation of the SFTP (SSH File Transfer Protocol), integrated for both Electron and iOS.
       - <b>· EFB ZIP:</b> Native plugin for file compression and decompression operations. Supports password management and is implemented for Electron and iOS.
-  - title: "AutoTrade — SaaS for Automated Trading"
+  - title: "AutoTrade Pro"
     link: https://autotrade-pro.com
     privacyPolicy: https://autotrade-pro.com/terms
     technologies:
@@ -53,7 +53,7 @@ projects:
       - "Architecture"
       - "I+D+i"
     content:
-      - "Launched in early August 2025, AutoTrade is a SaaS desktop platform that enables users to deploy and run their algorithms across any market, saving time and energy while scaling operations without manual intervention."
+      - "Launched in early August 2025, AutoTrade is a SaaS desktop platform that enables users to deploy and run their algorithms across any market, saving time and energy while scaling operations without manual intervention. As of early November 2025, we’re rolling out Pine Script strategy development: a true end-to-end service, wired into every broker across the market."
       - <b>· Stripe & Firebase Integraton:</b> AutoTrade uses Stripe for payment processing and Firebase for account management. Both platforms are synchronized through internal events and webhooks, ensuring that databases remain up-to-date in real time.
       - <b>· Software Architecture:</b> One of the project’s most significant achievements is its architecture. It functions similarly to an Electron app but is built entirely in pure Python with a modular design. Modules are separated into backend (Flask), automation engine, scheduler, SSCA (Socket Communication Agent) and webhook (Node.js). All modules communicate via local sockets using a proprietary protocol (SSCA & CSCA).
       - <b>· Backend Module:</b> Built with Flask and running on a dedicated thread, the backend serves the Angular-based frontend and handles OS-level communication with the user.
@@ -98,6 +98,8 @@ projects:
       - "The word 'Demiurge' comes from the Greek 'dēmiourgós' meaning 'maker,' 'artisan,' 'producer,' and ultimately, 'creator.' Demiurge is a set of utilities designed to streamline my workflows and automate processes."
       - <b>· Demiurge:</b> Component library to accelerate Angular application development, specifically tailored for hybrid applications.
       - <b>· Youtube2ivooX:</b> Automation of the process for downloading and extracting audio from YouTube, then uploading it to iVoox.
+      - <b>· Batch Bunny:</b> Hacking tool for download sources from Bunny servers.
+      - <b>· Podcastify:</b> Tool that extracts audio from mp4 files. It transforms your videos into podcasts!
   - title: "Blazebooks"
     github: https://github.com/N0M4D-D3V
     technologies:

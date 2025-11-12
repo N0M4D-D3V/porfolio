@@ -14,12 +14,18 @@ let fontPrimary = "serif";
 let fontPrimaryType = "serif";
 let fontSecondary = "open sans";
 let fontSecondaryType = "sans-serif";
+let fontTertiary = "Doto";
+let fontTertiaryType = "sans-serif";
 
 fontPrimary = fontPrimary
   .replace(/\+/g, " ")
   .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
 
 fontSecondary = fontSecondary
+  .replace(/\+/g, " ")
+  .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
+
+fontTertiary = fontTertiary
   .replace(/\+/g, " ")
   .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
 
@@ -43,9 +49,9 @@ module.exports = {
     extend: {
       colors: {
         txt: {
-          p: "#000",
-          s: "#222",
-          light: "#444",
+          p: "wheat",
+          s: "sandybrown",
+          light: "sandybrown",
         },
         bg: {
           p: "#fff",
@@ -88,6 +94,7 @@ module.exports = {
       fontFamily: {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
+        tertiary: [fontTertiary, fontTertiaryType],
       },
       spacing: {
         "1/2": "50%",

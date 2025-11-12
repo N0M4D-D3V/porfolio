@@ -1,4 +1,22 @@
 /* Fonts */
+@import "@fontsource/doto/400.css";
+@import "@fontsource/doto/700.css";
+
+@font-face {
+  font-family: "Doto";
+  src: url("/fonts/doto/Doto-Rounded-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Doto";
+  src: url("/fonts/doto/Doto-Regular.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* Cormorant 500 */
 @font-face {
