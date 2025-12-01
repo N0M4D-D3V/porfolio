@@ -6,6 +6,7 @@ import { glob } from "astro/loaders";
 
 const searchable = z.object({
   title: z.string(),
+  tags: z.array(z.string()).optional(),
   description: z.string().optional(),
   autodescription: z.boolean().default(true),
   draft: z.boolean().default(false),
@@ -142,9 +143,12 @@ const portfolio = defineCollection({
     projects: z.array(
       z.object({
         title: z.string(),
+        subtitle: z.string().optional(),
+        icon: z.string().optional(),
         github: z.string().optional(),
         privacyPolicy: z.string().optional(),
         link: z.string().optional(),
+        internalLink: z.string(),
         technologies: z.array(z.string()).optional(),
         content: z.array(z.string()).optional(),
       })

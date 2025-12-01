@@ -43,5 +43,7 @@ input#nav-toggle:checked ~ #nav-menu {
   }
   #nav-menu {
     @apply flex;
+
+    align-items: center;
   }
 }

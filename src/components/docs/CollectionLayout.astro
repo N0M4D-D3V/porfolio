@@ -17,7 +17,40 @@ const { collectionIndex, entries } = Astro.props;
   image={collectionIndex.data.image?.src}
   description={collectionIndex.data.description}
 >
+  <!-- HEADER -->
   <PageHeader title={collectionIndex.data.title} />
+
+  <!-- Description -->
+  {
+          collectionIndex.data.description && (
+          <section class="flex justify-center">
+            <div class="container m-2">
+              <div class="rounded-lg p-0 bg-gradient-to-t gradient">
+            <div
+              class="rounded-lg glass px-8 py-6 intersect:animate-fadeDown opacity-0 intersect-no-queue"
+            >
+            <h3>RESUMEN</h3>
+                <div set:html={collectionIndex.data.description} />
+                <!-- TAGS -->
+                {
+                  collectionIndex.data.tags && (
+                    <ul class="mt-8 flex flex-wrap items-center justify-center text-heading">
+                      {collectionIndex.data.tags.map((tag) => (
+                        <li class="me-4 px-8 my-3 rounded-lg md:me-6 glass">{tag}</li>
+                      ))}
+                    </ul>
+                  )
+                }
+              
+        </div>
+      </div>
+    </div>
+  </section>
+            )
+          }
+
+
+  <!-- Cards -->
   <section class="section">
     <div class="container">
       <div class="row">

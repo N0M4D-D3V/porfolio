@@ -3,8 +3,7 @@ import type { PortfolioEntry } from "@/types";
 import BaseLayout from "@components/base/BaseLayout.astro";
 import PageHeader from "@/components/common/PageHeader.astro";
 import { markdownify } from "@lib/textConverter";
-import { FaGithub } from "react-icons/fa";
-import { FaLink } from "react-icons/fa";
+import { FaLink, FaAngleRight } from "react-icons/fa";
 
 interface Props {
   entry: PortfolioEntry;
@@ -18,72 +17,72 @@ const { title, description, projects } = entry.data;
   <PageHeader title={title} />
   <section class="section-sm container">
     <div class="row justify-center">
-      <div class="col-10 content glass rounded-lg p-4">
+      <div
+        class="w-full glass rounded-lg p-4 inline-flex flex-wrap gap-6 justify-center [&>div]:w-64"
+      >
         {
-          projects.map((project, index) => (
-            <>
-              {index > 0 && <hr />}
-              <div>
-                <div class="mt-8">
-                  <h3 set:html={markdownify(project.title)} />
-                </div>
-                <div class="-mt-4 flex items-center flex-wrap">
-                  {project.github && (
-                    <a
-                      aria-label="Github"
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      class="mr-2 glass-t shadow-none rounded flex h-8 w-8 text-txt-p dark:text-darkmode-txt-p items-center justify-center text-center"
-                    >
-                      <FaGithub className="h-6 w-6" />
-                    </a>
-                  )}
+          projects.map((project) => (
+            <div class="proj-container glass-t">
+              <h3 class="text-center" set:html={markdownify(project.title)} />
+              {project.subtitle && (
+                <p set:html={markdownify(project.subtitle)} />
+              )}
 
-                  {project.link && (
-                    <a
-                      aria-label="link"
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      class="mr-2 glass-t shadow-none rounded flex h-8 w-8 text-txt-p dark:text-darkmode-txt-p items-center justify-center text-center"
-                    >
-                      <FaLink className="h-6 w-6" />
-                    </a>
-                  )}
-
-                  {project.privacyPolicy && (
-                    <a
-                      aria-label="link"
-                      href={project.privacyPolicy}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      class="mr-2 glass-t shadow-none rounded flex h-8 w-8 text-txt-p dark:text-darkmode-txt-p items-center justify-center text-center"
-                    >
-                      <FaLink className="h-6 w-6" />
-                    </a>
-                  )}
-
-                  {project.technologies?.map((element: string) => (
-                    <li class="list-none">
-                      {/* Use markdownify to convert markdown to HTML for each technology */}
-                      <div
-                        class="mr-2 px-2 h-8 flex glass-t shadow-none rounded text-txt-p dark:text-darkmode-txt-p items-center justify-center text-center"
-                        set:html={markdownify(element)}
-                      />
-                    </li>
-                  ))}
-                </div>
+              <div class="buttons-container">
+                {project.link && (
+                  <a
+                    aria-label="link"
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mr-2 glass-t shadow-none rounded flex h-8 w-8 text-txt-p dark:text-darkmode-txt-p items-center justify-center"
+                  >
+                    <FaLink className="h-6 w-6" />
+                  </a>
+                )}
+                <a
+                  aria-label="link"
+                  href={"/portfolio" + project.internalLink}
+                  rel="noopener noreferrer nofollow"
+                  class="mr-2 glass-t shadow-none rounded flex h-8 w-8 text-txt-p dark:text-darkmode-txt-p items-center justify-center"
+                >
+                  <FaAngleRight className="h-6 w-6" />
+                </a>
               </div>
-              <div>
-                {project.content?.map((element: string) => (
-                  <p set:html={markdownify(element)} />
-                ))}
-              </div>
-            </>
+            </div>
           ))
         }
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .buttons-container {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    width: 100%;
+
+    margin-top: 1rem;
+  }
+
+  .proj-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+
+    border-radius: 12px;
+
+    transition: all 0.5s ease;
+  }
+
+  .proj-container:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+  }
+</style>

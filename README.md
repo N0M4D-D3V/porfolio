@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="src/assets/astrogon-logo.svg" style="width:80%;" alt="Astrogon Logo" align="center" />
 </div>
@@ -27,7 +26,7 @@ Astrogon is a rapidly-customizable multipurpose website template built using Ast
 - And more:
   - Homepage
   - About/Bio
-  - Portfolio
+  - Projects
   - Terms and Conditions
   - 404 page
 
@@ -74,10 +73,10 @@ See [docs/tech-stack.md](docs/tech-stack.md) for more details.
 2. Use Node 22: `nvm install 22` or `nvm use 22`
 3. From the project directory, install Node dependencies: `npm install`
 4. From the project directory, build: `npm run dev`
-   1. Alternately*: `npx astro build`, `npx wrangler dev`
+   1. Alternately\*: `npx astro build`, `npx wrangler dev`
 5. See your changes live at `http://localhost:4321`
 
-> *This is relevant if you intend to deploy your site to Cloudflare. Starting with Astro 5.8, Node 18 is unsupported, but the old Cloudflare Pages uses 18 by default. Wrangler appears to be necessary to use the new Cloudflare Workers. Read about Astro deployment [here](https://docs.astro.build/en/guides/deploy/cloudflare/#cloudflare-workers).
+> \*This is relevant if you intend to deploy your site to Cloudflare. Starting with Astro 5.8, Node 18 is unsupported, but the old Cloudflare Pages uses 18 by default. Wrangler appears to be necessary to use the new Cloudflare Workers. Read about Astro deployment [here](https://docs.astro.build/en/guides/deploy/cloudflare/#cloudflare-workers).
 
 ## License
 

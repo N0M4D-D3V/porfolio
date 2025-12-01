@@ -1,0 +1,17 @@
+---
+import BaseLayout from "@components/base/BaseLayout.astro";
+import PageHeader from "@/components/common/PageHeader.astro";
+---
+
+<BaseLayout title="Title" description="Description">
+  <PageHeader title="Title 1" />
+  <section class="section-sm container">
+    <div class="row justify-center">
+      <div
+        class="w-full glass rounded-lg p-4 inline-flex flex-wrap gap-6 justify-center [&>div]:w-64"
+      >
+        This is the body
+      </div>
+    </div>
+  </section>
+</BaseLayout>
